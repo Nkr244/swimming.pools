@@ -1,0 +1,109 @@
+@font-face {
+    font-family: "icons";
+    src: url("./icons.ttf?05e4e686c76517cc2da4062c222e65c5") format("truetype"),
+url("./icons.woff?05e4e686c76517cc2da4062c222e65c5") format("woff"),
+url("./icons.woff2?05e4e686c76517cc2da4062c222e65c5") format("woff2");
+}
+
+i[class^="icon-"]:before, i[class*=" icon-"]:before {
+    font-family: icons !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: inherit;
+    vertical-align: middle;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-acc:before {
+    content: "\f101";
+}
+.icon-arrow-down-large:before {
+    content: "\f102";
+}
+.icon-arrow-down:before {
+    content: "\f103";
+}
+.icon-arrow-left:before {
+    content: "\f104";
+}
+.icon-arrow-right:before {
+    content: "\f105";
+}
+.icon-arrow-up-large:before {
+    content: "\f106";
+}
+.icon-arrow-up:before {
+    content: "\f107";
+}
+.icon-cart-number:before {
+    content: "\f108";
+}
+.icon-cart:before {
+    content: "\f109";
+}
+.icon-close-large:before {
+    content: "\f10a";
+}
+.icon-close-round:before {
+    content: "\f10b";
+}
+.icon-close:before {
+    content: "\f10c";
+}
+.icon-done-large:before {
+    content: "\f10d";
+}
+.icon-done:before {
+    content: "\f10e";
+}
+.icon-download:before {
+    content: "\f10f";
+}
+.icon-error:before {
+    content: "\f110";
+}
+.icon-eye-dash:before {
+    content: "\f111";
+}
+.icon-eye:before {
+    content: "\f112";
+}
+.icon-frame:before {
+    content: "\f113";
+}
+.icon-mail_out:before {
+    content: "\f114";
+}
+.icon-mail:before {
+    content: "\f115";
+}
+.icon-map:before {
+    content: "\f116";
+}
+.icon-menu:before {
+    content: "\f117";
+}
+.icon-minus:before {
+    content: "\f118";
+}
+.icon-phone:before {
+    content: "\f119";
+}
+.icon-plus:before {
+    content: "\f11a";
+}
+.icon-search:before {
+    content: "\f11b";
+}
+.icon-shield-yes:before {
+    content: "\f11c";
+}
+.icon-tile:before {
+    content: "\f11d";
+}
+.icon-trash:before {
+    content: "\f11e";
+}

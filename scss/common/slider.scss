@@ -1,0 +1,299 @@
+.wrapper {
+  padding: 0;
+}
+
+.slider {
+  position: relative;
+
+  .container {
+    padding: 0;
+  }
+
+  .btn-white {
+    margin-bottom: 65px;
+  }
+
+  &-content {
+    color: $white;
+    background-image: url("image/slider.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+
+    padding: 6rem 5rem 6.5rem 5rem;
+  }
+
+  &-title {
+    font-size: 4.4rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+    padding-top: 5rem;
+  }
+
+  &-sub-title {
+    font-size: 1.8rem;
+    font-weight: 500;
+    margin-bottom: 3rem;
+
+  }
+}
+
+.main-slider {
+  overflow: hidden;
+  border-radius: 1.5rem;
+  max-height: 40rem;
+  position: relative;
+
+}
+
+.prev,
+.next,
+.prev-product,
+.next-product {
+  position: absolute;
+  content: '';
+  top: 50%;
+  left: -3rem;
+  transform: translateY(-50%);
+  border: none;
+  border-radius: 50%;
+  background: $grey4;
+  z-index: 666;
+
+  &-i {
+    position: absolute;
+    top: 0;
+    left: 0.7rem;
+    color: $black;
+  }
+}
+
+.next {
+  left: auto;
+  right: -3rem;
+
+  &-i {
+    left: 1rem;
+  }
+}
+
+
+.main-slide, .slider-content {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.main-slide:before {
+  background: none;
+}
+
+.slick-dots {
+  bottom: 2rem;
+}
+
+.slick-dots li + li {
+  margin-left: 1rem;
+}
+
+
+//New product slider
+
+.new-product {
+  &-content {
+    position: relative;
+    /* the slides */
+    .slick-slide {
+      margin: 0 10px;
+    }
+    /* the parent */
+    .slick-list {
+      margin: 0 -10px;
+    }
+    .prev-product {
+      left: -3rem;
+    }
+    .next-product {
+      right: -2.7rem;
+      left: auto;
+
+    }
+  }
+
+  .prev-product,
+  .next-product {
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .slick-hidden {
+    display: inline-block;
+  }
+
+  .product-slide {
+    border-radius: 1rem;
+    border: 0.1rem solid $grey3;
+
+  }
+
+  .product-slide:last-child {
+    margin-right: 0;
+  }
+
+  .product-slide-content {
+    padding: 0 1.5rem 1.5rem 1.5rem;
+
+    button {
+      width: 100%;
+    }
+
+    &-article {
+      color: $grey1;
+      font-size: 1.55rem;
+      margin-bottom: 5px;
+    }
+
+    &-text {
+      font-size: 1.55rem;
+      margin-bottom: 15px;
+    }
+
+    &-prices {
+      display: flex;
+      gap: 1.5rem;
+      margin-bottom: 15px;
+    }
+
+    &-active-price {
+      font-size: 2.65rem;
+      color: $pink;
+    }
+
+    &-prev-price {
+      font-size: 1.55rem;
+      align-self: center;
+      color: $grey1;
+      text-decoration: line-through;
+    }
+
+    &-tag {
+      display: flex;
+      gap: 0.8rem;
+      font-weight: 500;
+      font-size: 1.1rem;
+      margin-top: 1.5rem;
+
+      &-item {
+        position: relative;
+        background: $grey4;
+        padding: 0.4rem 1.7rem 0.4rem 0.8rem;
+        border-radius: 0.25rem;
+        line-height: 1.5rem;
+      }
+    }
+
+    &-image-slider {
+      color: red;
+      margin-bottom: 10px;
+
+      li {
+        width: 10px;
+        height: 10px;
+
+        button {
+          background: $grey3;
+        }
+
+      }
+
+      .slick-dots li.slick-active button {
+
+        background: $blue;
+
+
+      }
+    }
+  }
+
+  i {
+    display: inline-block;
+  }
+
+  .icon-shield-yes:before,
+  .icon-frame:before {
+    position: absolute;
+    top: 0.4rem;
+    right: 0;
+    color: #6d9fea;
+    font-size: 2rem;
+  }
+
+  .icon-frame:before {
+    color: $pink;
+    font-size: 1.6rem;
+    right: 0.45rem;
+  }
+
+}
+
+.hvr-images {
+  position: relative;
+}
+
+.hvr-sectors {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+}
+
+.hvr-sector {
+  flex-grow: 1;
+}
+
+.images {
+  display: flex;
+  overflow: hidden;
+  height: 19rem;
+
+  img {
+    object-fit: contain;
+    width: 100%;
+  }
+}
+
+.image {
+  display: block;
+  overflow: hidden;
+}
+
+.hvr-dots {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hvr-dot {
+  width: 0.8rem;
+  height: 0.8rem;
+  margin: .5rem .3rem 2.5rem;
+  border-radius: 50%;
+  background: $grey3;
+}
+
+.hvr-dot-active {
+  background: $blue;
+}
+
+.slick-disabled {
+  i {
+    color: $grey3;
+  }
+}
+.slick-disabled:hover {
+  i {
+    color: $grey3;
+  }
+}

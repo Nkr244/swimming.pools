@@ -1,0 +1,9 @@
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+.form-group input {
+  height: 45px;
+}
+
+/*# sourceMappingURL=form.css.map */

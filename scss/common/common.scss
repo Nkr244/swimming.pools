@@ -1,0 +1,220 @@
+//Заголовки
+h2 {
+  font-weight: 700;
+  font-size: 3.6rem;
+  margin-bottom: 3rem;
+}
+//Хлебные крошки
+ul.breadcrumb {
+
+  list-style: none;
+
+}
+
+ul.breadcrumb li {
+  display: inline;
+  position: relative;
+  padding-right: 2.4rem;
+}
+
+ul.breadcrumb li + li:before {
+  position: absolute;
+  font-size: 4.5rem;
+  color: black;
+  content: "\f105";
+  font-family: icons, sans-serif;
+  vertical-align: sub;
+  top: -2.4rem;
+  left: -2.8rem;
+}
+
+ul.breadcrumb li a {
+  color: $grey1;
+  text-decoration: none;
+}
+
+ul.breadcrumb li a:hover {
+  color: $blue;
+
+}
+
+//Категории
+.categories {
+  display: flex;
+  flex-direction: column;
+  gap: 1.1rem;
+  border: 0.1rem solid $grey3;
+  border-radius: 1rem;
+  align-items: center;
+  max-width: 18rem;
+  max-height: 18rem;
+
+  span {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    padding-top: 1.5rem;
+    font-weight: bold;
+  }
+}
+
+//Tabbar
+.tabbar {
+  list-style: none;
+  padding-bottom: 0.4rem;
+  border-bottom: 0.1rem solid $grey3;
+
+  li {
+    display: inline;
+    margin-right: 3rem;
+    cursor: pointer;
+    position: relative;
+  }
+
+  li:hover {
+    color: $blue;
+
+  }
+
+  li:hover:before {
+    position: absolute;
+    content: '';
+    top: 2.2rem;
+    left: 0;
+    border-bottom: 0.4rem solid $blue;
+    width: 100%;
+    border-radius: 0.5rem;
+  }
+}
+
+//Личный кабинет
+.login,
+.basket {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 15rem;
+  cursor: pointer;
+
+  i {
+    font-size: 2.3rem;
+
+    span {
+      font-style: normal;
+      font-size: 2rem;
+    }
+  }
+
+  &:hover {
+    color: $blueAdditional;
+  }
+}
+
+.basket {
+  i {
+
+    position: relative;
+    font-size: 2.31rem;
+
+    span {
+      position: absolute;
+      display: inline-block;
+      font-style: normal;
+      top: 0.5rem;
+      left: 2.8rem;
+
+      color: $white;
+      z-index: 100;
+      font-size: 1.4rem;
+    }
+  }
+
+  span {
+    display: block;
+  }
+
+
+
+}
+
+//Filter
+.main-filter {
+  max-width: 18rem;
+  outline: none;
+  font-size: 1.4rem;
+  color: $black;
+
+  ul {
+    list-style-type: none;
+  }
+}
+
+.select-head {
+  position: relative;
+  border: 0.1rem solid $grey3;
+  margin-bottom: 1rem;
+  border-radius: 0.4rem;
+  padding: 1rem;
+  font-size: 1.4rem;
+  line-height: 1.8rem;
+  color: rgba(66, 67, 72, 0.8);
+  cursor: pointer;
+
+}
+
+.select-head::after {
+  width: 2rem;
+  height: 2.6rem;
+  color: $grey1;
+  position: absolute;
+  right: 1rem;
+  top: 50%;
+  content: "\f102";
+  font-family: icons, sans-serif;
+  font-size: 3rem;
+  display: block;
+  transition: 0.2s ease-in;
+  transform: translateY(-50%);
+}
+
+.select-head.open::after {
+  transform: translateY(-40%) rotate(-180deg);
+}
+
+.select-list {
+  display: none;
+  background: transparent;
+  border: 0.1rem solid $grey3;
+  border-radius: 4px;
+  box-shadow: (0 0.4rem 1.5rem rgba(27, 27, 27, 0.1));
+  z-index: 100;
+  color: #424348;
+}
+
+[data-select] select {
+  display: none;
+}
+
+.select-item {
+  display: block;
+  padding: 1rem;
+  cursor: pointer;
+  color: #333;
+  border-radius: 0.4rem;
+  position: relative;
+}
+
+.select-item:hover {
+  background-color: $grey4;
+}
+
+.select-item.checked:after {
+  position: absolute;
+  content: '\f113';
+  font-family: icons, sans-serif;
+  font-size: 20px;
+  top: 0.5rem;
+  right: 0.5rem;
+  width: 2rem;
+  height: 3rem;
+  color: $blue;
+}

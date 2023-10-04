@@ -1,0 +1,38 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Inter, sans-serif;
+}
+
+html {
+  font-size: calc(100vw / 1480 * 10);
+  @media (max-width: 1024px) {
+    font-size: calc(100vw / 768 * 10);
+  }
+  @media (max-width: 767px) {
+    font-size: calc(100vw / 500 * 10);
+  }
+  @media (max-width: 500px) {
+    font-size: calc(100vw / 375 * 10);
+  }
+}
+
+section {
+  margin-bottom: 10rem;
+}
+
+.container {
+  font-size: 1.6rem;
+  max-width: 104.64rem;
+  margin: 0 auto;
+}
+
+@import "fonts";
+@import "colors";
+@import "buttons";
+@import "form";
+@import "common";
+@import "header";
+@import "footer";
+@import "slider";

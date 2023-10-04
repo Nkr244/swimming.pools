@@ -1,0 +1,157 @@
+.form-group {
+  margin-bottom: 3rem;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 0.8rem;
+    font-size: 1.6rem;
+
+  }
+
+  .form-control-wrapper {
+    position: relative;
+  }
+
+  .form-password-button {
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 3.5rem;
+    border: none;
+    background: transparent;
+    font-size: 3rem;
+    color: $grey2;
+    cursor: pointer;
+  }
+
+  textarea,
+  input {
+    display: block;
+    width: 100%;
+    font-size: 1.6rem;
+    height: 4.5rem;
+    outline: none;
+    border: 0.1rem solid #B1B1B1;
+    border-radius: 0.5rem;
+    color: $grey2;
+    padding: 0 1.5rem;
+  }
+
+  textarea {
+    height: auto;
+    padding-top: 1.2rem;
+    padding-bottom: 1.2rem;
+  }
+
+  &.is-invalid input {
+    border-color: $pink;
+  }
+
+  &:not(.is-invalid) input:focus {
+    border-color: $blueAdditional !important;
+  }
+
+  .form-invalid-feedback,
+  .form-feedback {
+    display: block;
+    margin-top: 0.8rem;
+    text-decoration: none;
+    color: $grey1;
+    font-size: 1.2rem;
+  }
+
+  .form-invalid-feedback {
+    color: $pink;
+    display: none;
+  }
+
+  &.is-invalid .form-invalid-feedback {
+    display: block;
+  }
+}
+
+.form-radio-item {
+  margin-bottom: 3rem !important;
+}
+
+.form-group-radio input,
+.form-group-checkbox input {
+  display: none;
+}
+
+.form-radio-check {
+  display: inline-block;
+  border: 0.1rem solid $grey3;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 18.75rem;
+  position: relative;
+  vertical-align: top;
+
+}
+
+
+
+.form-radio-wrapper {
+  border: 0.1rem solid $grey3;
+  padding: 1.0rem 1.5rem;
+  border-radius: 4px;
+  gap: 1rem;
+  display: flex;
+  align-items: center
+}
+
+input:checked + .form-radio-wrapper .form-radio-check:before {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0.4rem;
+  content: '';
+  background-color: $blue;
+  width: 1rem;
+  height: 1rem;
+  border-radius: 18.75rem;
+}
+input:checked + .form-radio-wrapper,
+input:checked + .form-radio-wrapper .form-radio-check,
+input:checked + .form-checkbox-wrapper .form-checkbox-check {
+  border: 0.1rem solid $blue;
+}
+
+.form-radio-name {
+  font-size: 1.4rem;
+  font-weight: normal;
+}
+
+.form-checkbox-check {
+  display: inline-block;
+  border: 0.1rem solid $grey3;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 0.2rem;
+  position: relative;
+}
+
+.form-checkbox-wrapper .form-checkbox-check {
+  i {
+    display: none;
+  }
+}
+input:checked + .form-checkbox-wrapper .form-checkbox-check {
+  i {
+    display: inline-block;
+    color: $blue;
+    font-size: 2.4rem;
+  }
+}
+.icon-doneLarge:before {
+  position: absolute;
+  top: -0.6rem;
+  left: 0.15rem;
+}
