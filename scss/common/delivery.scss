@@ -1,0 +1,25 @@
+.delivery {
+  &-items {
+    display: flex;
+    gap: 2rem;
+  }
+  &-item {
+    flex-basis: 25%;
+    border: 1px solid $grey3;
+    border-radius: 1.4rem;
+    padding: 2rem;
+    img {
+      margin-bottom: 1rem;
+      width: 7rem;
+      height: 7rem;
+    }
+    h3 {
+      font-size: 1.8rem;
+      margin-bottom:1rem ;
+      max-width: 19rem;
+    }
+    p {
+      font-size: 1.42rem;
+    }
+  }
+}

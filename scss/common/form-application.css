@@ -1,0 +1,16 @@
+.form-content {
+  display: flex;
+}
+.form-content h3 {
+  font-size: 2.4rem;
+}
+
+.form-image {
+  flex-basis: 50%;
+}
+
+.form {
+  flex-basis: 50%;
+}
+
+/*# sourceMappingURL=form-application.css.map */

@@ -39,16 +39,16 @@ ul.breadcrumb li a:hover {
 }
 
 //Категории
-.categories {
+.product-category-item {
   display: flex;
   flex-direction: column;
   gap: 1.1rem;
   border: 0.1rem solid $grey3;
   border-radius: 1rem;
   align-items: center;
-  max-width: 18rem;
-  max-height: 18rem;
-
+  max-width: 16rem;
+  max-height: 16rem;
+  overflow: hidden;
   span {
     padding-left: 1.5rem;
     padding-right: 1.5rem;
@@ -96,7 +96,7 @@ ul.breadcrumb li a:hover {
   cursor: pointer;
 
   i {
-    font-size: 2.3rem;
+    font-size: 2.8rem;
 
     span {
       font-style: normal;
@@ -113,7 +113,7 @@ ul.breadcrumb li a:hover {
   i {
 
     position: relative;
-    font-size: 2.31rem;
+    font-size: 2.8rem;
 
     span {
       position: absolute;
@@ -218,3 +218,28 @@ ul.breadcrumb li a:hover {
   height: 3rem;
   color: $blue;
 }
+//Производители (manufacturers)
+.manufacturers {
+  &-items {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.8rem;
+  }
+
+  &-item {
+    display: flex;
+    flex-direction: column;
+    gap: 1.1rem;
+    border: 0.1rem solid $grey3;
+    border-radius: 1rem;
+    align-items: center;
+    overflow: hidden;
+    flex-basis: calc(16.6666% - 1.5rem);
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    img {
+      width: 80%;
+    }
+  }
+}
+

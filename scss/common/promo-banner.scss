@@ -1,0 +1,67 @@
+.promo-banner {
+
+
+  &-content {
+    display: flex;
+    background: url("image/promo-banner.jpg") no-repeat center;
+    background-size: cover;
+    overflow: hidden;
+    color: $white;
+    border-radius: 10px;
+  }
+
+  &-images {
+    flex-basis: 50%;
+    position: relative;
+    align-self: flex-end;
+  }
+  &-image {
+    display: flex;
+    margin-left: 7.5rem;
+    img {
+      width: 35rem;
+    }
+  }
+  &-text {
+    flex-basis: 50%;
+    padding: 4.5rem 6rem;
+
+    h2 {
+      font-size: 2.85rem;
+      margin-bottom: 1.5rem;
+    }
+
+    p {
+      margin-bottom: 2.8rem;
+    }
+
+    .btn-white {
+      padding: 1.3rem 6.14rem;
+    }
+  }
+  &-tag {
+    position: absolute;
+    background: $white;
+    border-radius: 0.5rem;
+    max-width: 10rem;
+    padding: 1rem 2.8rem 1rem 1.2rem;
+    color: $black;
+    font-size: 2rem;
+    font-weight: 900;
+    top: 55%;
+    left: 8.4rem;
+    rotate: -14.68deg;
+    i {
+      position: relative;
+      color: $pink;
+      font-size: 2.4rem;
+    }
+
+    i:before {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-62%);
+      right: -2.2rem;
+    }
+  }
+}

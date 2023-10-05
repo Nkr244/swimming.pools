@@ -1,6 +1,8 @@
 {
   "dependencies": {
+    "antd-country-phone-input": "^4.5.1",
     "fantasticon": "^2.0.0",
-    "jquery": "^3.7.1"
+    "jquery": "^3.7.1",
+    "world_countries_lists": "^2.8.2"
   }
 }
