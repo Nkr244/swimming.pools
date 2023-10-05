@@ -663,6 +663,7 @@ header .header-menu a {
   display: flex;
   justify-content: space-between;
   gap: 5rem;
+  position: relative;
 }
 .upper-block i {
   color: #538fea;
@@ -767,15 +768,162 @@ header .header-menu a {
   display: none;
 }
 
+.header-mobile,
+.header-burger {
+  display: none;
+}
+
 @media screen and (max-width: 1024px) {
   header .header-menu,
   .block-contacts,
   .bottom-block .search {
     display: none;
   }
+  .header-mobile.open-menu .block-contacts {
+    display: flex;
+  }
+  .header-mobile.open-menu .header-menu {
+    color: black;
+    display: block;
+  }
   .upper-block .blocks-address-time,
   .block-contacts {
     font-size: 1.2rem;
+  }
+  .header-burger {
+    display: block;
+  }
+  .header-burger {
+    position: absolute;
+    width: 4rem;
+    height: 3.5rem;
+    display: block !important;
+    top: 50% !important;
+    left: 65.5rem !important;
+    transform: translateX(-90%);
+    border: 0;
+    background-color: unset;
+    cursor: pointer;
+  }
+  .header-burger .header-burger .open-menu {
+    margin-left: auto;
+    margin-right: 0;
+    margin-top: 10%;
+  }
+  .header-burger span, .header-burger:after, .header-burger:before {
+    height: 3px;
+    width: 30px;
+    position: absolute;
+    margin: 0 auto;
+    background: #538fea;
+  }
+  .header-burger span {
+    top: 20px;
+  }
+  .header-burger:after, .header-burger:before {
+    content: "";
+    top: 0;
+  }
+  .header-burger:before {
+    top: 10px;
+  }
+  .header-burger.open-menu span {
+    opacity: 0;
+    transition: 0.5s;
+  }
+  .header-burger.open-menu:before {
+    transform: rotate(40deg);
+    top: 10px !important;
+    transition: 0.4s;
+  }
+  .header-burger.open-menu:after {
+    transform: rotate(-40deg);
+    top: 10px !important;
+    transition: 0.4s;
+  }
+  .header-burger-mobile {
+    display: block;
+  }
+  .header-search-mobile {
+    padding-right: 40px;
+  }
+  .header-mobile {
+    position: fixed;
+    background: #E4E4E4;
+  }
+  .header-mobile-block {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    gap: 30px;
+    padding-top: 40px;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .header-mobile-menu {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .header-mobile-menu a {
+    font-size: 20px;
+  }
+  .header-mobile-connection {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    align-items: center;
+  }
+  .header-mobile-button {
+    padding: 10px 35px;
+    border: none;
+    font-size: 18px;
+  }
+  .open-menu {
+    display: block;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: 100;
+  }
+  .header-mobile-block {
+    width: 30rem;
+  }
+  .header-mobile-block .search button {
+    position: absolute;
+    top: -0.85rem;
+    right: 0.6rem;
+    display: inline-block;
+    padding: 0 2.5rem;
+  }
+  .header-mobile-block .search input {
+    padding: 1.15rem 3.5rem;
+  }
+  .header-mobile-block .search-item:before {
+    top: 0.2rem;
+  }
+  .header-mobile-block .block-contacts {
+    display: flex;
+    gap: 2rem;
+  }
+  .header-mobile-block .search button {
+    top: -0.3rem;
+    right: 0.6rem;
+    line-height: 3rem;
+  }
+  .header-mobile-block .block-contacts .icon-phone:before, .header-mobile-block .block-contacts .icon-mail:before {
+    top: -0.3rem;
+  }
+  .header-mobile-block .block-contacts {
+    font-size: 1.1rem;
+  }
+  .header-mobile-block .header-mobile-block .block-contacts {
+    gap: 4rem;
+  }
+  .header-mobile-block .header-mobile-button {
+    line-height: 2rem;
   }
 }
 @media (max-width: 767px) {
@@ -795,6 +943,10 @@ header .header-menu a {
   .login span, .basket span {
     font-size: 1.2rem;
   }
+  .header-burger {
+    top: 50% !important;
+    left: 40rem !important;
+  }
 }
 @media (max-width: 500px) {
   .btn-mobile {
@@ -810,6 +962,25 @@ header .header-menu a {
   .block-address-time {
     text-wrap: wrap;
     flex-basis: 90%;
+  }
+  .header-burger {
+    top: 50% !important;
+    left: 27rem !important;
+  }
+  .header-burger.open-menu:after,
+  .header-burger.open-menu:before {
+    right: -5.5rem;
+  }
+}
+@media screen and (max-width: 400px) {
+  .header-mobile-block {
+    width: 100%;
+  }
+  .header-mobile-block .search button {
+    top: -0.45rem;
+  }
+  .header-mobile-block form {
+    margin: 0;
   }
 }
 footer {
@@ -1029,7 +1200,6 @@ footer .contacts-block-address span:last-child {
   border: none;
   border-radius: 50%;
   background: #F7F7F7;
-  z-index: 666;
 }
 .prev-i,
 .next-i,

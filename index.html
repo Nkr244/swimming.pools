@@ -38,6 +38,47 @@
                         <li><a href="">О компании</a></li>
                     </ul>
                 </div>
+                <div class="header-mobile">
+                    <div class="container">
+                        <div class="header-mobile-block">
+                            <form class="header-form" action="" method="get">
+                                <div class="search">
+                                    <span class="search-item">
+                                        <input type="text" name="search-text" placeholder="Поиск по сайту">
+                                        <button class="btn" type="button">Поиск</button>
+                                    </span>
+                                </div>
+                            </form>
+                            <div class="header-mobile-connection">
+                                <div class="block-contacts">
+                                    <div class="contacts-email">
+                                        <i class="icon-mail"></i>
+                                        <a href=""><b>water-empire@mail.ru</b></a>
+                                    </div>
+                                    <div class="contacts-tel">
+                                        <i class="icon-phone"></i>
+                                        <a href=""><b>8 (495) 220 20 06</b></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <nav class="header-menu">
+                                <ul class="header-mobile-menu align-items-center">
+                                    <li><a href="">Контакты</a></li>
+                                    <li><a href="">Доставка и оплата</a></li>
+                                    <li><a href="">Гарантии</a></li>
+                                    <li><a href="">О компании</a></li>
+                                </ul>
+                            </nav>
+                            <button class="header-mobile-button btn">Заказать звонок</button>
+
+
+                        </div>
+                    </div>
+
+                </div>
+                <button class="header-burger">
+                    <span></span>
+                </button>
                 <div class="block-contacts">
                     <div class="contacts-email">
                         <i class="icon-mail"></i>
@@ -65,10 +106,10 @@
 
 
                 <div class="search">
-            <span class="search-item">
-            <input type="text" name="search-text" placeholder="Поиск по сайту">
-        <button class="btn" type="button">Поиск</button>
-        </span>
+                    <span class="search-item">
+                        <input type="text" name="search-text" placeholder="Поиск по сайту">
+                        <button class="btn" type="button">Поиск</button>
+                    </span>
                 </div>
                 <div class="authentication">
                     <div class="login">
@@ -77,7 +118,7 @@
                     </div>
                     <div class="basket">
                         <i class="icon-cart-number">
-                            <span>2</span>
+                            <span></span>
                         </i>
                         <span>Корзина</span>
                     </div>
@@ -704,6 +745,11 @@
 <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 <script>
     $(document).ready(function () {
+        $('.header-burger').click(function () {
+            $('.header-burger').toggleClass('open-menu');
+            $('.header-mobile').toggleClass('open-menu');
+            $('body').toggleClass('overflow-none');
+        });
         $("#main-slider").slick({
             dots: true,
             infinite: true,

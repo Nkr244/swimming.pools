@@ -18,7 +18,7 @@ header {
   display: flex;
   justify-content: space-between;
   gap: 5rem;
-
+  position: relative;
   i {
     color: $blue;
     font-size: 2.2rem;
@@ -141,6 +141,10 @@ header {
 .btn-mobile {
   display: none;
 }
+.header-mobile,
+.header-burger {
+  display: none;
+}
 @media screen and (max-width: 1024px) {
   header .header-menu,
   .block-contacts,
@@ -148,12 +152,179 @@ header {
   {
     display: none;
   }
+  .header-mobile.open-menu .block-contacts{
+    display: flex;
+  }
+  .header-mobile.open-menu .header-menu
+  {
+    color: $black;
+    display: block;
+  }
   .upper-block .blocks-address-time,
   .block-contacts {
     font-size: 1.2rem;
   }
+  .header-burger {
+    display: block;
+  }
+  .header-burger {
+      position: absolute;
+      width: 4rem;
+      height: 3.5rem;
+      display: block !important;
+      top: 50% !important;
+      left: 65.5rem !important;
+      transform: translateX(-90%);
+      border: 0;
+      background-color: unset;
+      cursor: pointer;
+
+
+    .header-burger .open-menu {
+      margin-left: auto;
+      margin-right: 0;
+      margin-top: 10%;
+    }
+
+
+    & span,
+    &:after,
+    &:before {
+      height: 3px;
+      width: 30px;
+      position: absolute;
+      margin: 0 auto;
+      background: $blue;
+    }
+
+    & span {
+      top: 20px;
+    }
+
+    &:after,
+    &:before {
+      content: '';
+      top: 0;
+    }
+
+    &:before {
+      top: 10px;
+    }
+
+    &.open-menu span {
+      opacity: 0;
+      transition: 0.5s;
+
+    }
+
+    &.open-menu:before {
+      transform: rotate(40deg);
+      top: 10px !important;
+      transition: 0.4s;
+    }
+
+    &.open-menu:after {
+      transform: rotate(-40deg);
+      top: 10px !important;
+      transition: 0.4s;
+    }
+
+    &-mobile {
+      display: block;
+
+    }
+  }
+  .header-search-mobile {
+    padding-right: 40px;
+
+  }
+  .header-mobile {
+    position: fixed;
+    background: $grey3;
+    &-block {
+      display: flex;
+      flex-direction: column;
+      position: absolute;
+
+      gap: 30px;
+      padding-top: 40px;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    &-menu {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+
+      a {
+        font-size: 20px;
+      }
+    }
+
+    &-connection {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      align-items: center;
+    }
+
+    &-button {
+      padding: 10px 35px;
+      border: none;
+      font-size: 18px;
+    }
+  }
+  .open-menu {
+    display: block;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: 100;
+  }
+  .header-mobile-block {
+    width: 30rem;
+     .search button {
+      position: absolute;
+      top: -0.85rem;
+      right: 0.6rem;
+      display: inline-block;
+      padding: 0 2.5rem;
+    }
+    .search input {
+      padding: 1.15rem 3.5rem;
+    }
+    .search-item:before {
+        top: 0.2rem;
+    }
+    .block-contacts {
+      display: flex;
+      gap: 2rem;
+
+    }
+    .search button {
+       top: -0.3rem;
+       right: 0.6rem;
+        line-height: 3rem;
+     }
+    .block-contacts .icon-phone:before, .block-contacts .icon-mail:before {
+      top: -0.3rem;
+    }
+    .block-contacts {
+      font-size: 1.1rem;
+    }
+    .header-mobile-block .block-contacts {
+      gap: 4rem;
+    }
+    .header-mobile-button {
+     line-height: 2rem;
+    }
+  }
 
 }
+
 
 @media (max-width: 767px) {
   h2 {
@@ -175,7 +346,10 @@ header {
   .login span, .basket span {
     font-size: 1.2rem;
   }
-
+  .header-burger {
+    top: 50% !important;
+    left: 40rem !important;
+  }
 }
 
 @media (max-width: 500px) {
@@ -193,4 +367,25 @@ header {
     text-wrap: wrap;
     flex-basis: 90%;
   }
+  .header-burger {
+    top: 50% !important;
+    left: 27rem !important;
+  }
+  .header-burger.open-menu:after,
+  .header-burger.open-menu:before{
+    right: -5.5rem;
+  }
+}
+@media screen and (max-width: 400px){
+  .header-mobile-block {
+    width: 100%;
+    .search button {
+      top: -0.45rem;
+    }
+    form {
+      margin: 0;
+    }
+  }
+
+
 }
