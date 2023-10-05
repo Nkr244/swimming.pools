@@ -65,3 +65,37 @@
     }
   }
 }
+@media screen and (max-width: 1024px) {
+  .promo-banner-tag {
+    left: 1.4rem !important;
+  }
+  .promo-banner-image {
+    margin-left: 0 !important;
+  }
+  .promo-banner-text h2 {
+    font-size: 2.2rem !important;
+  }
+}
+@media screen and (max-width: 767px){
+  .promo-banner-images {
+    display: none;
+  }
+  .promo-banner-text {
+    flex-basis: 100% !important;
+    padding: 4.5rem 3rem !important;
+  }
+  .promo-banner-text .btn-white {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 500px){
+  .promo-banner-text {
+    h2 {
+      font-size: 2rem !important;
+    }
+
+    p {
+      font-size: 1.4rem;
+    }
+  }
+}

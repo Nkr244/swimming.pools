@@ -155,3 +155,43 @@ input:checked + .form-checkbox-wrapper .form-checkbox-check {
   top: -0.6rem;
   left: 0.15rem;
 }
+@media screen and (max-width: 1024px){
+  .form-content .form-image {
+    display: none;
+  }
+  .form-content .form {
+    flex-basis: 100%;
+  }
+}
+@media screen and (max-width: 767px){
+  .form-content {
+    display: block !important;
+  }
+  .form-group label {
+    font-size: 1rem !important;
+  }
+
+  .form-checkbox-wrapper label {
+    align-self: center;
+    margin-bottom: 0;
+  }
+}
+@media screen and (max-width: 500px){
+  .form-application {
+    .form h3 {
+      font-size: 1.8rem;
+    }
+
+    .form-group  {
+      .btn-main-form {
+        max-height: 5rem;
+        font-size: 1.6rem;
+      }
+    }
+
+  }
+  .form-checkbox-wrapper label {
+    font-size: 0.6rem !important;
+
+  }
+}

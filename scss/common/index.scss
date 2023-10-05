@@ -27,7 +27,14 @@ section {
   max-width: 116.74rem;
   margin: 0 auto;
 }
-
+@media screen and (max-width: 1024px) {
+  section {
+    margin-bottom: 4rem;
+  }
+  .wrapper {
+    padding: 0 4rem !important;
+  }
+}
 @import "fonts";
 @import "colors";
 @import "buttons";

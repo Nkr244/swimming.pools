@@ -19,3 +19,23 @@
     }
   }
 }
+@media screen and (max-width: 1024px){
+  .dealers-item {
+    h3 {
+      font-size: 1.5rem !important;
+    }
+
+    p {
+      font-size: 1.06rem !important;
+    }
+  }
+}
+@media screen and (max-width: 767px){
+  .dealers-items {
+    flex-wrap: wrap;
+
+    .dealers-item {
+      flex-basis: 100%;
+    }
+  }
+}

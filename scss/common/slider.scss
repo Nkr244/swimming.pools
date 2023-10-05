@@ -297,3 +297,44 @@
     color: $grey3;
   }
 }
+@media screen and (max-width: 1024px){
+  .new-product .product-slide-content-active-price {
+    font-size: 1.65rem !important;
+
+  }
+}
+@media (max-width: 767px) {
+  .main-slide {
+    padding-top: 0 !important;
+  }
+  .slider-title {
+    font-size: 2.4rem !important;
+  }
+  .slider-sub-title {
+    font-size: 1.4rem !important;
+    margin-bottom: 2rem !important;
+  }
+  .btn-white {
+    font-size: 1.4rem;
+    padding: 1.5rem 2.5rem;
+  }
+  .new-product .product-slide-content-article {
+    font-size: 1.2rem !important;
+  }
+  .new-product .product-slide-content-text {
+    font-size: 1.3rem !important;
+  }
+
+}
+@media screen and (max-width: 500px){
+  .slider-title {
+    font-size: 2rem !important;
+  }
+  .slider-sub-title {
+    font-size: 1.2rem !important;
+  }
+  .btn-white {
+    font-size: 1.2rem;
+    width: 100%;
+  }
+}

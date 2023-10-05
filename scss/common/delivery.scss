@@ -23,3 +23,17 @@
     }
   }
 }
+@media screen and (max-width: 1024px){
+  .delivery-items {
+    flex-wrap: wrap;
+  }
+  .delivery-item {
+    flex-basis: calc(50% - 1rem) !important;
+  }
+
+}
+@media screen and (max-width: 767px){
+  .delivery-item {
+    flex-basis: 100% !important;
+  }
+}
