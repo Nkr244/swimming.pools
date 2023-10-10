@@ -1,8 +1,8 @@
 @font-face {
     font-family: "icons";
-    src: url("./icons.ttf?05e4e686c76517cc2da4062c222e65c5") format("truetype"),
-url("./icons.woff?05e4e686c76517cc2da4062c222e65c5") format("woff"),
-url("./icons.woff2?05e4e686c76517cc2da4062c222e65c5") format("woff2");
+    src: url("./icons.ttf?e53d5a25eb25425be83238abb0358d82") format("truetype"),
+url("./icons.woff?e53d5a25eb25425be83238abb0358d82") format("woff"),
+url("./icons.woff2?e53d5a25eb25425be83238abb0358d82") format("woff2");
 }
 
 i[class^="icon-"]:before, i[class*=" icon-"]:before {
@@ -38,72 +38,78 @@ i[class^="icon-"]:before, i[class*=" icon-"]:before {
 .icon-arrow-up:before {
     content: "\f107";
 }
-.icon-cart-number:before {
+.icon-burger:before {
     content: "\f108";
 }
-.icon-cart:before {
+.icon-cart-number:before {
     content: "\f109";
 }
-.icon-close-large:before {
+.icon-cart:before {
     content: "\f10a";
 }
-.icon-close-round:before {
+.icon-close-large:before {
     content: "\f10b";
 }
-.icon-close:before {
+.icon-close-round:before {
     content: "\f10c";
 }
-.icon-done-large:before {
+.icon-close:before {
     content: "\f10d";
 }
-.icon-done:before {
+.icon-done-large:before {
     content: "\f10e";
 }
-.icon-download:before {
+.icon-done:before {
     content: "\f10f";
 }
-.icon-error:before {
+.icon-download:before {
     content: "\f110";
 }
-.icon-eye-dash:before {
+.icon-error:before {
     content: "\f111";
 }
-.icon-eye:before {
+.icon-eye-dash:before {
     content: "\f112";
 }
-.icon-frame:before {
+.icon-eye:before {
     content: "\f113";
 }
-.icon-mail_out:before {
+.icon-frame:before {
     content: "\f114";
 }
-.icon-mail:before {
+.icon-mail_out:before {
     content: "\f115";
 }
-.icon-map:before {
+.icon-mail:before {
     content: "\f116";
 }
-.icon-menu:before {
+.icon-map:before {
     content: "\f117";
 }
-.icon-minus:before {
+.icon-menu:before {
     content: "\f118";
 }
-.icon-phone:before {
+.icon-minus:before {
     content: "\f119";
 }
-.icon-plus:before {
+.icon-phone:before {
     content: "\f11a";
 }
-.icon-search:before {
+.icon-plus:before {
     content: "\f11b";
 }
-.icon-shield-yes:before {
+.icon-search:before {
     content: "\f11c";
 }
-.icon-tile:before {
+.icon-shield-yes:before {
     content: "\f11d";
 }
-.icon-trash:before {
+.icon-square:before {
     content: "\f11e";
+}
+.icon-tile:before {
+    content: "\f11f";
+}
+.icon-trash:before {
+    content: "\f120";
 }

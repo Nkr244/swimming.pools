@@ -13,17 +13,17 @@ i {
 
 .btn {
   display: inline-block;
-  padding: 0 1.5rem;
+  padding: 0 15px;
   background: $blue;
   border: none;
-  border-radius: 0.5rem;
-  font-size: 1.6rem;
+  border-radius: 5px;
+  font-size: 16px;
   color: $white;
   cursor: pointer;
   font-weight: bold;
   position: relative;
   vertical-align: middle;
-  line-height: 4rem;
+  line-height: 40px;
 
   &:hover {
     background: $blueAdditional;
@@ -31,23 +31,23 @@ i {
 
   &-white {
     background: $white;
-    border-radius: 0.5rem;
-    font-size: 1.6rem;
+    border-radius: 5px;
+    font-size: 16px;
     font-weight: 600;
     text-align: center;
     color: $black;
     border: none;
-    padding: 1.5rem 4.5rem;
+    padding: 15px 45px;
     cursor: pointer;
   }
 
   &-big {
-    padding: 0 1.5rem;
-    line-height: 4.86rem;
-    font-size: 1.6rem !important;
+    padding: 0 15px;
+    line-height: 48px;
+    font-size: 16px !important;
 
     i {
-      margin-right: 2.2rem;
+      margin-right: 22px;
       vertical-align: bottom;
     }
   }
@@ -85,31 +85,31 @@ i {
 .btn-square {
   position: relative;
   cursor: pointer;
-  width: 2.6rem;
-  height: 2.6rem;
+  width: 26px;
+  height: 26px;
   background-color: $blue;
   border: none;
-  border-radius: 0.2rem;
+  border-radius: 2px;
 
   &:hover {
     background-color: $blueAdditional;
   }
 
   i {
-    font-size: 2rem;
+    font-size: 20px;
     color: $white;
   }
 }
 
 .btn-circle {
-  width: 3.5rem;
-  height: 3.5rem;
+  width: 35px;
+  height: 35px;
   background: $grey3;
-  border-radius: 18.75rem;
+  border-radius: 187.5px;
   border: none;
 
   i {
-    font-size: 3rem;
+    font-size: 30px;
   }
 
   &:hover {
@@ -120,11 +120,11 @@ i {
   }
 
   &-big {
-    width: 6rem;
-    height: 6rem;
+    width: 60px;
+    height: 60px;
 
     i {
-      font-size: 4.5rem;
+      font-size: 45px;
     }
   }
 
@@ -133,7 +133,7 @@ i {
 //Search
 .search {
   display: block;
-  max-width: 55rem;
+  max-width: 550px;
 
   &-item {
     position: relative;
@@ -142,29 +142,29 @@ i {
 
   button {
     position: absolute;
-    top: -1.49rem;
-    right: 0.6rem;
+    top: -14.9px;
+    right: 6px;
     display: inline-block;
-    padding: 0 2.5rem;
+    padding: 0 25px;
   }
 
   input {
     width: 100%;
-    padding: 1.69rem 3.5rem;
+    padding: 17px 35px;
     max-width: 100%;
     background-color: $grey4;
     border: none;
-    border-radius: 0.5rem;
+    border-radius: 5px;
     color: $grey1;
   }
 
   &-item:before {
     position: absolute;
     content: "\f11b";
-    top: -0.5rem;
-    left: 1rem;
+    top: -5px;
+    left: 10px;
     font-family: icons, sans-serif;
-    font-size: 2rem;
+    font-size: 20px;
     color: $grey2;
     pointer-events: none;
   }
@@ -176,18 +176,18 @@ i {
 
 .search-catalog {
   display: flex;
-  gap: 0.5rem;
-  max-width: 38rem;
+  gap: 5px;
+  max-width: 380px;
 
   input {
     width: 100%;
-    padding: 1rem 1.5rem;
+    padding: 10px 15px;
     max-width: 100%;
     background-color: transparent;
 
-    border-radius: 0.5rem;
+    border-radius: 5px;
     color: $grey1;
-    border: 0.1rem solid $grey3;
+    border: 1px solid $grey3;
   }
 
   input:focus {
@@ -195,15 +195,21 @@ i {
   }
 
   button {
-    padding: 0 2.5rem;
+    padding: 0 25px;
 
   }
 }
 
 .btn-catalog {
-  font-size: 1.5rem;
+  font-size: 15px;
   bottom: 0 ;
   white-space: nowrap;
+}
+.btn-category-product {
+  background: $grey4;
+  color: $black;
+  font-weight: 600;
+  margin-bottom: 160px;
 }
 
 

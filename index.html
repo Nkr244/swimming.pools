@@ -8,7 +8,7 @@
 
     <link rel="stylesheet" href="js/style.css">
     <link rel="stylesheet" href="style.css">
-
+    <link rel="stylesheet" type="text/css" href="slinky.min.css">
     <link rel="stylesheet" href="dist/icons.css">
     <title>Бассейны.рф</title>
 </head>
@@ -22,7 +22,6 @@
                     <i class="icon-map"></i>
                     <div class="block-address-time">
                         <div class="block-address">
-
                             Москва, ул. Беловежская, д. 39к5, пом. V, ком. 10
                         </div>
                         <div class="block-time">
@@ -99,6 +98,21 @@
                 <button class="btn-catalog btn btn-big">
                     <i class="icon icon-menu"></i>
                     Каталог
+                </button>
+                <div class="menu-catalogs">
+                    <ul class="menu-catalog">
+                        <li class="menu-catalog-item"><a href="#">Трубы и фитинги</a></li>
+                        <li class="menu-catalog-item"><a href="#">Фильтры</a></li>
+                        <li class="menu-catalog-item"><a href="#">Насосы</a></li>
+                    </ul>
+                    <ul class="menu-sub-catalog">
+                        <li class="menu-sub-catalog-title"><a href="">Фитинги ПВХ</a></li>
+                        <li class="menu-sub-catalog-item"><a href="">Втулки</a></li>
+                        <li class="menu-sub-catalog-item"><a href="">Заглушки</a></li>
+                        <li class="menu-sub-catalog-item"><a href="">Краны с электроприводом</a></li>
+                    </ul>
+
+                </div>
                 </button>
                 <button class="btn-mobile btn btn-big">
                     <i class="icon icon-menu"></i>
@@ -745,6 +759,22 @@
 <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 <script>
     $(document).ready(function () {
+        $('.btn-catalog').on('click', function () {
+
+            if (($('.menu-catalogs').hasClass('open-menu')) === false) {
+                $('.menu-catalogs').addClass('open-menu')
+
+
+            }
+            else  $('.menu-catalogs').removeClass('open-menu')
+        })
+        $('.menu-catalog-item').on('click',function () {
+            if (($('.menu-sub-catalog').hasClass('open-menu')) === false) {
+                $('.menu-sub-catalog').addClass('open-menu')
+            }
+            else  $('.menu-sub-catalog').removeClass('open-menu')
+        })
+
         $('.header-burger').click(function () {
             $('.header-burger').toggleClass('open-menu');
             $('.header-mobile').toggleClass('open-menu');

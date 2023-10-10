@@ -1,5 +1,5 @@
 .form-group {
-  margin-bottom: 3rem;
+  margin-bottom: 30px;
 
   &:last-child {
     margin-bottom: 0;
@@ -8,8 +8,8 @@
   label {
     font-weight: bold;
     display: block;
-    margin-bottom: 0.8rem;
-    font-size: 1.6rem;
+    margin-bottom: 8px;
+    font-size: 16px;
 
   }
 
@@ -22,10 +22,10 @@
     right: 0;
     top: 0;
     bottom: 0;
-    width: 3.5rem;
+    width: 35px;
     border: none;
     background: transparent;
-    font-size: 3rem;
+    font-size: 30px;
     color: $grey2;
     cursor: pointer;
   }
@@ -34,19 +34,19 @@
   input {
     display: block;
     width: 100%;
-    font-size: 1.6rem;
-    height: 4.5rem;
+    font-size: 16px;
+    height: 45px;
     outline: none;
-    border: 0.1rem solid #B1B1B1;
-    border-radius: 0.5rem;
+    border: 1px solid #B1B1B1;
+    border-radius: 5px;
     color: $grey2;
-    padding: 0 1.5rem;
+    padding: 0 15px;
   }
 
   textarea {
     height: auto;
-    padding-top: 1.2rem;
-    padding-bottom: 1.2rem;
+    padding-top: 12px;
+    padding-bottom: 12px;
   }
 
   &.is-invalid input {
@@ -60,10 +60,10 @@
   .form-invalid-feedback,
   .form-feedback {
     display: block;
-    margin-top: 0.8rem;
+    margin-top: 8px;
     text-decoration: none;
     color: $grey1;
-    font-size: 1.2rem;
+    font-size: 12px;
   }
 
   .form-invalid-feedback {
@@ -77,7 +77,7 @@
 }
 
 .form-radio-item {
-  margin-bottom: 3rem !important;
+  margin-bottom: 30px !important;
 }
 
 .form-group-radio input,
@@ -87,10 +87,10 @@
 
 .form-radio-check {
   display: inline-block;
-  border: 0.1rem solid $grey3;
-  width: 2rem;
-  height: 2rem;
-  border-radius: 18.75rem;
+  border: 1px solid $grey3;
+  width: 20px;
+  height: 20px;
+  border-radius: 187.5px;
   position: relative;
   vertical-align: top;
 
@@ -99,10 +99,10 @@
 
 
 .form-radio-wrapper {
-  border: 0.1rem solid $grey3;
-  padding: 1.0rem 1.5rem;
+  border: 1px solid $grey3;
+  padding: 10px 15px;
   border-radius: 4px;
-  gap: 1rem;
+  gap: 10px;
   display: flex;
   align-items: center
 }
@@ -111,30 +111,29 @@ input:checked + .form-radio-wrapper .form-radio-check:before {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  left: 0.4rem;
+  left: 4px;
   content: '';
   background-color: $blue;
-  width: 1rem;
-  height: 1rem;
-  border-radius: 18.75rem;
+  width: 10px;
+  height: 10px;
+  border-radius: 187.5px;
 }
 input:checked + .form-radio-wrapper,
 input:checked + .form-radio-wrapper .form-radio-check,
 input:checked + .form-checkbox-wrapper .form-checkbox-check {
-  border: 0.1rem solid $blue;
+  border: 1px solid $blue;
 }
 
 .form-radio-name {
-  font-size: 1.4rem;
+  font-size: 14px;
   font-weight: normal;
 }
 
 .form-checkbox-check {
   display: inline-block;
-  border: 0.1rem solid $grey3;
-  width: 2rem;
-  height: 2rem;
-  border-radius: 0.2rem;
+  border: 1px solid $grey3;
+  width: 20px;
+  height: 20px;
   position: relative;
 }
 
@@ -147,13 +146,13 @@ input:checked + .form-checkbox-wrapper .form-checkbox-check {
   i {
     display: inline-block;
     color: $blue;
-    font-size: 2.4rem;
+    font-size: 24px;
   }
 }
-.icon-doneLarge:before {
+.icon-done-large:before {
   position: absolute;
-  top: -0.6rem;
-  left: 0.15rem;
+  top: -9px;
+  left: 2.5px;
 }
 @media screen and (max-width: 1024px){
   .form-content .form-image {
@@ -168,7 +167,7 @@ input:checked + .form-checkbox-wrapper .form-checkbox-check {
     display: block !important;
   }
   .form-group label {
-    font-size: 1rem !important;
+    font-size: 10px !important;
   }
 
   .form-checkbox-wrapper label {
@@ -179,19 +178,35 @@ input:checked + .form-checkbox-wrapper .form-checkbox-check {
 @media screen and (max-width: 500px){
   .form-application {
     .form h3 {
-      font-size: 1.8rem;
+      font-size: 18px;
     }
 
     .form-group  {
       .btn-main-form {
-        max-height: 5rem;
-        font-size: 1.6rem;
+        max-height: 50px;
+        font-size: 16px;
+      }
+      textarea,
+        input {
+          font-size: 12px;
+
       }
     }
 
   }
+  footer .info-block {
+    flex-wrap: wrap;
+  }
   .form-checkbox-wrapper label {
-    font-size: 0.6rem !important;
+    font-size: 6px !important;
 
   }
+  .form-checkbox-check {
+    width: 20px;
+    height: 20px;
+    i:before {
+      top: -6px !important;
+    }
+  }
+
 }

@@ -1,0 +1,67 @@
+.menu-catalogs,
+.menu-sub-catalog {
+  display: none;
+}
+
+.menu-catalogs.open-menu {
+  position: fixed;
+  background: $grey4;
+  padding-top: 20px;
+  width: 380px;
+  text-align: left;
+  font-size: 14px;
+  top: 164px;
+  left: 235px;
+  bottom: 0;
+  right: 0;
+  z-index: 666;
+  display: flex;
+
+  .menu-catalog {
+    flex-basis: 100%;
+
+    .menu-catalog-item {
+      padding: 10px 20px;
+      color: black;
+
+      a {
+        text-decoration: none;
+      }
+    }
+
+    .menu-catalog-item {
+      border-bottom: 1px solid $grey3;
+    }
+
+    .menu-catalog-item:hover {
+      background: $blueAdditional;
+      color: $white;
+    }
+  }
+}
+
+.menu-sub-catalog.open-menu {
+  position: fixed;
+  background: $white;
+  padding-top: 20px;
+  width: 380px;
+  text-align: left;
+  font-size: 14px;
+  top: 164px;
+  left: 615px;
+  bottom: 0;
+  right: 0;
+  z-index: 666;
+  display: flex;
+  flex-direction: column;
+  color: $grey1;
+  a {
+    text-decoration: none;
+  }
+  .menu-sub-catalog-title {
+    font-size: 16px;
+    font-weight: bold;
+    color: $black;
+    margin-bottom: 5px;
+  }
+}

@@ -1,13 +1,13 @@
 header {
-  font-size: 1rem;
-  padding-top: 2rem;
-  padding-bottom: 2.5rem;
+  font-size: 10px;
+  padding-top: 20px;
+  padding-bottom: 25px;
 
   .header-menu {
     margin-top: 0;
 
     a {
-      font-size: 1.4rem;
+      font-size: 14px;
     }
   }
 }
@@ -17,11 +17,11 @@ header {
   text-wrap: nowrap;
   display: flex;
   justify-content: space-between;
-  gap: 5rem;
+  gap: 50px;
   position: relative;
   i {
     color: $blue;
-    font-size: 2.2rem;
+    font-size: 22px;
     vertical-align: top;
   }
 
@@ -29,13 +29,13 @@ header {
     display: flex;
     text-wrap: nowrap;
     position: relative;
-    font-size: 1.4rem;
+    font-size: 14px;
 
     .icon-map {
       position: absolute;
-      font-size: 2.4rem;
-      top: -0.5rem;
-      left: -0.5rem;
+      font-size: 24px;
+      top: -5px;
+      left: -5px;
     }
 
     .block-address {
@@ -54,7 +54,7 @@ header {
       display: flex;
 
       list-style: none;
-      gap: 1rem;
+      gap: 10px;
 
       a {
         color: $grey1;
@@ -66,8 +66,8 @@ header {
 
 .block-contacts {
   display: flex;
-  font-size: 1.4rem;
-  gap: 4rem;
+  font-size: 14px;
+  gap: 40px;
   font-weight: bold;
 
   .contacts-email,
@@ -87,8 +87,8 @@ header {
   .icon-phone:before,
   .icon-mail:before {
     position: absolute;
-    top: -0.1rem;
-    left: -2rem;
+    top: -1px;
+    left: -20px;
   }
 
 
@@ -97,34 +97,34 @@ header {
 .block-address-time {
   display: flex;
   flex-direction: column;
-  gap: 0.8rem;
-  padding-left: 2.4rem;
+  gap: 8px;
+  padding-left: 24px;
 }
 
 .bottom-block {
   display: flex;
   align-items: flex-end;
-  gap: 2rem;
+  gap: 20px;
   justify-content: space-between;
 
   .header-logo {
     object-fit: contain;
-    padding-bottom: 0.5rem;
+    padding-bottom: 5px;
   }
 
   .search {
     flex-basis: 41%;
 
     button {
-      line-height: 4rem;
-      top: -1.5rem;
+      line-height: 40px;
+      top: -15px;
     }
   }
 }
 
 .authentication {
   display: flex;
-  gap: 2rem;
+  gap: 20px;
 }
 
 .btn-catalog {
@@ -134,7 +134,7 @@ header {
 .login,
 .basket {
   span {
-    font-size: 1.4rem;
+    font-size: 14px;
     text-wrap: nowrap;
   }
 }
@@ -145,36 +145,46 @@ header {
 .header-burger {
   display: none;
 }
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1010px) {
+  header .search {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 600px) {
+header .block-contacts {
+  display: none;
+}
+}
+@media screen and (max-width: 1179px) {
   header .header-menu,
-  .block-contacts,
-  .bottom-block .search,
   {
     display: none;
   }
   .header-mobile.open-menu .block-contacts{
     display: flex;
   }
-  .header-mobile.open-menu .header-menu
+  .header-mobile.open-menu .header-menu,
+  .header-mobile.open-menu .search
   {
     color: $black;
     display: block;
   }
   .upper-block .blocks-address-time,
   .block-contacts {
-    font-size: 1.2rem;
+    font-size: 12px;
   }
   .header-burger {
     display: block;
   }
   .header-burger {
       position: absolute;
-      width: 4rem;
-      height: 3.5rem;
+      width: 40px;
+      height: 35px;
       display: block !important;
-      top: 50% !important;
-      left: 65.5rem !important;
-      transform: translateX(-90%);
+      top: 28px !important;
+      right: 17px !important;
+    left: auto !important;
       border: 0;
       background-color: unset;
       cursor: pointer;
@@ -285,41 +295,41 @@ header {
     z-index: 100;
   }
   .header-mobile-block {
-    width: 30rem;
+    width: 300px;
      .search button {
       position: absolute;
-      top: -0.85rem;
-      right: 0.6rem;
+      top: -8.5px;
+      right: 6px;
       display: inline-block;
-      padding: 0 2.5rem;
+      padding: 0 25px;
     }
     .search input {
-      padding: 1.15rem 3.5rem;
+      padding: 11.5px 35px;
     }
     .search-item:before {
-        top: 0.2rem;
+        top: 2px;
     }
     .block-contacts {
       display: flex;
-      gap: 2rem;
+      gap: 20px;
 
     }
     .search button {
-       top: -0.3rem;
-       right: 0.6rem;
-        line-height: 3rem;
+       top: -3px;
+       right: 6px;
+        line-height: 30px;
      }
     .block-contacts .icon-phone:before, .block-contacts .icon-mail:before {
-      top: -0.3rem;
+      top: -3px;
     }
     .block-contacts {
-      font-size: 1.1rem;
+      font-size: 11px;
     }
     .header-mobile-block .block-contacts {
-      gap: 4rem;
+      gap: 40px;
     }
     .header-mobile-button {
-     line-height: 2rem;
+     line-height: 20px;
     }
   }
 
@@ -328,10 +338,10 @@ header {
 
 @media (max-width: 767px) {
   h2 {
-    font-size: 2.6rem;
+    font-size: 26px;
   }
   .upper-block .blocks-address-time, .block-contacts {
-    font-size: 0.9rem;
+    font-size: 9px;
   }
   .bottom-block {
     .header-logo {
@@ -339,17 +349,14 @@ header {
     }
 
     .btn-catalog {
-      flex-basis: 100%;
+      flex-basis: 10%;
       width: 100%;
     }
   }
   .login span, .basket span {
-    font-size: 1.2rem;
+    font-size: 12px;
   }
-  .header-burger {
-    top: 50% !important;
-    left: 40rem !important;
-  }
+
 }
 
 @media (max-width: 500px) {
@@ -367,25 +374,30 @@ header {
     text-wrap: wrap;
     flex-basis: 90%;
   }
-  .header-burger {
-    top: 50% !important;
-    left: 27rem !important;
-  }
-  .header-burger.open-menu:after,
-  .header-burger.open-menu:before{
-    right: -5.5rem;
-  }
 }
 @media screen and (max-width: 400px){
   .header-mobile-block {
     width: 100%;
     .search button {
-      top: -0.45rem;
+      top: -4.5px;
     }
     form {
       margin: 0;
     }
   }
+  .header-mobile-block .block-contacts .icon-phone:before, .header-mobile-block .block-contacts .icon-mail:before {
+    top: 3px;
+  }
+}
+@media screen and (max-width: 340px) {
+  header {
+    .authentication {
+      gap: 5px;
+    }
+    .bottom-block {
+      gap: 10px;
+    }
 
+  }
 
 }

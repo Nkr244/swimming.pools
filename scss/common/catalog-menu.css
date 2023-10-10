@@ -1,0 +1,134 @@
+.smgm {
+  width: 300px;
+  background: #ddd;
+  position: relative;
+  z-index: 9998;
+  -webkit-transition: -webkit-box-shadow 0.5s ease;
+  transition: -webkit-box-shadow 0.5s ease;
+  transition: box-shadow 0.5s ease;
+  transition: box-shadow 0.5s ease, -webkit-box-shadow 0.5s ease;
+  transition: box-shadow 0.5s ease, -webkit-box-shadow 0.5s ease;
+}
+
+.smgm:hover {
+  -webkit-box-shadow: 0 0 0 9999px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 0 9999px rgba(0, 0, 0, 0.5);
+}
+
+.smgm li {
+  font-size: 13px;
+  font-weight: 400;
+  display: block;
+  position: relative;
+}
+
+.smgm li a {
+  border-bottom: 1px solid #F4F4F4;
+  color: #000;
+  background: #ddd;
+  line-height: 15px;
+  font-weight: 400;
+  padding: 15px 30px 15px 30px;
+  min-height: 20px;
+  max-height: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.smgm li a:hover {
+  background: #00441C;
+  color: #fff;
+}
+
+.smgm li > div {
+  position: absolute;
+  z-index: 9000;
+  top: 100%;
+  left: -9999px;
+  opacity: 0;
+  -webkit-transition-delay: 300ms;
+  transition-delay: 300ms;
+  border-left: 5px solid #005823;
+}
+
+.smgm li:hover > div {
+  top: 0;
+  left: 300px;
+  opacity: 1;
+  background: #fff;
+  padding: 20px;
+  min-width: 800px;
+  min-height: 300px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  -webkit-transition-delay: 300ms;
+  transition-delay: 300ms;
+}
+
+.allpod > ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin: 0 0 -10px -20px;
+}
+
+.podm1 > li {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 calc(33.333333% - 20px);
+  flex: 0 0 calc(33.333333% - 20px);
+  margin: 0 0 10px 20px;
+}
+
+.podm ul li a {
+  display: block;
+  color: #000;
+  font-size: 13px;
+  margin: 0;
+  padding: 5px 0 5px 0;
+  line-height: 15px;
+  min-height: 10px;
+  max-height: 100px;
+  border: none;
+  font-weight: 600;
+  background: 0 0;
+}
+
+.podm ul li:hover > a {
+  color: #2B9A48;
+  background: 0 0;
+}
+
+.podm ul li ul {
+  padding: 0 0 0 10px;
+}
+
+.podm ul li ul li a {
+  padding: 5px 0 5px 0;
+  font-weight: 400;
+}
+
+.podm ul li ul li ul {
+  padding: 0 0 0 10px;
+}
+
+.podm ul li ul li ul li a {
+  padding: 5px 0 5px 0;
+  font-weight: 400;
+}
+
+.podm ul li ul li ul li ul {
+  padding: 0 0 0 10px;
+}
+
+.podm ul li ul li ul li ul li a {
+  padding: 5px 0 5px 0;
+  font-weight: 400;
+}
+
+/*# sourceMappingURL=catalog-menu.css.map */

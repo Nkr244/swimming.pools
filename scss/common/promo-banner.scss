@@ -17,63 +17,64 @@
   }
   &-image {
     display: flex;
-    margin-left: 7.5rem;
+    margin-left: 75px;
     img {
-      width: 35rem;
+      width: 350px;
     }
   }
   &-text {
     flex-basis: 50%;
-    padding: 4.5rem 6rem;
+    padding: 45px 60px;
 
     h2 {
-      font-size: 2.85rem;
-      margin-bottom: 1.5rem;
+      font-size: 28px;
+      margin-bottom: 15px;
     }
 
     p {
-      margin-bottom: 2.8rem;
+      margin-bottom: 28px;
     }
 
     .btn-white {
-      padding: 1.3rem 6.14rem;
+      padding: 13px 61px;
+      font-size: 14px;
     }
   }
   &-tag {
     position: absolute;
     background: $white;
-    border-radius: 0.5rem;
-    max-width: 10rem;
-    padding: 1rem 2.8rem 1rem 1.2rem;
+    border-radius: 5px;
+    max-width: 100px;
+    padding: 10px 28px 10px 12px;
     color: $black;
-    font-size: 2rem;
+    font-size: 20px;
     font-weight: 900;
     top: 55%;
-    left: 8.4rem;
+    left: 84px;
     rotate: -14.68deg;
     i {
       position: relative;
       color: $pink;
-      font-size: 2.4rem;
+      font-size: 24px;
     }
 
     i:before {
       position: absolute;
       top: 50%;
       transform: translateY(-62%);
-      right: -2.2rem;
+      right: -22px;
     }
   }
 }
 @media screen and (max-width: 1024px) {
   .promo-banner-tag {
-    left: 1.4rem !important;
+    left: 14px !important;
   }
   .promo-banner-image {
     margin-left: 0 !important;
   }
   .promo-banner-text h2 {
-    font-size: 2.2rem !important;
+    font-size: 22px !important;
   }
 }
 @media screen and (max-width: 767px){
@@ -82,7 +83,7 @@
   }
   .promo-banner-text {
     flex-basis: 100% !important;
-    padding: 4.5rem 3rem !important;
+    padding: 45px 30px !important;
   }
   .promo-banner-text .btn-white {
     width: 100%;
@@ -91,11 +92,11 @@
 @media screen and (max-width: 500px){
   .promo-banner-text {
     h2 {
-      font-size: 2rem !important;
+      font-size: 20px !important;
     }
 
     p {
-      font-size: 1.4rem;
+      font-size: 14px;
     }
   }
 }

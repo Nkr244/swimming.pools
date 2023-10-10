@@ -1,12 +1,12 @@
 footer {
-  padding: 4rem 13rem;
+  padding: 40px 130px;
   background-color: $blue;
   color: $white;
 
   .upper-blocks {
     display: flex;
-    gap: 13.5rem;
-    margin-bottom: 2rem;
+    gap: 135px;
+    margin-bottom: 20px;
     .info-block-item {
       flex-basis: 33.3333%;
     }
@@ -14,22 +14,22 @@ footer {
 
   .info-block {
     display: flex;
-    gap: 3rem;
+    gap: 30px;
     flex-basis: 60%;
 
     &-item {
 
       h3 {
-        font-size: 1.6rem;
-        margin-bottom: 1.5rem;
+        font-size: 16px;
+        margin-bottom: 15px;
       }
 
       ul {
         list-style: none;
 
         li {
-          font-size: 1.4rem;
-          margin-bottom: 1rem;
+          font-size: 14px;
+          margin-bottom: 10px;
 
           a {
             text-decoration: none;
@@ -44,30 +44,30 @@ footer {
     flex-basis: 40%;
 
     h3 {
-      margin-bottom: 2rem;
-      font-size: 1.6rem;
+      margin-bottom: 20px;
+      font-size: 16px;
     }
 
     &-phone {
       display: flex;
-      gap: 2rem;
-      margin-bottom: 2rem;
+      gap: 20px;
+      margin-bottom: 20px;
 
       a {
         text-wrap: nowrap;
         color: $white;
-        font-size: 2rem;
+        font-size: 20px;
         font-weight: bold;
 
       }
     }
 
     &-address {
-      font-size: 1.4rem;
+      font-size: 14px;
 
       span {
         display: block;
-        margin-bottom: 1rem;
+        margin-bottom: 10px;
       }
 
       span:last-child {
@@ -81,7 +81,7 @@ footer {
 .bottom-blocks {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 8rem;
+  margin-bottom: 80px;
   .bottom-info-block {
     display: flex;
     flex-wrap: wrap;
@@ -93,13 +93,13 @@ footer {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    height: 17rem;
+    height: 170px;
 
   }
 
   .bottom-block-list-item {
     flex-basis: 33.3333%;
-    margin-bottom: 1rem;
+    margin-bottom: 10px;
   }
 
   .bottom-block-item a {
@@ -110,49 +110,49 @@ footer {
 
   .logo-block {
     display: flex;
-    padding-top:2.5rem;
+    padding-top:25px;
     flex-basis: 36%;
   }
 }
 .footer-links {
   display: flex;
   justify-content: space-between;
-  font-size: 1.4rem;
+  font-size: 14px;
    &-item {
      a {
        text-decoration: none;
        color: $white;
-       margin-right: 2rem;
+       margin-right: 20px;
      }
 
    }
 }
 @media screen and (max-width: 1024px){
   footer {
-    padding: 4rem 2rem !important;
+    padding: 40px 20px !important;
 
     .bottom-blocks .bottom-block-list-item {
       flex-basis: 50%;
     }
 
     .contacts-block-phone {
-      gap: 1rem;
+      gap: 10px;
       flex-wrap: wrap;
     }
 
     .logo-block {
       img {
-        width: 29rem;
-        height: 16rem;
+        width: 290px;
+        height: 160px;
       }
     }
 
     .bottom-blocks {
-      margin-bottom: 10rem;
+      margin-bottom: 90px;
     }
 
     .upper-blocks {
-      gap: 0.5rem !important;
+      gap: 5px !important;
     }
   }
 }
@@ -168,7 +168,7 @@ footer {
     }
 
     .contacts-block-phone {
-      flex-wrap: nowrap
+      flex-wrap: wrap;
     }
 
     .bottom-blocks .bottom-block-item {
@@ -181,25 +181,28 @@ footer {
     }
   }
   .bottom-blocks {
-    margin-bottom: 3rem !important;
+    margin-bottom: 30px !important;
   }
   .bottom-blocks .logo-block {
     flex-basis: 95% !important;
   }
   .footer-links {
-    font-size: 0.9rem !important;
+    font-size: 9px !important;
   }
 }
 @media screen and (max-width: 500px){
   footer {
     .upper-blocks {
-      gap: 2.5rem !important;
+      gap: 25px !important;
     }
     .info-block {
-      gap: 1rem !important;
+      gap: 10px !important;
     }
     .contacts-block-phone a {
-      font-size: 1.5rem !important;
+      font-size: 15px !important;
+    }
+    .bottom-blocks .bottom-block-list-item {
+      flex-basis: 100%;
     }
   }
 }

@@ -1,25 +1,25 @@
 .delivery {
   &-items {
     display: flex;
-    gap: 2rem;
+    gap: 20px;
   }
   &-item {
     flex-basis: 25%;
     border: 1px solid $grey3;
-    border-radius: 1.4rem;
-    padding: 2rem;
+    border-radius: 14px;
+    padding: 20px;
     img {
-      margin-bottom: 1rem;
-      width: 7rem;
-      height: 7rem;
+      margin-bottom: 10px;
+      width: 70px;
+      height: 70px;
     }
     h3 {
-      font-size: 1.8rem;
-      margin-bottom:1rem ;
-      max-width: 19rem;
+      font-size: 18px;
+      margin-bottom:10px ;
+      max-width: 190px;
     }
     p {
-      font-size: 1.42rem;
+      font-size: 14.2px;
     }
   }
 }

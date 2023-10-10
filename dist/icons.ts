@@ -6,6 +6,7 @@ export type IconsId =
   | "arrow-right"
   | "arrow-up-large"
   | "arrow-up"
+  | "burger"
   | "cart-number"
   | "cart"
   | "close-large"
@@ -27,6 +28,7 @@ export type IconsId =
   | "plus"
   | "search"
   | "shield-yes"
+  | "square"
   | "tile"
   | "trash";
 
@@ -38,6 +40,7 @@ export type IconsKey =
   | "ArrowRight"
   | "ArrowUpLarge"
   | "ArrowUp"
+  | "Burger"
   | "CartNumber"
   | "Cart"
   | "CloseLarge"
@@ -59,6 +62,7 @@ export type IconsKey =
   | "Plus"
   | "Search"
   | "ShieldYes"
+  | "Square"
   | "Tile"
   | "Trash";
 
@@ -70,6 +74,7 @@ export enum Icons {
   ArrowRight = "arrow-right",
   ArrowUpLarge = "arrow-up-large",
   ArrowUp = "arrow-up",
+  Burger = "burger",
   CartNumber = "cart-number",
   Cart = "cart",
   CloseLarge = "close-large",
@@ -91,6 +96,7 @@ export enum Icons {
   Plus = "plus",
   Search = "search",
   ShieldYes = "shield-yes",
+  Square = "square",
   Tile = "tile",
   Trash = "trash",
 }
@@ -103,27 +109,29 @@ export const ICONS_CODEPOINTS: { [key in Icons]: string } = {
   [Icons.ArrowRight]: "61701",
   [Icons.ArrowUpLarge]: "61702",
   [Icons.ArrowUp]: "61703",
-  [Icons.CartNumber]: "61704",
-  [Icons.Cart]: "61705",
-  [Icons.CloseLarge]: "61706",
-  [Icons.CloseRound]: "61707",
-  [Icons.Close]: "61708",
-  [Icons.DoneLarge]: "61709",
-  [Icons.Done]: "61710",
-  [Icons.Download]: "61711",
-  [Icons.Error]: "61712",
-  [Icons.EyeDash]: "61713",
-  [Icons.Eye]: "61714",
-  [Icons.Frame]: "61715",
-  [Icons.MailOut]: "61716",
-  [Icons.Mail]: "61717",
-  [Icons.Map]: "61718",
-  [Icons.Menu]: "61719",
-  [Icons.Minus]: "61720",
-  [Icons.Phone]: "61721",
-  [Icons.Plus]: "61722",
-  [Icons.Search]: "61723",
-  [Icons.ShieldYes]: "61724",
-  [Icons.Tile]: "61725",
-  [Icons.Trash]: "61726",
+  [Icons.Burger]: "61704",
+  [Icons.CartNumber]: "61705",
+  [Icons.Cart]: "61706",
+  [Icons.CloseLarge]: "61707",
+  [Icons.CloseRound]: "61708",
+  [Icons.Close]: "61709",
+  [Icons.DoneLarge]: "61710",
+  [Icons.Done]: "61711",
+  [Icons.Download]: "61712",
+  [Icons.Error]: "61713",
+  [Icons.EyeDash]: "61714",
+  [Icons.Eye]: "61715",
+  [Icons.Frame]: "61716",
+  [Icons.MailOut]: "61717",
+  [Icons.Mail]: "61718",
+  [Icons.Map]: "61719",
+  [Icons.Menu]: "61720",
+  [Icons.Minus]: "61721",
+  [Icons.Phone]: "61722",
+  [Icons.Plus]: "61723",
+  [Icons.Search]: "61724",
+  [Icons.ShieldYes]: "61725",
+  [Icons.Square]: "61726",
+  [Icons.Tile]: "61727",
+  [Icons.Trash]: "61728",
 };

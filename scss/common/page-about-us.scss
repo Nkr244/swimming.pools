@@ -1,0 +1,121 @@
+.bread-crumb {
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+//Промо баннер
+
+.about-us-promo-delivery-content,
+.about-us-promo-content {
+  background: url("image/about-us-promo.jpg") no-repeat center;
+  background-size: cover;
+  color: $white;
+  border-radius: 15px;
+  padding: 60px 50px;
+  display: flex;
+
+  &-text {
+    flex-basis: 41%;
+
+    h2 {
+      margin-bottom: 15px;
+    }
+  }
+
+}
+
+.about-us-promo-delivery-content {
+  background: url("image/order-and-delivery.png") no-repeat center;
+  background-size: cover;
+}
+
+.delivery-tab-content {
+  display: flex;
+  margin-bottom: 90px;
+
+  &-text {
+    flex-basis: 50%;
+
+    h3 {
+      margin-bottom: 10px;
+    }
+
+    p {
+      margin-bottom: 10px;
+    }
+  }
+
+  &-item {
+    margin-bottom: 20px;
+  }
+
+  .delivery-tab-image {
+    flex-basis: 50%;
+    text-align: end;
+
+    img {
+      border-radius: 15px;
+
+    }
+  }
+}
+
+.tab-bar {
+  margin-bottom: 30px;
+}
+
+.attention {
+  &-content {
+    display: flex;
+    gap: 50px;
+    justify-content: space-between;
+  }
+
+  &-block-left {
+    flex-basis: 60%;
+
+    .attention-block-item {
+      margin-bottom: 20px;
+
+      p {
+        font-size: 15px;
+      }
+    }
+
+    .attention-block-item-blue {
+      background: $blue;
+      padding: 15px;
+      color: $white;
+      border-radius: 5px;
+      font-size: 17px;
+    }
+  }
+
+  &-block-right {
+    flex-basis: 40%;
+
+    &-item {
+      max-width: 440px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      border-radius: 10px;
+      background: $grey4;
+      padding: 20px;
+      margin-left: auto;
+      margin-right: 0;
+      margin-bottom: 20px;
+
+      span {
+        color: $grey1;
+        font-size: 14px;
+      }
+
+      a {
+        font-size: 30px;
+        font-weight: bold;
+      }
+    }
+  }
+}
+

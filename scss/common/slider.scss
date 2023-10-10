@@ -21,28 +21,28 @@
     background-size: cover;
 
 
-    padding: 6rem 5rem 6.5rem 5rem;
+    padding: 60px 50px 65px 50px;
   }
 
   &-title {
-    font-size: 4.4rem;
+    font-size: 44px;
     font-weight: 600;
-    margin-bottom: 1.5rem;
-    padding-top: 5rem;
+    margin-bottom: 15px;
+    padding-top: 50px;
   }
 
   &-sub-title {
-    font-size: 1.8rem;
+    font-size: 18px;
     font-weight: 500;
-    margin-bottom: 3rem;
+    margin-bottom: 30px;
 
   }
 }
 
 .main-slider {
   overflow: hidden;
-  border-radius: 1.5rem;
-  max-height: 40rem;
+  border-radius: 15px;
+  max-height: 400px;
   position: relative;
 
 }
@@ -54,7 +54,7 @@
   position: absolute;
   content: '';
   top: 50%;
-  left: -3rem;
+  left: -30px;
   transform: translateY(-50%);
   border: none;
   border-radius: 50%;
@@ -64,17 +64,17 @@
   &-i {
     position: absolute;
     top: 0;
-    left: 0.7rem;
+    left: 7px;
     color: $black;
   }
 }
 
 .next {
   left: auto;
-  right: -3rem;
+  right: -30px;
 
   &-i {
-    left: 1rem;
+    left: 10px;
   }
 }
 
@@ -89,11 +89,11 @@
 }
 
 .slick-dots {
-  bottom: 2rem;
+  bottom: 20px;
 }
 
 .slick-dots li + li {
-  margin-left: 1rem;
+  margin-left: 10px;
 }
 
 
@@ -111,10 +111,10 @@
       margin: 0 -10px;
     }
     .prev-product {
-      left: -3rem;
+      left: -30px;
     }
     .next-product {
-      right: -2.7rem;
+      right: -27px;
       left: auto;
 
     }
@@ -131,8 +131,8 @@
   }
 
   .product-slide {
-    border-radius: 1rem;
-    border: 0.1rem solid $grey3;
+    border-radius: 10px;
+    border: 1px solid $grey3;
 
   }
 
@@ -141,7 +141,7 @@
   }
 
   .product-slide-content {
-    padding: 0 1.5rem 1.5rem 1.5rem;
+    padding: 0 15px 15px 15px;
 
     button {
       width: 100%;
@@ -149,28 +149,28 @@
 
     &-article {
       color: $grey1;
-      font-size: 1.55rem;
+      font-size: 16px;
       margin-bottom: 5px;
     }
 
     &-text {
-      font-size: 1.55rem;
+      font-size: 16px;
       margin-bottom: 15px;
     }
 
     &-prices {
       display: flex;
-      gap: 1.5rem;
+      gap: 15px;
       margin-bottom: 15px;
     }
 
     &-active-price {
-      font-size: 2.65rem;
+      font-size: 26px;
       color: $pink;
     }
 
     &-prev-price {
-      font-size: 1.55rem;
+      font-size: 16px;
       align-self: center;
       color: $grey1;
       text-decoration: line-through;
@@ -178,17 +178,17 @@
 
     &-tag {
       display: flex;
-      gap: 0.8rem;
+      gap: 8px;
       font-weight: 500;
-      font-size: 1.1rem;
-      margin-top: 1.5rem;
+      font-size: 12px;
+      margin-top: 15px;
 
       &-item {
         position: relative;
         background: $grey4;
-        padding: 0.4rem 1.7rem 0.4rem 0.8rem;
-        border-radius: 0.25rem;
-        line-height: 1.5rem;
+        padding: 4px 17px 4px 8px;
+        border-radius: 2.5px;
+        line-height: 15px;
       }
     }
 
@@ -222,16 +222,16 @@
   .icon-shield-yes:before,
   .icon-frame:before {
     position: absolute;
-    top: 0.4rem;
+    top: 4px;
     right: 0;
     color: #6d9fea;
-    font-size: 2rem;
+    font-size: 20px;
   }
 
   .icon-frame:before {
     color: $pink;
-    font-size: 1.6rem;
-    right: 0.45rem;
+    font-size: 16px;
+    right: 4.5px;
   }
 
 }
@@ -256,7 +256,7 @@
 .images {
   display: flex;
   overflow: hidden;
-  height: 22rem;
+  height: 220px;
 
   img {
     object-fit: contain;
@@ -276,9 +276,9 @@
 }
 
 .hvr-dot {
-  width: 0.8rem;
-  height: 0.8rem;
-  margin: .5rem .3rem 2.5rem;
+  width: 8px;
+  height: 8px;
+  margin: 5px 3px 25px;
   border-radius: 50%;
   background: $grey3;
 }
@@ -299,7 +299,7 @@
 }
 @media screen and (max-width: 1024px){
   .new-product .product-slide-content-active-price {
-    font-size: 1.65rem !important;
+    font-size: 16px !important;
 
   }
 }
@@ -308,33 +308,33 @@
     padding-top: 0 !important;
   }
   .slider-title {
-    font-size: 2.4rem !important;
+    font-size: 24px !important;
   }
   .slider-sub-title {
-    font-size: 1.4rem !important;
-    margin-bottom: 2rem !important;
+    font-size: 14px !important;
+    margin-bottom: 20px !important;
   }
   .btn-white {
-    font-size: 1.4rem;
-    padding: 1.5rem 2.5rem;
+    font-size: 14px;
+    padding: 15px 25px;
   }
   .new-product .product-slide-content-article {
-    font-size: 1.2rem !important;
+    font-size: 12px !important;
   }
   .new-product .product-slide-content-text {
-    font-size: 1.3rem !important;
+    font-size: 13px !important;
   }
 
 }
 @media screen and (max-width: 500px){
   .slider-title {
-    font-size: 2rem !important;
+    font-size: 20px !important;
   }
   .slider-sub-title {
-    font-size: 1.2rem !important;
+    font-size: 12px !important;
   }
   .btn-white {
-    font-size: 1.2rem;
+    font-size: 12px;
     width: 100%;
   }
 }

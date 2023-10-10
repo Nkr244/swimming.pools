@@ -5,34 +5,23 @@
   font-family: Inter, sans-serif;
 }
 
-html {
-  font-size: calc(100vw / 1480 * 10);
-  @media (max-width: 1024px) {
-    font-size: calc(100vw / 768 * 10);
-  }
-  @media (max-width: 767px) {
-    font-size: calc(100vw / 500 * 10);
-  }
-  @media (max-width: 500px) {
-    font-size: calc(100vw / 375 * 10);
-  }
-}
 
 section {
-  margin-bottom: 10rem;
+  margin-bottom: 90px;
 }
 
 .container {
-  font-size: 1.6rem;
-  max-width: 116.74rem;
+  font-size: 16px;
+  max-width: 1180px;
   margin: 0 auto;
+  font-family: Inter, sans-serif;
 }
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1179px) {
   section {
-    margin-bottom: 4rem;
+    margin-bottom: 40px;
   }
   .wrapper {
-    padding: 0 4rem !important;
+    padding: 0 30px !important;
   }
 }
 @import "fonts";
@@ -42,6 +31,7 @@ section {
 @import "common";
 @import "header";
 @import "footer";
+@import "catalog-menu";
 @import "slider";
 @import "promo-banner";
 @import "product-category";
@@ -49,3 +39,5 @@ section {
 @import "delivery";
 @import "dealers";
 @import "form-application";
+@import "page-about-us";
+@import "product-catalog";
