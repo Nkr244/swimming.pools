@@ -195,7 +195,7 @@ i {
 }
 .search-item:before {
   position: absolute;
-  content: "\f11b";
+  content: "\f11c";
   top: -5px;
   left: 10px;
   font-family: icons, sans-serif;
@@ -560,7 +560,7 @@ ul.breadcrumb li a:hover {
 .select-head {
   position: relative;
   border: 1px solid #E4E4E4;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
   border-radius: 4px;
   padding: 10px;
   font-size: 14px;
@@ -574,7 +574,7 @@ ul.breadcrumb li a:hover {
   height: 26px;
   color: #767676;
   position: absolute;
-  right: 1rem;
+  right: 10px;
   top: 60%;
   content: "\f102";
   font-family: icons, sans-serif;
@@ -1615,7 +1615,7 @@ footer .contacts-block-address span:last-child {
   gap: 18px;
 }
 .product-category-item {
-  flex-basis: 15%;
+  flex-basis: 15% !important;
   max-height: 100%;
   max-width: 100%;
 }
@@ -2003,20 +2003,110 @@ footer .contacts-block-address span:last-child {
 .main-filter-catalog {
   display: flex;
 }
+.main-filter-catalog-checkbox {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+.main-filter-catalog-collapse {
+  cursor: pointer;
+}
 .main-filter-catalog .block-left {
-  flex-basis: 30%;
+  flex-basis: 24%;
   border: 1px solid #F7F7F7;
   border-radius: 10px;
   margin-right: 20px;
 }
 .main-filter-catalog .block-left-item {
-  padding: 20px;
+  padding: 15px 20px;
+  font-size: 14px;
+  display: flex;
+  flex-direction: column;
+}
+.main-filter-catalog .block-left-item input:checked + .form-checkbox-wrapper .form-checkbox-check i {
+  font-size: 18px;
+}
+.main-filter-catalog .block-left-item i {
+  position: relative;
+}
+.main-filter-catalog .block-left-item .icon-arrow-up-large:before {
+  position: absolute;
+  top: -9px;
+  font-size: 16px;
+}
+.main-filter-catalog .block-left-item .icon-done-large:before {
+  top: -11px;
+  left: 1.5px;
+}
+.main-filter-catalog .block-left-item .form-checkbox-wrapper {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+.main-filter-catalog .block-left-item h3 {
+  margin-bottom: 15px;
+  display: inline-block;
+}
+.main-filter-catalog .block-left-item .form-checkbox-item {
+  display: flex;
+}
+.main-filter-catalog .block-left-item .form-checkbox-item input {
+  display: none;
 }
 .main-filter-catalog .block-left-item a {
   color: #538fea;
 }
 .main-filter-catalog .block-right {
-  flex-basis: 70%;
+  flex-basis: 75%;
+}
+.main-filter-catalog .block-right .product-slider {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.main-filter-catalog .block-right .product-slider .product-slide {
+  flex-basis: calc(25% - 15px);
+}
+.main-filter-catalog .block-right .product-slider .product-slide-content .product-add-basket {
+  padding: 7px;
+  background: #F7F7F7;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  align-items: center;
+}
+.main-filter-catalog .block-right .product-slider .product-slide-content button {
+  position: relative;
+}
+.main-filter-catalog .block-right .product-slider .product-slide-content button span {
+  display: none;
+}
+.main-filter-catalog .block-right .product-slider .product-slide-content .btn-square {
+  max-width: 26px;
+  max-height: 26px;
+}
+.main-filter-catalog .block-right .product-slider .product-slide-content .btn-square i {
+  position: relative;
+  color: #FFFFFF;
+}
+.main-filter-catalog .block-right .product-slider .product-slide-content .btn-square i:before {
+  position: absolute;
+  top: -12px;
+  left: -9px;
+}
+.main-filter-catalog .block-right .product-slider .product-slide-content-article, .main-filter-catalog .block-right .product-slider .product-slide-content-text {
+  font-size: 14px !important;
+}
+.main-filter-catalog .block-right .product-slider .product-slide-content-active-price {
+  font-size: 20px;
+}
+.main-filter-catalog .block-right .product-slider .product-slide-content-prev-price {
+  font-size: 12px;
+}
+.main-filter-catalog .block-right .product-slider .product-slide-content-tag {
+  flex-wrap: wrap;
 }
 .main-filter-catalog .block-right .marking {
   gap: 20px;
@@ -2039,6 +2129,10 @@ footer .contacts-block-address span:last-child {
 }
 .main-filter-catalog .block-right .marking-item i:hover {
   color: #6d9fea;
+}
+
+.close-menu {
+  display: none;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -2,26 +2,31 @@
   .manufacturers {
     margin-bottom: 30px;
   }
-&-block {
-  display: flex;
-  gap: 20px;
-}
+
+  &-block {
+    display: flex;
+    gap: 20px;
+  }
+
   &-item {
     padding: 20px 0 0 20px;
     max-width: 280px;
     width: 100%;
     justify-content: space-between;
     flex-basis: 100%;
+
     h3 {
       font-size: 24px;
 
       align-self: flex-start;
     }
+
     img {
       max-width: 180px;
       max-height: 180px;
       width: 100%;
     }
+
     .image {
       display: inline-block;
       text-align: end;
@@ -30,10 +35,12 @@
   }
 
 }
+
 .fast-filters {
   display: flex;
   gap: 10px;
   margin-bottom: 30px;
+
   .fast-filter {
     border: 1px solid $grey4;
     border-radius: 4px;
@@ -42,49 +49,177 @@
     display: flex;
     gap: 10px;
     cursor: pointer;
+
     span {
       align-self: center;
     }
   }
 }
+
 .main-filter-catalog {
   display: flex;
+
+  &-checkbox {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 15px;
+  }
+
+  &-collapse {
+    cursor: pointer;
+  }
+
   .block-left {
-    flex-basis: 30%;
+    flex-basis: 24%;
     border: 1px solid $grey4;
     border-radius: 10px;
     margin-right: 20px;
+
     &-item {
-      padding: 20px;
+      padding: 15px 20px;
+      font-size: 14px;
+      display: flex;
+      flex-direction: column;
+
+      input:checked + .form-checkbox-wrapper .form-checkbox-check i {
+        font-size: 18px;
+      }
+
+      i {
+        position: relative;
+      }
+
+      .icon-arrow-up-large:before {
+        position: absolute;
+        top: -9px;
+        font-size: 16px;
+      }
+
+      .icon-done-large:before {
+        top: -11px;
+        left: 1.5px;
+      }
+
+      .form-checkbox-wrapper {
+        display: flex;
+        gap: 5px;
+        align-items: center;
+      }
+
+      h3 {
+        margin-bottom: 15px;
+        display: inline-block;
+      }
+
+      .form-checkbox-item {
+        display: flex;
+
+        input {
+          display: none;
+        }
+      }
+
       a {
         color: $blue;
       }
     }
   }
+
   .block-right {
-    flex-basis: 70%;
+    flex-basis: 75%;
+
+    .product-slider {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+
+      .product-slide {
+        flex-basis: calc(25% - 15px);
+
+        &-content {
+          .product-add-basket {
+            padding: 7px;
+            background: $grey4;
+            border-radius: 5px;
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            align-items: center;
+          }
+
+          button {
+            position: relative;
+
+            span {
+              display: none;
+            }
+          }
+
+          .btn-square {
+            max-width: 26px;
+            max-height: 26px;
+
+            i {
+              position: relative;
+              color: $white;
+             &:before {
+               position: absolute;
+               top: -12px;
+               left: -9px;
+             }
+            }
+          }
+
+          &-article,
+          &-text {
+            font-size: 14px !important;
+          }
+
+          &-active-price {
+            font-size: 20px;
+          }
+
+          &-prev-price {
+            font-size: 12px;
+          }
+        }
+      }
+
+      .product-slide-content-tag {
+        flex-wrap: wrap;
+      }
+    }
 
     .marking {
       gap: 20px;
       display: flex;
+
       &-icon {
         display: flex;
         gap: 10px;
       }
+
       &-item {
         border: 1px solid $grey3;
         border-radius: 4px;
         width: 40px;
         height: 40px;
         text-align: center;
+
         i {
           font-size: 30px;
           color: $grey2;
         }
+
         i:hover {
           color: $blueAdditional;
         }
       }
     }
   }
+}
+
+.close-menu {
+  display: none;
 }
