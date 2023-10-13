@@ -9,12 +9,15 @@
 section {
   margin-bottom: 90px;
 }
-
+.wrapper {
+  position: relative;
+}
 .container {
   font-size: 16px;
   max-width: 1180px;
   margin: 0 auto;
   font-family: Inter, sans-serif;
+
 }
 @media screen and (max-width: 1179px) {
   section {
@@ -41,3 +44,4 @@ section {
 @import "form-application";
 @import "page-about-us";
 @import "product-catalog";
+@import "single-product";

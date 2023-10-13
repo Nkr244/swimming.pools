@@ -1,3 +1,4 @@
+
 //Заголовки
 h2 {
   font-weight: 700;
@@ -25,7 +26,7 @@ ul.breadcrumb li + li:before {
   content: "\f105";
   font-family: icons, sans-serif;
   vertical-align: sub;
-  top: -1px;
+  top: -2px;
   left: -20px;
 }
 
@@ -164,22 +165,22 @@ ul.breadcrumb li a:hover {
 }
 
 .select-head::after {
-  width: 26px;
-  height: 26px;
+  width: 18px;
+  height: 20px;
   color: $grey1;
   position: absolute;
   right: 10px;
-  top: 60%;
+  top: 55%;
   content: "\f102";
   font-family: icons, sans-serif;
-  font-size: 30px;
+  font-size: 20px;
   display: block;
   transition: 0.2s ease-in;
   transform: translateY(-50%);
 }
 
 .select-head.open::after {
-  transform: translateY(-70%) rotate(-180deg);
+  transform: translateY(-55%) rotate(-180deg);
 }
 
 .select-list {

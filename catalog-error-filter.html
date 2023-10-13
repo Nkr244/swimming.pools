@@ -130,36 +130,147 @@
             <ul class="breadcrumb">
                 <li><a href="index.html">Главная</a></li>
                 <li><a href="catalog-lvl-1.html">Каталог</a></li>
-                <li>Трубы и фитинги</li>
+                <li><a href="catalog-lvl-2.html">Трубы и фитинги</a></li>
+                <li><a href="catalog-lvl-3.html">Фитинги ПВХ</a></li>
+                <li>Втулки</li>
             </ul>
         </div>
-        <section class="product-category">
-            <h2>Трубы и фитинги</h2>
-            <div class="product-category-block">
-                <div class="product-catalog-item product-category-item">
-                    <h3>Фитинги ПВХ</h3>
-                    <img class="image" src="image/fiting.png" alt="">
+        <h2>Фитинги ПВХ</h2>
+        <div class="fast-filters">
+            <div class="fast-filter">
+                <img src="image/sleeve.png" alt="">
+                <span>Втулки</span>
+            </div>
+            <div class="fast-filter">
+                <img src="image/stub.png" alt="">
+                <span>Заглушки</span>
+            </div>
+            <div class="fast-filter">
+                <img src="image/transition.png" alt="">
+                <span>Переходы с наружной резьбой</span>
+            </div>
+            <div class="fast-filter">
+                <img src="image/crosspieces.png" alt="">
+                <span>Крестовины</span>
+            </div>
+            <div class="fast-filter">
+                <img src="image/cranes.png" alt="">
+                <span>Краны с электроприводом</span>
+            </div>
+            <div class="fast-filter">
+                <img src="image/stub.png" alt="">
+                <span>Заглушки</span>
+            </div>
+        </div>
+        <section class="main-filter-catalog">
+            <div class="block-left">
+                <div class="block-left-item">
+                    <h3>Цена</h3>
+                    <input type="range"  name="volume" min="0" max="11" />
                 </div>
-                <div class="product-catalog-item product-category-item">
-                    <h3>Держатели труб</h3>
-                    <img class="image" src="image/holders.png" alt="">
+                <div class="block-left-item">
+                    <h3>Цена</h3>
+                    <div class="main-filter-catalog-checkbox">
+                        <label class="form-checkbox-item">
+                            <input type="checkbox" name="checkbox-name">
+                            <span class="form-checkbox-wrapper">
+                                    <span class="form-checkbox-check"><i class="icon-done-large"></i></span>
+                                    <label>Coraplax</label>
+                                </span>
+                        </label>
+                        <label class="form-checkbox-item">
+                            <input type="checkbox" name="checkbox-name">
+                            <span class="form-checkbox-wrapper">
+                                    <span class="form-checkbox-check"><i class="icon-done-large"></i></span>
+                                    <label>ERA</label>
+                                </span>
+                        </label>
+                    </div>
                 </div>
-                <div class="product-catalog-item product-category-item">
-                    <h3>Материалы для монтажа ПВХ</h3>
-                    <img class="image" src="image/materials.png" alt="">
+                <div class="block-left-item">
+                    <h3>Тип продукта</h3>
+                    <div class="main-filter-catalog-checkbox">
+                        <label class="form-checkbox-item">
+                            <input type="checkbox" name="checkbox-name">
+                            <span class="form-checkbox-wrapper">
+                                    <span class="form-checkbox-check"><i class="icon-done-large"></i></span>
+                                    <label>Втулки</label>
+                                </span>
+                        </label>
+                        <label class="form-checkbox-item">
+                            <input type="checkbox" name="checkbox-name">
+                            <span class="form-checkbox-wrapper">
+                                    <span class="form-checkbox-check"><i class="icon-done-large"></i></span>
+                                    <label>Заглушки</label>
+                                </span>
+                        </label>
+                        <label class="form-checkbox-item">
+                            <input type="checkbox" name="checkbox-name">
+                            <span class="form-checkbox-wrapper">
+                                    <span class="form-checkbox-check"><i class="icon-done-large"></i></span>
+                                    <label>Переходы с наружной резьбой</label>
+                                </span>
+                        </label>
+                        <label class="form-checkbox-item">
+                            <input type="checkbox" name="checkbox-name">
+                            <span class="form-checkbox-wrapper">
+                                    <span class="form-checkbox-check"><i class="icon-done-large"></i></span>
+                                    <label>Крестовины</label>
+                                </span>
+                        </label>
+                        <label class="form-checkbox-item">
+                            <input type="checkbox" name="checkbox-name">
+                            <span class="form-checkbox-wrapper">
+                                    <span class="form-checkbox-check"><i class="icon-done-large"></i></span>
+                                    <label>Краны с электроприводом</label>
+                                </span>
+                        </label>
+                    </div>
+                    <div class="main-filter-catalog-collapse">
+                        <h3>Свернуть</h3>
+                        <i class="icon-arrow-up-large"></i>
+                    </div>
+                    <a href="">Сбросить фильтры</a>
+                </div>
 
+            </div>
+            <div class="block-right">
+                <div class="marking">
+                    <div class="marking-left">
+                        <div class="marking-icon">
+                            <div class="marking-item">
+                                <i class="icon-square"></i>
+                            </div>
+                            <div class="marking-item">
+                                <i class="icon-burger"></i>
+                            </div>
+                        </div>
+                        <div class="main-filter" data-select>
+                            <select name="filter-sort">
+                                <option value="by-popular">По популярности</option>
+                                <option value="price-desc">Сначала дорогие</option>
+                                <option value="price-asc">Сначала дешевые</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="count-product">
+                        <span>336 товаров</span>
+                    </div>
                 </div>
-                <div class="product-catalog-item product-category-item">
-                    <h3>Трубы</h3>
-                    <img class="image" src="image/pipes.png" alt="">
+                <div class="new-product">
+                    <div class="new-product-content">
+                        <div class="new-product-content-error-filter">
+                            <h3>По вашим параметрам ничего не нашлось</h3>
+                            <p>Попробуйте сбросить фильтры</p>
+                            <button class="btn">Сбросить</button>
+                        </div>
+
+                    </div>
                 </div>
             </div>
-
-        </section>
-
     </div>
-
-
+    </section>
+</div>
 </div>
 <footer>
     <div class="container">
@@ -244,10 +355,64 @@
     </div>
 
 </footer>
+
 </body>
 <script type="text/javascript" src="js/jquery-3.5.1.slim.min.js"></script>
 <script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
 <script type="text/javascript" src="js/slick.min.js"></script>
 <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script>
+    jQuery(($) => {
+        $('[data-select]').each((i, mainElement) => {
+            mainElement = $(mainElement)
+            const selectInput = $(mainElement.find('select'))
 
+            const selectHead = $(document.createElement('div'))
+            selectHead.addClass('select-head')
+            selectHead.text(selectInput.find('option:selected').text())
+            mainElement.append(selectHead)
+
+            const selectList = $(document.createElement('ul'))
+            selectList.addClass('select-list')
+
+            selectInput.find('option').each((i, option) => {
+                const liElement = $(document.createElement('li'))
+                liElement.addClass('select-item')
+                liElement.attr('data-select-value', option.value)
+                liElement.text(option.text)
+
+                selectList.append(liElement)
+            })
+
+            mainElement.append(selectList)
+
+            selectHead.click(() => {
+                if (selectHead.hasClass("open")) {
+                    selectHead.removeClass("open");
+                    selectList.fadeOut();
+
+                } else {
+                    selectHead.addClass('open');
+                    selectList.fadeIn();
+                }
+            });
+
+            mainElement.find('[data-select-value]').each((i, selectElement) => {
+                selectElement = $(selectElement)
+
+                selectElement.click(() => {
+                    const value = selectElement.attr('data-select-value');
+
+                    selectInput.val(value)
+
+                    selectHead.removeClass('open')
+                    selectList.fadeOut()
+
+                    selectHead.text(selectElement.text())
+                })
+            })
+        });
+    });
+
+</script>
 </html>

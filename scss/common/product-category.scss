@@ -7,7 +7,7 @@
   }
 
   &-item {
-    flex-basis: 15% !important;
+    flex-basis: calc(16% - 8px) !important;
     max-height: 100%;
     max-width: 100%;
     img {
