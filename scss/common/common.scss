@@ -247,4 +247,18 @@ ul.breadcrumb li a:hover {
     }
   }
 }
+.error {
+  .new-product-content-error-filter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    img {
+      margin-bottom: 30px;
+    }
+    p {
+      width: 50%;
+    }
+  }
+
+}
 

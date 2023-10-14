@@ -1,0 +1,128 @@
+.personal-area {
+  display: flex;
+  gap: 20px;
+  &-price {
+    width: 100% !important;
+  }
+  .block-left {
+    flex-basis: 30%;
+    .new-product-content-error-filter {
+      padding: 0;
+      overflow: hidden;
+      .personal-area-menu {
+        overflow: hidden;
+        ul {
+          text-align: start;
+
+        }
+        li {
+          padding: 10px 20px;
+          cursor: pointer;
+
+        }
+        li:hover {
+          color: $white;
+          background: $blueAdditional;
+
+        }
+      }
+    }
+    .personal-area-header {
+      display: flex;
+      gap: 10px;
+      padding: 20px;
+      p {
+        width: auto!important;
+        margin-bottom: 0;
+        font-weight: bold;
+      }
+      span {
+        color: $grey1;
+      }
+      &-content {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 5px;
+      }
+    }
+  }
+  .block-right {
+    flex-basis: 70%;
+    .page-catalog-instructions-item {
+      text-align: start;
+    }
+    .product-slide,
+    .line-product
+    {
+      margin-bottom: 15px !important;
+
+    }
+    .product-slide {
+      display: flex;
+      width: 100%;
+    }
+    .product-slide-item {
+      flex-basis: 100%;
+
+    }
+    .page-catalog-instructions-item-content {
+      align-items: center;
+      position: initial;
+    }
+    .btn-more {
+      color: $black;
+      width: auto !important;
+      bottom: 0;
+      right: 30px;
+      font-weight: bold;
+      i:before {
+        top: -11px;
+        left:2px;
+      }
+    }
+    .btn-cancel {
+      border: none;
+      text-decoration: underline;
+      color: $grey1;
+      bottom: auto;
+      top: 0;
+      right: 0;
+    }
+    .new-product-content-error-filter {
+      position: relative;
+      align-items: flex-start;
+      padding: 20px 20px 0px 20px;
+      margin-bottom: 5px;
+      .personal-area-text {
+        width: 85% !important;
+      }
+    }
+    .page-catalog-instructions-content {
+      padding: 0;
+    }
+    .d-flex {
+      flex-direction: column;
+      gap: 10px;
+    }
+    .basket-product-item-text {
+      text-align: left;
+      c {
+        color: $black;
+        margin-left: 5px;
+      }
+      h3 {
+        font-size: 16px !important;
+        margin-bottom: 5px;
+      }
+    }
+    .basket-product-item-tag {
+      font-size: 12px;
+      background: $grey4;
+      border-radius: 10px;
+      height: 24px;
+      padding: 4px 8px;
+      color: $grey1;
+    }
+  }
+}
