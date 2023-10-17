@@ -23,4 +23,19 @@
    max-width: 40%;
   }
 }
+@media screen and (max-width: 1024px) {
+  .main-filter-catalog .block-right .product-slider .product-slide {
+    flex-basis: calc(33% - 13px) !important;
+  }
+}
+@media screen and (max-width: 775px) {
+  .main-filter-catalog .block-right .product-slider .product-slide {
+    flex-basis: calc(50% - 10px) !important;
+  }
+}
+@media screen and (max-width: 500px) {
+  .main-filter-catalog .block-right .product-slider .product-slide {
+    flex-basis: 100% !important;
+  }
+}
 

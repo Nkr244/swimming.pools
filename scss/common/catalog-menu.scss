@@ -4,14 +4,14 @@
 }
 
 .menu-catalogs.open-menu {
-  position: fixed;
+  position: absolute;
   background: $grey4;
   padding-top: 20px;
-  width: 380px;
+  max-width: 380px;
   text-align: left;
   font-size: 14px;
-  top: 164px;
-  left: 235px;
+  top: 160px;
+  left: 0;
   bottom: 0;
   right: 0;
   z-index: 666;
@@ -25,6 +25,8 @@
       color: black;
 
       a {
+        display: block;
+        width: 100%;
         text-decoration: none;
       }
     }
@@ -41,27 +43,30 @@
 }
 
 .menu-sub-catalog.open-menu {
-  position: fixed;
+  position: absolute;
   background: $white;
-  padding-top: 20px;
-  width: 380px;
+  padding: 40px 20px;
+  max-width: 230px;
+  width: 100%;
   text-align: left;
   font-size: 14px;
-  top: 164px;
-  left: 615px;
+  top: 4px;
+  left: 380px;
   bottom: 0;
   right: 0;
   z-index: 666;
-  display: flex;
-  flex-direction: column;
+  display: block;
   color: $grey1;
   a {
     text-decoration: none;
+  }
+  li {
+    margin-bottom: 5px;
   }
   .menu-sub-catalog-title {
     font-size: 16px;
     font-weight: bold;
     color: $black;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
   }
 }

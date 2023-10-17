@@ -177,10 +177,10 @@
         <section class="delivery-tab">
             <div class="tab-bar">
                 <ul class="tabbar">
-                    <li>Доставка по Москве и МО</li>
-                    <li>Доставка по России и СНГ</li>
-                    <li>Получение товара</li>
-                    <li>Условия возврата</li>
+                    <li class="tabbar-item tabbar-active">Доставка по Москве и МО</li>
+                    <li class="tabbar-item ">Доставка по России и СНГ</li>
+                    <li class="tabbar-item ">Получение товара</li>
+                    <li class="tabbar-item ">Условия возврата</li>
                 </ul>
             </div>
             <div class="delivery-tab-content">
@@ -360,6 +360,57 @@
 <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 <script>
     $(document).ready(function () {
+        const elements = document.getElementsByClassName("tabbar-item");
+
+        for (let i = 0; i < elements.length; i++) {
+            const element = elements[i];
+
+            element.addEventListener("click", function (event) {
+                $('.product-slide-content-about-item').addClass('close')
+                $('.single-product-about').addClass('close')
+                $('.single-product-documentation').addClass('close')
+                $('.tabbar-item').removeClass('tabbar-active')
+                const clickedElement = event.target;
+
+                if (clickedElement.classList.contains('tabbar-active') === true) {
+                    clickedElement.classList.remove('tabbar-active')
+                } else if (clickedElement.classList.contains('tabbar-active') === false) {
+                    clickedElement.classList.add('tabbar-active')
+                    if (clickedElement.innerHTML === 'Характеристики') {
+                        if ($('.product-slide-content-about-item').hasClass('close') === true) {
+                            $('.product-slide-content-about-item').removeClass('close')
+                        }
+                        else {
+                            $('.product-slide-content-about-item').addClass('close')
+                            clickedElement.classList.remove('tabbar-active')
+
+                        }
+                    } else if (clickedElement.innerHTML === 'О товаре') {
+                        if ($('.single-product-about').hasClass('close') === true) {
+                            $('.single-product-about').removeClass('close')
+                        }
+                        else {
+                            $('.single-product-about').addClass('close')
+                            clickedElement.classList.remove('tabbar-active')
+                        }
+                    } else if (clickedElement.innerHTML === 'Документация') {
+                        if ($('.single-product-documentation').hasClass('close') === true) {
+                            $('.single-product-documentation').removeClass('close')
+                        }
+                        else {
+                            $('.single-product-documentation').addClass('close')
+                            clickedElement.classList.remove('tabbar-active');
+                        }
+                    }
+
+
+                }
+
+
+
+
+            });
+        }
         $('.header-burger').click(function () {
             $('.header-burger').toggleClass('open-menu');
             $('.header-mobile').toggleClass('open-menu');

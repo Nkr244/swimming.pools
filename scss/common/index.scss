@@ -17,7 +17,7 @@ section {
   max-width: 1180px;
   margin: 0 auto;
   font-family: Inter, sans-serif;
-
+  position: relative;
 }
 @media screen and (max-width: 1260px) {
   section {
@@ -50,3 +50,5 @@ section {
 @import "register";
 @import "catalog-instructions";
 @import "personal-area";
+@import "order";
+@import "tech";

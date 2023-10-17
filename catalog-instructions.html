@@ -140,6 +140,7 @@
                         <div class="marking-left">
                             <div class="marking-left-item">
                                 <div class="main-filter" data-select>
+
                                     <select name="filter-sort">
                                         <option>Выбрать бренд</option>
                                         <option>Вариант 1</option>
@@ -361,5 +362,66 @@
 <script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
 <script type="text/javascript" src="js/slick.min.js"></script>
 <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script>
+    jQuery(($) => {
+        $('[data-select]').each((i, mainElement) => {
+            mainElement = $(mainElement)
+            const selectInput = $(mainElement.find('select'))
 
+            const selectHead = $(document.createElement('div'))
+            selectHead.addClass('select-head')
+            selectHead.text(selectInput.find('option:selected').text())
+            mainElement.append(selectHead)
+
+            const selectList = $(document.createElement('ul'))
+            selectList.addClass('select-list')
+
+            selectInput.find('option').each((i, option) => {
+                const liElement = $(document.createElement('li'))
+                liElement.addClass('select-item')
+                liElement.attr('data-select-value', option.value)
+                liElement.text(option.text)
+
+                selectList.append(liElement)
+            })
+
+            mainElement.append(selectList)
+
+            selectHead.click(() => {
+                if (selectHead.hasClass("open")) {
+                    selectHead.removeClass("open");
+                    selectList.fadeOut();
+
+                } else {
+                    selectHead.addClass('open');
+                    selectList.fadeIn();
+                }
+            });
+
+            mainElement.find('[data-select-value]').each((i, selectElement) => {
+                selectElement = $(selectElement)
+
+                selectElement.click(() => {
+                    const value = selectElement.attr('data-select-value');
+
+                    selectInput.val(value)
+
+                    selectHead.removeClass('open')
+                    selectList.fadeOut()
+
+                    selectHead.text(selectElement.text())
+                })
+            })
+        });
+
+        $(document).click(function (e) {
+            if (!$(e.target).closest(".main-filter").length) {
+                $(".select-head").removeClass("open");
+                $(".select-list").fadeOut();
+            }
+        });
+    });
+
+
+</script>
 </html>

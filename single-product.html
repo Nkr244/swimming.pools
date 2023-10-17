@@ -176,7 +176,7 @@
                                     <div class="product-slide-content-item flex-basis-45">
 
                                         <h3>Характеристики:</h3>
-                                        <div class="product-slide-content-about">
+                                        <div class="product-slide-content-about d-block ">
                                             <p>
                                                 <span>Артикул</span>
                                                 <span class="line"></span>
@@ -292,14 +292,14 @@
         </section>
         <section>
             <div class="tab-bar">
-                <ul class="tabbar">
-                    <li>Характеристики</li>
-                    <li>О товаре</li>
-                    <li>Документация</li>
+                <ul class="tabbar ">
+                    <li class="tabbar-item tabbar-active">Характеристики</li>
+                    <li class="tabbar-item">О товаре</li>
+                    <li class="tabbar-item">Документация</li>
                 </ul>
             </div>
             <div class="single-product-characteristics">
-                <div class="product-slide-content-about ">
+                <div class="product-slide-content-about-item ">
                     <div class="product-characteristics">
                         <p>
                             <span>Артикул</span>
@@ -585,56 +585,7 @@
             </div>
 
         </section>
-        <div class="analog">
-            <div class="analog-item">
-                <section class="form-application">
-                    <div class="form-content">
-                        <div class="form">
-                            <i class="icon-close-large"></i>
-                            <h3>Подобрать аналог</h3>
-                            <p>
-                                Заполните форму ниже — наши менеджеры свяжутся
-                                с вами в течение 24 часов и помогут решить проблему
-                            </p>
-                            <form action="">
-                                <div class="form-group">
-                                    <label class="">Имя*</label>
-                                    <input type="text" placeholder="Введите ваше имя" required>
-                                </div>
-                                <div class="form-group">
-                                    <label class="form-number">Номер телефона*</label>
-                                    <input type="number" placeholder="+7 (000) 000 00 00" required>
-                                </div>
-                                <div class="form-group form-checkbox">
-                                    <label class="form-checkbox-item">
-                                        <input id="form-conditions" type="checkbox" name="checkbox-name" required>
-                                        <span class="form-checkbox-wrapper">
-                                            <span class="form-checkbox-check"><i class="icon-done-large"></i></span>
-                                            <label for="form-conditions">Я принимаю условия <a href="#">политики конфиденциальности</a></label>
-                                        </span>
-                                    </label>
-                                </div>
 
-                                <div class="form-group">
-                                    <button class="btn-main-form btn" type="submit">Отправить заявку</button>
-                                </div>
-
-                            </form>
-                        </div>
-                    </div>
-                </section>
-            </div>
-        </div>
-        <div class="analog-done">
-            <section>
-                <i class="icon-close-large"></i>
-                <div class="new-product-content-error-filter">
-                    <h3>Заявка отправлена</h3>
-                    <p>Менеджер свяжется с вами в течение 24 часов.</p>
-                    <button class="btn">Хорошо</button>
-                </div>
-            </section>
-        </div>
     </div>
 </div>
 <footer>
@@ -728,6 +679,57 @@
 <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 <script>
     $(document).ready(function () {
+        const elements = document.getElementsByClassName("tabbar-item");
+
+        for (let i = 0; i < elements.length; i++) {
+            const element = elements[i];
+
+            element.addEventListener("click", function (event) {
+                $('.product-slide-content-about-item').addClass('close')
+                $('.single-product-about').addClass('close')
+                $('.single-product-documentation').addClass('close')
+                $('.tabbar-item').removeClass('tabbar-active')
+                    const clickedElement = event.target;
+
+                    if (clickedElement.classList.contains('tabbar-active') === true) {
+                        clickedElement.classList.remove('tabbar-active')
+                    } else if (clickedElement.classList.contains('tabbar-active') === false) {
+                        clickedElement.classList.add('tabbar-active')
+                        if (clickedElement.innerHTML === 'Характеристики') {
+                            if ($('.product-slide-content-about-item').hasClass('close') === true) {
+                                $('.product-slide-content-about-item').removeClass('close')
+                            }
+                            else {
+                                $('.product-slide-content-about-item').addClass('close')
+                                clickedElement.classList.remove('tabbar-active')
+
+                            }
+                        } else if (clickedElement.innerHTML === 'О товаре') {
+                            if ($('.single-product-about').hasClass('close') === true) {
+                                $('.single-product-about').removeClass('close')
+                            }
+                            else {
+                                $('.single-product-about').addClass('close')
+                                clickedElement.classList.remove('tabbar-active')
+                            }
+                        } else if (clickedElement.innerHTML === 'Документация') {
+                            if ($('.single-product-documentation').hasClass('close') === true) {
+                                $('.single-product-documentation').removeClass('close')
+                            }
+                            else {
+                                $('.single-product-documentation').addClass('close')
+                               clickedElement.classList.remove('tabbar-active');
+                            }
+                        }
+
+
+                    }
+
+
+
+
+            });
+        }
         $('.slick-vertical').slick({
             infinite: false,
             slidesToShow: 4,
@@ -749,6 +751,7 @@
             infinite: false,
             slidesToShow: 3,
             slidesToScroll: 1,
+            dots: false,
             prevArrow: $('.prev-single'),
             nextArrow: $('.next-single'),
             responsive: [

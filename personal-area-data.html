@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -13,7 +13,6 @@
     <title>Бассейны.рф</title>
 </head>
 <body>
-
 <div class="wrapper">
     <div class="container">
         <header>
@@ -126,27 +125,186 @@
 
             </div>
         </header>
-        <section class="page-search-none">
-            <div class="bread-crumb">
-                <ul class="breadcrumb">
-                    <li><a href="index.html">Главная</a></li>
-                    <li>Результаты поиска</li>
-                </ul>
-            </div>
-            <section>
+        <div class="bread-crumb">
+            <ul class="breadcrumb">
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="#">Личный кабинет</a></li>
+                <li>История заказов</li>
+            </ul>
+        </div>
+        <h2>Личный кабинет</h2>
+        <div class="personal-area personal-area-data">
+            <div class="block-left basket-none">
                 <div class="new-product-content-error-filter">
-                    <h3>По вашему запросу ничего не найдено</h3>
-                    <p>Попробуйте обобщить поисковый запрос или воспользуйтесь разделами каталога.</p>
-                    <button class="btn">Перейти в каталог</button>
+                    <div class="personal-area-header">
+                        <div class="image">
+                            <img src="image/personal-area.svg" alt="">
+                        </div>
+                        <div class="personal-area-header-content">
+                            <p>Иван Иванович Иванов</p>
+                            <span>
+                                ООО «Название»
+                            </span>
+                            <span>
+                                7743013902
+                            </span>
+                        </div>
+                    </div>
+                    <div class="personal-area-menu">
+                        <ul>
+                            <li>Личные данные</li>
+                            <li>Текущие заказы</li>
+                            <li>История заказов</li>
+                            <li>Бухгалтерские документы</li>
+                            <li>Прайс-лист</li>
+                        </ul>
+                    </div>
                 </div>
-            </section>
-        </section>
+            </div>
+            <div class="basket-none error block-right close">
+                <div class="new-product-content-error-filter">
+                    <img src="image/basket-none.png" alt="">
+                    <h3>У вас пока нет заказов</h3>
+                    <p>Посмотрите предложения на <a href="index.html">главной странице</a>, воспользуйтесь <a
+                            href="catalog-lvl-1.html">каталогом</a> или поиском</p>
+                </div>
+            </div>
+            <div class="basket-none error block-right">
+                <div class="register register-second">
+                    <div class="form-content">
+                        <div class="form">
+                            <h3>Личные данные</h3>
+                            <div class="form-group form-group-radio">
+                                <label class="form-radio-item">
+                                    <input type="radio" name="radio-name">
+                                    <span class="form-radio-wrapper">
+                                            <span class="form-radio-check"></span>
+                                            <span class="form-radio-name">Физическое лицо</span>
+                                        </span>
+                                </label>
+                                <label class="form-radio-item">
+                                    <input type="radio" name="radio-name">
+                                    <span class="form-radio-wrapper" style="">
+                                            <span class="form-radio-check"></span>
+                                            <span class="form-radio-name">Юридическое лицо</span>
+                                        </span>
+                                </label>
+                            </div>
+                            <form action="">
+                                <div class="form-group">
+                                    <label class="">ФИО</label>
+                                    <input type="text" placeholder="Введите фамилию, имя и отчество">
+                                </div>
+                                <div class="form-group">
+                                    <label class="">Почта</label>
+                                    <input type="text" placeholder="Введите электронную почту">
+                                </div>
+                                <div class="form-group">
+                                    <button class="btn-main-form btn" type="submit">Сохранить изменения</button>
+                                </div>
+                                <div class="form-group">
+                                    <p class="email-ok">Отправили письмо на указанный адрес — перейдите по ссылке в письме для подтверждения</p>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="register register-second">
+                    <div class="form-content">
+                        <div class="form">
+                            <h3>Реквизиты организации</h3>
+                            <div class="form-group form-group-radio">
+                                <label class="form-radio-item">
+                                    <input type="radio" name="radio-name">
+                                    <span class="form-radio-wrapper">
+                                            <span class="form-radio-check"></span>
+                                            <span class="form-radio-name">Физическое лицо</span>
+                                        </span>
+                                </label>
+                                <label class="form-radio-item">
+                                    <input type="radio" name="radio-name">
+                                    <span class="form-radio-wrapper" style="">
+                                            <span class="form-radio-check"></span>
+                                            <span class="form-radio-name">Юридическое лицо</span>
+                                        </span>
+                                </label>
+                            </div>
+                            <form action="">
+                                <div class="form-group">
+                                    <label class="">ИНН организации</label>
+                                    <input type="text" placeholder="Введите ИНН организации">
+                                </div>
+                                <div class="form-group">
+                                    <label class="">Название организации</label>
+                                    <input type="text" placeholder="Введите название организации">
+                                </div>
+                                <div class="form-group">
+                                    <button class="btn-main-form btn" type="submit">Сохранить изменения</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="register register-second">
+                    <div class="form-content">
+                        <div class="form">
+                            <h3>Смена пароля</h3>
+                            <form action="">
+                                <div class="form-group">
+                                    <label class="">Старый пароль</label>
+                                    <span class="form-control-wrapper">
+                                <input type="password" placeholder="Введите старый пароль">
+                                 <button type="button" class="form-password-button">
+                                <i class="icon-eye"></i>
+                            </button>
+                            </span>
+
+                                </div>
+                                <div class="form-group">
+                                    <label class="">Новый пароль</label>
+                                    <span class="form-control-wrapper">
+                                <input type="password" placeholder="Введите новый пароль">
+                                   <button type="button" class="form-password-button">
+                                <i class="icon-eye"></i>
+                            </button>
+                            </span>
+
+                                </div>
+                                <div class="form-group">
+                                <label class="">Повторите новый пароль</label>
+                                <span class="form-control-wrapper">
+                                <input type="password" placeholder="Повторно введите новый пароль">
+                                   <button type="button" class="form-password-button">
+                                <i class="icon-eye"></i>
+                            </button>
+                            </span>
+
+                        </div>
+                                <div class="form-group">
+                                    <button class="btn-main-form btn" type="submit">Сохранить изменения</button>
+                                </div>
+                                <div class="form-group">
+                                    <p class="password-ok">Пароль успешно изменен</p>
+                                </div>
+                            </form>
 
 
+
+                        </div>
+                    </div>
+
+                </div>
+                <button class="close-acc" href="">Выйти из аккаунта</button>
+
+
+            </div>
+        </div>
 
     </div>
-
 </div>
+
 <footer>
     <div class="container">
         <div class="upper-blocks">
@@ -231,62 +389,4 @@
 
 </footer>
 </body>
-<script type="text/javascript" src="js/jquery-3.5.1.slim.min.js"></script>
-<script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
-<script type="text/javascript" src="js/slick.min.js"></script>
-<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-<script>
-    jQuery(($) => {
-        $('[data-select]').each((i, mainElement) => {
-            mainElement = $(mainElement)
-            const selectInput = $(mainElement.find('select'))
-
-            const selectHead = $(document.createElement('div'))
-            selectHead.addClass('select-head')
-            selectHead.text(selectInput.find('option:selected').text())
-            mainElement.append(selectHead)
-
-            const selectList = $(document.createElement('ul'))
-            selectList.addClass('select-list')
-
-            selectInput.find('option').each((i, option) => {
-                const liElement = $(document.createElement('li'))
-                liElement.addClass('select-item')
-                liElement.attr('data-select-value', option.value)
-                liElement.text(option.text)
-
-                selectList.append(liElement)
-            })
-
-            mainElement.append(selectList)
-
-            selectHead.click(() => {
-                if (selectHead.hasClass("open")) {
-                    selectHead.removeClass("open");
-                    selectList.fadeOut();
-
-                } else {
-                    selectHead.addClass('open');
-                    selectList.fadeIn();
-                }
-            });
-
-            mainElement.find('[data-select-value]').each((i, selectElement) => {
-                selectElement = $(selectElement)
-
-                selectElement.click(() => {
-                    const value = selectElement.attr('data-select-value');
-
-                    selectInput.val(value)
-
-                    selectHead.removeClass('open')
-                    selectList.fadeOut()
-
-                    selectHead.text(selectElement.text())
-                })
-            })
-        });
-    });
-
-</script>
 </html>

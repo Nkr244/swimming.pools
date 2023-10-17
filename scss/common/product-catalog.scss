@@ -255,8 +255,10 @@
     flex-basis: calc(33% - 11px);
   }
 }
-@media screen and (max-width: 1070px) {
-
+@media screen and (max-width: 1120px) {
+  .main-filter-catalog .block-right .marking-left {
+    margin-bottom: 15px;
+  }
 }
 @media screen and (max-width: 1024px){
   .product-category-block {
@@ -289,6 +291,7 @@
         flex-wrap: wrap;
         gap: 10px;
         flex-basis: 70%;
+
       }
     }
   }

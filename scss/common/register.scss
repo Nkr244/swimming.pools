@@ -23,8 +23,8 @@
 
       .icon-eye:before {
         position: absolute;
-        top: -18px;
-        left: -25px;
+        top: -9px;
+        left: 0;
       }
 
       .form-group-radio {
@@ -49,10 +49,34 @@
     }
   }
 }
+.close-icon {
+  position: relative;
+  i {
+    width: 24px;
+    height: 24px;
+    color: $grey2;
+    font-size: 24px;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+  }
+}
 
 @media screen and (max-width: 550px) {
+  .password-error-custom,
+  .login-custom {
+    p {
+      font-size: 14px;
+    }
+    .register-login {
+      text-wrap: nowrap;
+      font-size: 12px !important;
+    }
+  }
+;
   .register,
   .register-second {
+
     .form-group-radio {
       flex-direction: column !important;
       gap: 0 !important;
@@ -63,5 +87,6 @@
         font-size: 12px !important;
       }
     }
+
   }
 }

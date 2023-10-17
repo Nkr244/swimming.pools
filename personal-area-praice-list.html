@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -13,7 +13,6 @@
     <title>Бассейны.рф</title>
 </head>
 <body>
-
 <div class="wrapper">
     <div class="container">
         <header>
@@ -126,27 +125,83 @@
 
             </div>
         </header>
-        <section class="page-search-none">
-            <div class="bread-crumb">
-                <ul class="breadcrumb">
-                    <li><a href="index.html">Главная</a></li>
-                    <li>Результаты поиска</li>
-                </ul>
-            </div>
-            <section>
+        <div class="bread-crumb">
+            <ul class="breadcrumb">
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="#">Личный кабинет</a></li>
+                <li>Прайс-лист</li>
+            </ul>
+        </div>
+        <h2>Личный кабинет</h2>
+        <section class="personal-area">
+            <div class="block-left basket-none">
                 <div class="new-product-content-error-filter">
-                    <h3>По вашему запросу ничего не найдено</h3>
-                    <p>Попробуйте обобщить поисковый запрос или воспользуйтесь разделами каталога.</p>
-                    <button class="btn">Перейти в каталог</button>
+                    <div class="personal-area-header">
+                        <div class="image">
+                            <img src="image/personal-area.svg" alt="">
+                        </div>
+                        <div class="personal-area-header-content">
+                            <p>Иван Иванович Иванов</p>
+                            <span>
+                                ООО «Название»
+                            </span>
+                            <span>
+                                7743013902
+                            </span>
+                        </div>
+                    </div>
+                    <div class="personal-area-menu">
+                        <ul>
+                            <li>Личные данные</li>
+                            <li>Текущие заказы</li>
+                            <li>История заказов</li>
+                            <li>Бухгалтерские документы</li>
+                            <li>Прайс-лист</li>
+                        </ul>
+                    </div>
                 </div>
-            </section>
+            </div>
+            <div class="basket-none error block-right close">
+                <div class="personal-area-email-ok new-product-content-error-filter">
+                    <img src="image/basket-none.png" alt="">
+                    <h3>У вас пока нет заказов</h3>
+                    <p>Посмотрите предложения на <a href="index.html">главной странице</a>, воспользуйтесь <a
+                            href="catalog-lvl-1.html">каталогом</a> или поиском</p>
+                </div>
+            </div>
+            <div class="personal-area-documents basket-none error block-right">
+
+                <div class="new-product-content-error-filter">
+                    <div class="product-slide">
+                        <div>
+                            <div class="page-catalog-instructions-content">
+                                <div class="page-catalog-instructions-item">
+                                    <div class="page-catalog-instructions-item-content">
+                                        <div class="basket-product-item">
+                                            <div class="basket-product-item-text">
+                                                <h3>Прайс-лист</h3>
+                                                <div class="personal-area-documents-item">
+                                                    <i class="icon-download"></i>
+                                                    <a href="">Document's name.pdf</a>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="line-product"></div>
+
+                </div>
+
+            </div>
         </section>
 
-
-
     </div>
-
 </div>
+
 <footer>
     <div class="container">
         <div class="upper-blocks">
@@ -231,62 +286,4 @@
 
 </footer>
 </body>
-<script type="text/javascript" src="js/jquery-3.5.1.slim.min.js"></script>
-<script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
-<script type="text/javascript" src="js/slick.min.js"></script>
-<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-<script>
-    jQuery(($) => {
-        $('[data-select]').each((i, mainElement) => {
-            mainElement = $(mainElement)
-            const selectInput = $(mainElement.find('select'))
-
-            const selectHead = $(document.createElement('div'))
-            selectHead.addClass('select-head')
-            selectHead.text(selectInput.find('option:selected').text())
-            mainElement.append(selectHead)
-
-            const selectList = $(document.createElement('ul'))
-            selectList.addClass('select-list')
-
-            selectInput.find('option').each((i, option) => {
-                const liElement = $(document.createElement('li'))
-                liElement.addClass('select-item')
-                liElement.attr('data-select-value', option.value)
-                liElement.text(option.text)
-
-                selectList.append(liElement)
-            })
-
-            mainElement.append(selectList)
-
-            selectHead.click(() => {
-                if (selectHead.hasClass("open")) {
-                    selectHead.removeClass("open");
-                    selectList.fadeOut();
-
-                } else {
-                    selectHead.addClass('open');
-                    selectList.fadeIn();
-                }
-            });
-
-            mainElement.find('[data-select-value]').each((i, selectElement) => {
-                selectElement = $(selectElement)
-
-                selectElement.click(() => {
-                    const value = selectElement.attr('data-select-value');
-
-                    selectInput.val(value)
-
-                    selectHead.removeClass('open')
-                    selectList.fadeOut()
-
-                    selectHead.text(selectElement.text())
-                })
-            })
-        });
-    });
-
-</script>
 </html>

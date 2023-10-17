@@ -130,7 +130,20 @@ i {
   }
 
 }
+.bg-blue {
+  background: $blueAdditional;
+  color: $white !important;
+  position: relative;
+}
+.bg-blue:before {
+  position: absolute;
+  content:"\f105" ;
+  top: 7px;
+  right: 15px;
+  font-family: icons, sans-serif;
+  font-size: 21px;
 
+}
 //Search
 .search {
   display: block;
@@ -161,7 +174,7 @@ i {
 
   &-item:before {
     position: absolute;
-    content: "\f11c";
+    content: "\f11d";
     top: -5px;
     left: 10px;
     font-family: icons, sans-serif;

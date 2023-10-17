@@ -16,7 +16,37 @@
 
 <div class="wrapper">
     <div class="container">
+        <div class="menu-catalogs">
+        <ul class="menu-catalog">
+            <li class="menu-catalog-item"><a href="#">Трубы и фитинги</a></li>
+            <li class="menu-catalog-item"><a href="#">Фильтры</a></li>
+            <li class="menu-catalog-item"><a href="#">Насосы</a></li>
+        </ul>
+        <ul class="menu-sub-catalog fitings">
+            <li class="menu-sub-catalog-title"><a href="">Фитинги ПВХ</a></li>
+            <li class="menu-sub-catalog-item"><a href="">Втулки</a></li>
+            <li class="menu-sub-catalog-item"><a href="">Заглушки</a></li>
+            <li class="menu-sub-catalog-item"><a href="">Краны с электроприводом</a></li>
+            <li class="menu-sub-catalog-item"><a href="">Втулки</a></li>
+            <li class="menu-sub-catalog-item"><a href="">Заглушки</a></li>
+            <li class="menu-sub-catalog-item"><a href="">Краны с электроприводом</a></li>
+            <li class="menu-sub-catalog-item"><a href="">Втулки</a></li>
+            <li class="menu-sub-catalog-item"><a href="">Заглушки</a></li>
+            <li class="menu-sub-catalog-item"><a href="">Краны с электроприводом</a></li>
+        </ul>
+
+        <ul class="menu-sub-catalog filters">
+            <li class="menu-sub-catalog-title"><a href="">Фильтры</a></li>
+
+        </ul>
+        <ul class="menu-sub-catalog pumps">
+            <li class="menu-sub-catalog-title"><a href="">Насосы</a></li>
+
+        </ul>
+    </div>
+
         <header>
+
             <div class="upper-block">
                 <div class="blocks-address-time">
                     <i class="icon-map"></i>
@@ -99,20 +129,8 @@
                     <i class="icon icon-menu"></i>
                     Каталог
                 </button>
-                <div class="menu-catalogs">
-                    <ul class="menu-catalog">
-                        <li class="menu-catalog-item"><a href="#">Трубы и фитинги</a></li>
-                        <li class="menu-catalog-item"><a href="#">Фильтры</a></li>
-                        <li class="menu-catalog-item"><a href="#">Насосы</a></li>
-                    </ul>
-                    <ul class="menu-sub-catalog">
-                        <li class="menu-sub-catalog-title"><a href="">Фитинги ПВХ</a></li>
-                        <li class="menu-sub-catalog-item"><a href="">Втулки</a></li>
-                        <li class="menu-sub-catalog-item"><a href="">Заглушки</a></li>
-                        <li class="menu-sub-catalog-item"><a href="">Краны с электроприводом</a></li>
-                    </ul>
 
-                </div>
+
                 </button>
                 <button class="btn-mobile btn btn-big">
                     <i class="icon icon-menu"></i>
@@ -764,16 +782,62 @@
             if (($('.menu-catalogs').hasClass('open-menu')) === false) {
                 $('.menu-catalogs').addClass('open-menu')
 
+            } else $('.menu-catalogs').removeClass('open-menu')
+        })
+        $('.btn-mobile').on('click', function () {
 
-            }
-            else  $('.menu-catalogs').removeClass('open-menu')
+            if (($('.menu-catalogs').hasClass('open-menu')) === false) {
+                $('.menu-catalogs').addClass('open-menu')
+
+            } else $('.menu-catalogs').removeClass('open-menu')
         })
-        $('.menu-catalog-item').on('click',function () {
-            if (($('.menu-sub-catalog').hasClass('open-menu')) === false) {
-                $('.menu-sub-catalog').addClass('open-menu')
-            }
-            else  $('.menu-sub-catalog').removeClass('open-menu')
-        })
+        const elements = document.getElementsByClassName("menu-catalog-item");
+
+        for (let i = 0; i < elements.length; i++) {
+            const element = elements[i];
+
+            element.addEventListener("click", function (event) {
+                $('.fitings').removeClass('open-menu');
+                $('.filters').removeClass('open-menu');
+                $('.pumps').removeClass('open-menu');
+                if ($('.menu-catalog-item').hasClass('bg-blue') === true) {
+                    $('.menu-catalog-item').removeClass('bg-blue')
+                }
+                const clickedElement = event.target;
+                let test = 0
+                if (clickedElement.innerHTML === 'Трубы и фитинги') {
+                    if (($('.fitings').hasClass('open-menu')) === false) {
+                        $('.fitings').addClass('open-menu')
+                        test = clickedElement.parentNode
+                        test.classList.add('bg-blue');
+
+                    } else {
+                        $('.fitings').removeClass('open-menu')
+                    }
+                } else if (clickedElement.innerHTML === 'Фильтры') {
+                    if (($('.filters').hasClass('open-menu')) === false) {
+                        $('.filters').addClass('open-menu')
+                        test = clickedElement.parentNode
+                        test.classList.add('bg-blue');
+                    } else{
+                        $('.filters').removeClass('open-menu')
+                        $('.menu-catalog-item').removeClass('bg-blue')
+                    }
+                } else if (clickedElement.innerHTML === 'Насосы') {
+                    if (($('.pumps').hasClass('open-menu')) === false) {
+                        $('.pumps').addClass('open-menu')
+                        test = clickedElement.parentNode
+                        test.classList.add('bg-blue');
+
+                    } else {
+                        $('.pumps').removeClass('open-menu')
+                        $('.menu-catalog-item').removeClass('bg-blue')
+                    }
+                }
+
+            });
+        }
+
 
         $('.header-burger').click(function () {
             $('.header-burger').toggleClass('open-menu');

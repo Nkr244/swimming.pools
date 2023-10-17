@@ -56,6 +56,9 @@
   .about-us-main-block {
     flex-basis: 100% !important;
     padding: 38px;
+    h2 {
+      font-size: 18px !important;
+    }
   }
   .about-us p {
     padding: 0;
@@ -65,6 +68,13 @@
     margin-left: 0;
     width: 100%;
   }
+  .about-us-promo-delivery-content-text h2, .about-us-promo-content-text h2 {
+    font-size: 16px !important;
+  }
+  .about-us-promo-content-text .about-us-promo-subtitle {
+    font-size: 12px;
+  }
+
 }
 @media screen and (max-width: 500px){
   .about-us-content {

@@ -24,11 +24,12 @@
     "map": 61719,
     "menu": 61720,
     "minus": 61721,
-    "phone": 61722,
-    "plus": 61723,
-    "search": 61724,
-    "shield-yes": 61725,
-    "square": 61726,
-    "tile": 61727,
-    "trash": 61728
+    "paper-clip": 61722,
+    "phone": 61723,
+    "plus": 61724,
+    "search": 61725,
+    "shield-yes": 61726,
+    "square": 61727,
+    "tile": 61728,
+    "trash": 61729
 }

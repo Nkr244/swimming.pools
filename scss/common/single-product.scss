@@ -43,7 +43,7 @@
 
 .single-product {
   &-characteristics {
-    .product-slide-content-about {
+    .product-slide-content-about-item {
       display: flex;
       gap: 45px;
 
@@ -349,7 +349,7 @@
   max-width: 480px;
 }
 
-.product-slide-content-about {
+.product-slide-content-about-item {
   flex-basis: 43%;
 
   p {
@@ -478,9 +478,9 @@
 .analog {
   max-width: 560px;
   position: relative;
-  .form-content {
-    justify-content: center;
 
+  .form-content {
+    display: block;
     .form-checkbox {
       margin-bottom: 15px;
     }
@@ -508,7 +508,7 @@
     flex-basis: 40% !important;
   }
   .single-product-characteristics {
-    .product-slide-content-about {
+    .product-slide-content-about-item {
       flex-direction: column;
     }
   }

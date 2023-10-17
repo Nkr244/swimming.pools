@@ -61,6 +61,9 @@ ul.breadcrumb li a:hover {
 }
 
 //Tabbar
+.d-block {
+  display: block !important;
+}
 .tabbar {
   list-style: none;
   padding-bottom: 4px;
@@ -79,6 +82,18 @@ ul.breadcrumb li a:hover {
   }
 
   li:hover:before {
+    position: absolute;
+    content: '';
+    top: 22px;
+    left: 0;
+    border-bottom: 4px solid $blue;
+    width: 100%;
+    border-radius: 5px;
+  }
+}
+.tabbar-active {
+    position: relative;
+  &:before {
     position: absolute;
     content: '';
     top: 22px;

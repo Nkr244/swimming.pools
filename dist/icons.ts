@@ -24,6 +24,7 @@ export type IconsId =
   | "map"
   | "menu"
   | "minus"
+  | "paper-clip"
   | "phone"
   | "plus"
   | "search"
@@ -58,6 +59,7 @@ export type IconsKey =
   | "Map"
   | "Menu"
   | "Minus"
+  | "PaperClip"
   | "Phone"
   | "Plus"
   | "Search"
@@ -92,6 +94,7 @@ export enum Icons {
   Map = "map",
   Menu = "menu",
   Minus = "minus",
+  PaperClip = "paper-clip",
   Phone = "phone",
   Plus = "plus",
   Search = "search",
@@ -127,11 +130,12 @@ export const ICONS_CODEPOINTS: { [key in Icons]: string } = {
   [Icons.Map]: "61719",
   [Icons.Menu]: "61720",
   [Icons.Minus]: "61721",
-  [Icons.Phone]: "61722",
-  [Icons.Plus]: "61723",
-  [Icons.Search]: "61724",
-  [Icons.ShieldYes]: "61725",
-  [Icons.Square]: "61726",
-  [Icons.Tile]: "61727",
-  [Icons.Trash]: "61728",
+  [Icons.PaperClip]: "61722",
+  [Icons.Phone]: "61723",
+  [Icons.Plus]: "61724",
+  [Icons.Search]: "61725",
+  [Icons.ShieldYes]: "61726",
+  [Icons.Square]: "61727",
+  [Icons.Tile]: "61728",
+  [Icons.Trash]: "61729",
 };

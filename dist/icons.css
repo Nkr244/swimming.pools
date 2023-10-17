@@ -1,8 +1,8 @@
 @font-face {
     font-family: "icons";
-    src: url("./icons.ttf?1d8a42b0523d73af97de46826501795c") format("truetype"),
-url("./icons.woff?1d8a42b0523d73af97de46826501795c") format("woff"),
-url("./icons.woff2?1d8a42b0523d73af97de46826501795c") format("woff2");
+    src: url("./icons.ttf?50faf391bab825ca216f8c2ebc1b8628") format("truetype"),
+url("./icons.woff?50faf391bab825ca216f8c2ebc1b8628") format("woff"),
+url("./icons.woff2?50faf391bab825ca216f8c2ebc1b8628") format("woff2");
 }
 
 i[class^="icon-"]:before, i[class*=" icon-"]:before {
@@ -92,24 +92,27 @@ i[class^="icon-"]:before, i[class*=" icon-"]:before {
 .icon-minus:before {
     content: "\f119";
 }
-.icon-phone:before {
+.icon-paper-clip:before {
     content: "\f11a";
 }
-.icon-plus:before {
+.icon-phone:before {
     content: "\f11b";
 }
-.icon-search:before {
+.icon-plus:before {
     content: "\f11c";
 }
-.icon-shield-yes:before {
+.icon-search:before {
     content: "\f11d";
 }
-.icon-square:before {
+.icon-shield-yes:before {
     content: "\f11e";
 }
-.icon-tile:before {
+.icon-square:before {
     content: "\f11f";
 }
-.icon-trash:before {
+.icon-tile:before {
     content: "\f120";
+}
+.icon-trash:before {
+    content: "\f121";
 }

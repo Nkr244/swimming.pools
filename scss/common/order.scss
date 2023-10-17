@@ -1,0 +1,101 @@
+.form {
+  padding: 20px !important;
+}
+.order {
+  &-item-title {
+    font-size: 20px;
+    padding: 20px 20px 0;
+  }
+  &-phys {
+
+    &-doc {
+      padding: 10px;
+      background:$grey4 ;
+      display: flex;
+      border-radius: 5px;
+      align-items: center;
+      gap: 10px;
+      cursor: pointer;
+      i {
+        position: relative;
+        background: white;
+        padding: 8px  ;
+        width: 40px;
+        height: 40px;
+        font-size: 24px;
+        color: $grey2;
+      }
+      i:before {
+        position: absolute;
+        top: 7px;
+        left: 9px;
+      }
+    }
+  }
+  &-receiver,
+  &-delivery {
+    .form-content {
+      border: none;
+      max-width: 650px;
+
+      .form {
+        align-items: flex-start;
+
+        form {
+          max-width: 550px;
+          width: 100%;
+          .form-group-custom {
+            display: flex;
+            flex-direction: row;
+            gap: 20px;
+          }
+        }
+      }
+    }
+  }
+
+  &-pay {
+    .form-group {
+      display: flex;
+      flex-direction: row;
+      gap: 20px;
+      margin: 20px 20px 0;
+
+
+      .form-radio-item {
+        flex-basis: 23%;
+
+        .form-radio-wrapper {
+          height: 60px;
+        }
+      }
+    }
+
+    &-error {
+      button {
+        max-width: 280px;
+      }
+    }
+
+    .count-sale-item {
+      font-size: 14px;
+
+      .grey-price-title {
+        color: $grey1;
+      }
+    }
+  }
+}
+@media screen and (max-width: 550px) {
+  .order-pay .form-group {
+    flex-wrap: wrap;
+    .form-radio-item {
+      flex-basis: 100%;
+    }
+  }
+  .order-delivery .form-content .form form .form-group-custom {
+    flex-direction: column;
+  }
+  .form-group-custom label{
+  }
+}
