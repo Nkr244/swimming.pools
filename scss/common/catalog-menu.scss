@@ -5,20 +5,22 @@
 
 .menu-catalogs.open-menu {
   position: absolute;
-  background: $grey4;
   padding-top: 20px;
-  max-width: 380px;
+  max-width: 840px;
   text-align: left;
   font-size: 14px;
-  top: 160px;
+  top: -50px;
   left: 0;
   bottom: 0;
   right: 0;
   z-index: 666;
   display: flex;
-
+  .menu-catalog-mobile,
   .menu-catalog {
+    max-width: 380px;
     flex-basis: 100%;
+    padding-top: 20px;
+    background: $grey4;
 
     .menu-catalog-item {
       padding: 10px 20px;
@@ -45,28 +47,58 @@
 .menu-sub-catalog.open-menu {
   position: absolute;
   background: $white;
-  padding: 40px 20px;
-  max-width: 230px;
+  padding: 50px 40px 20px 20px;
+  max-width: 800px;
   width: 100%;
   text-align: left;
   font-size: 14px;
-  top: 4px;
+  top: 0;
   left: 380px;
   bottom: 0;
   right: 0;
   z-index: 666;
-  display: block;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
   color: $grey1;
+
   a {
     text-decoration: none;
   }
+
   li {
     margin-bottom: 5px;
   }
+
   .menu-sub-catalog-title {
     font-size: 16px;
     font-weight: bold;
     color: $black;
     margin-bottom: 10px;
+  }
+}
+@media screen and (max-width:1230px ) {
+  .menu-sub-catalog.open-menu {
+    flex-direction: column;
+    justify-content: flex-start;
+    max-width: 500px;
+  }
+}
+@media screen and (max-width: 930px) {
+  .menu-sub-catalog.open-menu {
+    max-width: 350px;
+  }
+}
+.menu-catalog-mobile {
+  display: none;
+}
+@media screen and (max-width: 776px){
+  .menu-catalog,
+  .menu-sub-catalog.open-menu {
+    display: none;
+  }
+  .menu-catalog-mobile {
+    display: flex;
+    flex-direction: column;
   }
 }

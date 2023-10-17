@@ -19,6 +19,16 @@ section {
   font-family: Inter, sans-serif;
   position: relative;
 }
+.modal-background {
+  background: rgba(0,0,0,.5);
+  header {
+    background: white;
+    margin-bottom: 0;
+  }
+  section {
+    opacity: .3;
+  }
+}
 @media screen and (max-width: 1260px) {
   section {
     margin-bottom: 40px;
