@@ -2870,6 +2870,9 @@ footer .contacts-block-address span:last-child {
   max-height: 130px !important;
 }
 
+.go-to-basket a {
+  text-decoration: none;
+}
 .go-to-basket .product-add-basket {
   display: flex;
   margin-bottom: 10px;
@@ -2895,7 +2898,23 @@ footer .contacts-block-address span:last-child {
   max-width: 560px;
   position: relative;
 }
+.analog-done .new-product-content-error-filter {
+  background: white;
+}
 
+.analog,
+.analog-done {
+  cursor: pointer;
+  position: fixed;
+  top: 15%;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+.analog .form,
+.analog-done .form {
+  background: white;
+}
 .analog i,
 .analog-done i {
   position: absolute;
@@ -2907,7 +2926,6 @@ footer .contacts-block-address span:last-child {
 
 .analog {
   max-width: 560px;
-  position: relative;
 }
 .analog .form-content {
   display: block;
@@ -3935,6 +3953,9 @@ footer .contacts-block-address span:last-child {
 .order-item-title {
   font-size: 20px;
   padding: 20px 20px 0;
+}
+.order-group-radio {
+  justify-content: flex-start;
 }
 .order-phys-doc {
   padding: 10px;

@@ -6,8 +6,10 @@
     font-size: 20px;
     padding: 20px 20px 0;
   }
+  &-group-radio {
+    justify-content: flex-start;
+  }
   &-phys {
-
     &-doc {
       padding: 10px;
       background:$grey4 ;
