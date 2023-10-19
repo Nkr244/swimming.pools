@@ -130,6 +130,99 @@
 </header>
 <div class="wrapper">
     <div class="container">
+        <div class="login-custom close">
+            <div class="form-content close-icon">
+                <i class="icon-close-large"></i>
+                <div class="form">
+                    <h3>Вход</h3>
+                    <form action="">
+                        <div class="form-group">
+                            <label class="">Почта</label>
+                            <input type="text" placeholder="Введите электронную почту">
+                        </div>
+                        <div class="form-group">
+                            <label class="">Пароль</label>
+                            <span class="form-control-wrapper">
+                                <input type="password" placeholder="Введите пароль">
+                            </span>
+                        </div>
+
+
+                        <div class="form-group">
+                            <button class="btn-main-form btn" type="submit">Войти</button>
+                        </div>
+                        <div class="register-login form-group">
+                            <span>Нет аккаунта?</span> <a href="#">Зарегистрироваться</a>
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="register close">
+            <div class="form-content close-icon">
+                <i class="icon-close-large"></i>
+                <div class="form">
+                    <h3>Регистрация</h3>
+                    <div class="form-group form-group-radio">
+                        <label class="form-radio-item">
+                            <input type="radio" name="radio-name">
+                            <span class="form-radio-wrapper">
+                                 <span class="form-radio-check"></span>
+                                 <span class="form-radio-name">Физическое лицо</span>
+                            </span>
+                        </label>
+                        <label class="form-radio-item">
+                            <input type="radio" name="radio-name">
+                            <span class="form-radio-wrapper" style="">
+                    <span class="form-radio-check"></span>
+                    <span class="form-radio-name">Юридическое лицо</span>
+                </span>
+                        </label>
+                    </div>
+                    <form action="">
+                        <div class="form-group">
+                            <label class="">ФИО*</label>
+                            <input type="text" placeholder="Введите фамилию, имя и отчество">
+                        </div>
+                        <div class="form-group">
+                            <label class="">Почта*</label>
+                            <input type="text" placeholder="Введите электронную почту">
+                        </div>
+                        <div class="form-group">
+                            <label class="">Пароль*</label>
+                            <span class="form-control-wrapper">
+                                <input type="password" placeholder="Введите пароль">
+                            </span>
+                        </div>
+                        <div class="form-group">
+                            <label class="">Повторите пароль*</label>
+                            <span class="form-control-wrapper">
+                                <input type="password" placeholder="Повторно введите пароль">
+                            </span>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-checkbox-item">
+                                <input id="form-conditions" type="checkbox" name="checkbox-name" required>
+                                <span class="form-checkbox-wrapper">
+                                    <span class="form-checkbox-check"><i class="icon-done-large"></i></span>
+                                    <label for="form-conditions">Я принимаю условия <a href="#">политики конфиденциальности</a></label>
+                                </span>
+                            </label>
+                        </div>
+
+                        <div class="form-group">
+                            <button class="btn-main-form btn" type="button">Войти</button>
+                        </div>
+                        <div class="login-register register-login form-group">
+                            <span>Уже есть аккаунт?</span> <a href="#">Войти</a>
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+
+        </div>
         <div class="menu-catalogs">
             <ul class="menu-catalog">
                 <li class="menu-catalog-item"><a href="#">Трубы и фитинги</a></li>
@@ -197,8 +290,6 @@
 
             </ul>
         </div>
-
-
         <section class="slider">
             <div class="main-slider" id="main-slider">
                 <div class="main-slide">
@@ -818,6 +909,48 @@
 <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 <script>
     $(document).ready(function () {
+        $('.login').on('click', function () {
+            if ($('.login-custom').hasClass('close') === true) {
+                $('.login-custom').removeClass('close')
+                $('.wrapper').addClass('modal-background')
+                $('header').addClass('mb-none')
+
+
+                $('.icon-close-large').on('click', function () {
+                    $('.login-custom').addClass('close')
+                    $('.wrapper').removeClass('modal-background')
+                    $('header').removeClass('mb-none')
+                })
+            }
+        })
+        $('.register-login').on('click', function () {
+            $('.login-custom').addClass('close')
+            if ($('.register').hasClass('close')) {
+                $('.register').removeClass('close')
+                $('.wrapper').addClass('modal-background')
+                $('header').addClass('mb-none')
+
+                $('.icon-close-large').on('click', function () {
+                    $('.register').addClass('close')
+                    $('.wrapper').removeClass('modal-background')
+                    $('header').removeClass('mb-none')
+                })
+            }
+        })
+        $('.login-register').on('click', function () {
+            $('.register').addClass('close')
+            if ($('.login-custom').hasClass('close')) {
+                $('.login-custom').removeClass('close')
+                $('.wrapper').addClass('modal-background')
+                $('header').addClass('mb-none')
+
+                $('.icon-close-large').on('click', function () {
+                    $('.login-custom').addClass('close')
+                    $('.wrapper').removeClass('modal-background')
+                    $('header').removeClass('mb-none')
+                })
+            }
+        })
         $('.btn-catalog').on('click', function () {
 
             if (($('.menu-catalogs').hasClass('open-menu')) === false) {

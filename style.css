@@ -370,8 +370,8 @@ i {
 
 input:checked + .form-radio-wrapper .form-radio-check:before {
   position: absolute;
-  top: 25%;
-  transform: translateX(-52%);
+  top: 26%;
+  transform: translateX(-45%);
   left: 50%;
   content: "";
   background-color: #538fea;
@@ -2088,8 +2088,8 @@ footer .contacts-block-address span:last-child {
 }
 .form-group .form-checkbox-check i:before {
   position: absolute;
-  top: -9px;
-  left: 2.5px;
+  top: -4px;
+  left: 7.5px;
 }
 
 .form-image {
@@ -3302,6 +3302,16 @@ footer .contacts-block-address span:last-child {
     text-align: left;
   }
 }
+.login-custom,
+.register {
+  position: fixed;
+  top: 20%;
+  left: 35%;
+  right: 0;
+  bottom: 0;
+  z-index: 6666;
+}
+
 .login-custom .form-content,
 .register .form-content,
 .password-error-custom .form-content {
@@ -3366,6 +3376,7 @@ footer .contacts-block-address span:last-child {
 
 .close-icon {
   position: relative;
+  cursor: pointer;
 }
 .close-icon i {
   width: 24px;

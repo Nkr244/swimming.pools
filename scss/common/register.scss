@@ -1,4 +1,13 @@
 .login-custom,
+.register{
+  position: fixed;
+  top: 20%;
+  left: 35%;
+  right: 0;
+  bottom: 0;
+  z-index: 6666;
+}
+.login-custom,
 .register,
 .password-error-custom {
   .form-content {
@@ -51,6 +60,7 @@
 }
 .close-icon {
   position: relative;
+  cursor: pointer;
   i {
     width: 24px;
     height: 24px;
