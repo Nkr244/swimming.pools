@@ -3341,6 +3341,8 @@ footer .contacts-block-address span:last-child {
 }
 .login-custom,
 .register {
+  overflow-y: scroll;
+  overflow-x: hidden;
   position: fixed;
   top: 15%;
   left: 0;

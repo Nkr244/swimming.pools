@@ -198,7 +198,7 @@
                     <h3>Регистрация</h3>
                     <div class="form-group form-group-radio">
                         <label class="form-radio-item">
-                            <input type="radio" name="radio-name">
+                            <input type="radio" name="radio-name" checked>
                             <span class="form-radio-wrapper">
                                  <span class="form-radio-check"></span>
                                  <span class="form-radio-name">Физическое лицо</span>
@@ -221,7 +221,14 @@
                             <label class="">Почта*</label>
                             <input type="text" placeholder="Введите электронную почту">
                         </div>
-
+                        <div class="form-legal form-group close">
+                            <label class="">ИНН организации*</label>
+                            <input type="text" placeholder="Введите ИНН организации">
+                        </div>
+                        <div class="form-legal form-group close">
+                            <label class="">Название организации*</label>
+                            <input type="text" placeholder="Введите название организации">
+                        </div>
                         <div class="form-group">
                             <label class="">Пароль*</label>
                             <span class="form-control-wrapper">
@@ -984,6 +991,19 @@
                 })
             }
         })
+        $('.form-radio-wrapper').on('click', function () {
+            for (let i=0; i<document.querySelectorAll('.form-radio-name').length; i++) {
+                const item = document.querySelectorAll('.form-radio-name')[i];
+                if (item.innerHTML === 'Юридическое лицо') {
+                    if ($('.form-legal').hasClass('close') === true) {
+                        $('.form-legal').removeClass('close')
+                    } else $('.form-legal').addClass('close')
+                }
+            }
+
+        })
+
+        // if ($('.form-radio-name').innerHTML === "Юридическое лицо")
         $('.btn-catalog').on('click', function () {
 
             if (($('.menu-catalogs').hasClass('open-menu')) === false) {
