@@ -3343,7 +3343,7 @@ footer .contacts-block-address span:last-child {
 .register {
   position: fixed;
   top: 15%;
-  left: 35%;
+  left: 0;
   right: 0;
   bottom: 0;
   z-index: 6666;
@@ -3356,6 +3356,7 @@ footer .contacts-block-address span:last-child {
   border-radius: 15px;
   background: #FFFFFF;
   display: block;
+  margin: 0 auto;
 }
 .login-custom .form-content .form,
 .register .form-content .form,
