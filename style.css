@@ -24,12 +24,11 @@ section {
 
 .modal-background-login,
 .modal-background {
-  background: rgba(0, 0, 0, 0.5) !important;
+  background: rgba(0, 0, 0, 0.4) !important;
 }
 .modal-background-login header,
 .modal-background header {
   background: white;
-  margin-bottom: 0;
 }
 .modal-background-login section,
 .modal-background section {
@@ -37,7 +36,8 @@ section {
 }
 
 .modal-background-login header {
-  background: rgba(0, 0, 0, 0.5) !important;
+  background: rgba(0, 0, 0, 0);
+  opacity: 0.2;
 }
 
 @media screen and (max-width: 1260px) {
@@ -3338,7 +3338,7 @@ footer .contacts-block-address span:last-child {
 .login-custom,
 .register {
   position: fixed;
-  top: 20%;
+  top: 15%;
   left: 35%;
   right: 0;
   bottom: 0;

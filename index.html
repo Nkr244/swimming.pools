@@ -944,13 +944,13 @@
         $('.login').on('click', function () {
             if ($('.login-custom').hasClass('close') === true) {
                 $('.login-custom').removeClass('close')
-                $('.wrapper').addClass('modal-background')
+                $('.wrapper').addClass('modal-background-login')
                 $('header').addClass('mb-none')
 
 
                 $('.icon-close-large').on('click', function () {
                     $('.login-custom').addClass('close')
-                    $('.wrapper').removeClass('modal-background')
+                    $('.wrapper').removeClass('modal-background-login')
                     $('header').removeClass('mb-none')
                 })
             }
@@ -959,12 +959,12 @@
             $('.login-custom').addClass('close')
             if ($('.register').hasClass('close')) {
                 $('.register').removeClass('close')
-                $('.wrapper').addClass('modal-background')
+                $('.wrapper').addClass('modal-background-login')
                 $('header').addClass('mb-none')
 
                 $('.icon-close-large').on('click', function () {
                     $('.register').addClass('close')
-                    $('.wrapper').removeClass('modal-background')
+                    $('.wrapper').removeClass('modal-background-login')
                     $('header').removeClass('mb-none')
                 })
             }
@@ -973,12 +973,12 @@
             $('.register').addClass('close')
             if ($('.login-custom').hasClass('close')) {
                 $('.login-custom').removeClass('close')
-                $('.wrapper').addClass('modal-background')
+                $('.wrapper').addClass('modal-background-login')
                 $('header').addClass('mb-none')
 
                 $('.icon-close-large').on('click', function () {
                     $('.login-custom').addClass('close')
-                    $('.wrapper').removeClass('modal-background')
+                    $('.wrapper').removeClass('modal-background-login')
                     $('header').removeClass('mb-none')
                 })
             }
