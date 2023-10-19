@@ -22,15 +22,22 @@ section {
   position: relative;
 }
 
+.modal-background-login,
 .modal-background {
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.5) !important;
 }
+.modal-background-login header,
 .modal-background header {
   background: white;
   margin-bottom: 0;
 }
+.modal-background-login section,
 .modal-background section {
   opacity: 0.3;
+}
+
+.modal-background-login header {
+  background: rgba(0, 0, 0, 0.5) !important;
 }
 
 @media screen and (max-width: 1260px) {
@@ -714,6 +721,17 @@ ul.breadcrumb li a:hover {
   margin-bottom: 0;
 }
 
+.header-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+.header-modal .bottom-block {
+  margin: 0 auto;
+  max-width: 1180px;
+}
+
 header {
   font-size: 10px;
   padding-top: 20px;
@@ -822,7 +840,7 @@ header .header-menu a {
 }
 .bottom-block .search button {
   line-height: 40px;
-  top: -9px;
+  top: -15px;
 }
 
 .authentication {
@@ -861,7 +879,7 @@ header .header-menu a {
   }
 }
 @media screen and (max-width: 1179px) {
-  header {
+  .header-modal {
     padding: 20px 30px;
   }
   header .header-menu {
@@ -1245,16 +1263,17 @@ footer .contacts-block-address span:last-child {
 }
 
 .menu-catalogs.open-menu {
-  position: absolute;
+  position: fixed;
   padding-top: 20px;
   max-width: 840px;
   text-align: left;
   font-size: 14px;
-  top: -20px;
+  top: 78px;
   left: 0;
   bottom: 0;
-  right: 0;
+  right: 340px;
   z-index: 666;
+  margin: 0 auto;
   display: flex;
 }
 .menu-catalogs.open-menu .menu-catalog-mobile,
@@ -1286,18 +1305,19 @@ footer .contacts-block-address span:last-child {
 }
 
 .menu-sub-catalog.open-menu {
-  position: absolute;
+  position: fixed;
   background: #FFFFFF;
-  padding: 50px 40px 20px 20px;
+  padding: 35px 40px 20px 20px;
   max-width: 800px;
   width: 100%;
   text-align: left;
   font-size: 14px;
-  top: 0;
+  top: 98px;
   left: 380px;
   bottom: 0;
   right: 0;
   z-index: 666;
+  margin: 0 auto;
   display: flex;
   justify-content: space-between;
   gap: 20px;
@@ -1321,11 +1341,19 @@ footer .contacts-block-address span:last-child {
     flex-direction: column;
     justify-content: flex-start;
     max-width: 500px;
+    left: 80px;
   }
 }
-@media screen and (max-width: 930px) {
+@media screen and (max-width: 1179px) {
+  .menu-catalogs.open-menu {
+    top: 71px;
+    left: 30px;
+    right: 0;
+  }
   .menu-sub-catalog.open-menu {
-    max-width: 350px;
+    position: absolute;
+    left: 380px;
+    top: 20px;
   }
 }
 .menu-catalog-mobile {
@@ -1340,6 +1368,11 @@ footer .contacts-block-address span:last-child {
   .menu-catalog-mobile {
     display: flex;
     flex-direction: column;
+  }
+}
+@media screen and (max-width: 500px) {
+  .menu-catalogs.open-menu .menu-catalog-mobile {
+    max-width: 250px;
   }
 }
 .wrapper {

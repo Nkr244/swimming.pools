@@ -4,16 +4,17 @@
 }
 
 .menu-catalogs.open-menu {
-  position: absolute;
+  position: fixed;
   padding-top: 20px;
   max-width: 840px;
   text-align: left;
   font-size: 14px;
-  top: -20px;
+  top: 78px;
   left: 0;
   bottom: 0;
-  right: 0;
+  right: 340px;
   z-index: 666;
+  margin: 0 auto;
   display: flex;
   .menu-catalog-mobile,
   .menu-catalog {
@@ -45,18 +46,19 @@
 }
 
 .menu-sub-catalog.open-menu {
-  position: absolute;
+  position: fixed;
   background: $white;
-  padding: 50px 40px 20px 20px;
+  padding: 35px 40px 20px 20px;
   max-width: 800px;
   width: 100%;
   text-align: left;
   font-size: 14px;
-  top: 0;
+  top: 98px;
   left: 380px;
   bottom: 0;
   right: 0;
   z-index: 666;
+  margin: 0 auto;
   display: flex;
   justify-content: space-between;
   gap: 20px;
@@ -82,13 +84,23 @@
     flex-direction: column;
     justify-content: flex-start;
     max-width: 500px;
+    left: 80px;
   }
 }
-@media screen and (max-width: 930px) {
+@media screen and (max-width: 1179px) {
+.menu-catalogs.open-menu {
+  top: 71px;
+  left: 30px;
+  right: 0;
+}
   .menu-sub-catalog.open-menu {
-    max-width: 350px;
+    position: absolute;
+    left: 380px;
+    top: 20px;
+
   }
 }
+
 .menu-catalog-mobile {
   display: none;
 }
@@ -100,5 +112,12 @@
   .menu-catalog-mobile {
     display: flex;
     flex-direction: column;
+  }
+}
+@media screen and (max-width: 500px){
+  .menu-catalogs.open-menu {
+    .menu-catalog-mobile {
+      max-width: 250px;
+    }
   }
 }

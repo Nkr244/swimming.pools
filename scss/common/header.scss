@@ -1,8 +1,20 @@
 .mb-none {
   margin-bottom: 0;
 }
-header {
 
+.header-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+
+  .bottom-block {
+    margin: 0 auto;
+    max-width: 1180px;
+  }
+}
+
+header {
   font-size: 10px;
   padding-top: 20px;
   padding-bottom: 25px;
@@ -10,6 +22,7 @@ header {
   border-bottom: 1px solid $grey3;
   margin-bottom: 30px;
   z-index: 666666;
+
   .header-menu {
     margin-top: 0;
 
@@ -26,6 +39,7 @@ header {
   justify-content: space-between;
   gap: 50px;
   position: relative;
+
   i {
     color: $blue;
     font-size: 22px;
@@ -113,9 +127,11 @@ header {
   align-items: flex-end;
   gap: 20px;
   justify-content: space-between;
+
   .icon-menu {
     position: relative;
   }
+
   //.icon-menu:before {
   //  position: absolute;
   //  top: -49px;
@@ -131,7 +147,7 @@ header {
 
     button {
       line-height: 40px;
-      top: -9px;
+      top: -15px;
 
     }
 
@@ -155,13 +171,16 @@ header {
     text-wrap: nowrap;
   }
 }
+
 .btn-mobile {
   display: none;
 }
+
 .header-mobile,
 .header-burger {
   display: none;
 }
+
 @media screen and (max-width: 1010px) {
   header .search {
     display: none;
@@ -169,12 +188,14 @@ header {
 }
 
 @media screen and (max-width: 600px) {
-header .block-contacts {
-  display: none;
+  header .block-contacts {
+    display: none;
+  }
 }
-}
+
+
 @media screen and (max-width: 1179px) {
-  header {
+  .header-modal {
     padding: 20px 30px;
 
   }
@@ -182,12 +203,11 @@ header .block-contacts {
   {
     display: none;
   }
-  .header-mobile.open-menu .block-contacts{
+  .header-mobile.open-menu .block-contacts {
     display: flex;
   }
   .header-mobile.open-menu .header-menu,
-  .header-mobile.open-menu .search
-  {
+  .header-mobile.open-menu .search {
     color: $black;
     display: block;
   }
@@ -199,16 +219,16 @@ header .block-contacts {
     display: block;
   }
   .header-burger {
-      position: absolute;
-      width: 40px;
-      height: 35px;
-      display: block !important;
-      top: 28px !important;
-      right: 17px !important;
+    position: absolute;
+    width: 40px;
+    height: 35px;
+    display: block !important;
+    top: 28px !important;
+    right: 17px !important;
     left: auto !important;
-      border: 0;
-      background-color: unset;
-      cursor: pointer;
+    border: 0;
+    background-color: unset;
+    cursor: pointer;
 
 
     .header-burger .open-menu {
@@ -272,6 +292,7 @@ header .block-contacts {
   .header-mobile {
     position: fixed;
     background: $grey3;
+
     &-block {
       display: flex;
       flex-direction: column;
@@ -317,40 +338,49 @@ header .block-contacts {
   }
   .header-mobile-block {
     width: 300px;
-     .search button {
+
+    .search button {
       position: absolute;
       top: -8.5px;
       right: 6px;
       display: inline-block;
       padding: 0 25px;
     }
+
     .search input {
       padding: 11.5px 35px;
     }
+
     .search-item:before {
-        top: 2px;
+      top: 2px;
     }
+
     .block-contacts {
       display: flex;
       gap: 20px;
 
     }
+
     .search button {
-       top: -3px;
-       right: 6px;
-        line-height: 30px;
-     }
+      top: -3px;
+      right: 6px;
+      line-height: 30px;
+    }
+
     .block-contacts .icon-phone:before, .block-contacts .icon-mail:before {
       top: -3px;
     }
+
     .block-contacts {
       font-size: 11px;
     }
+
     .header-mobile-block .block-contacts {
       gap: 40px;
     }
+
     .header-mobile-button {
-     line-height: 20px;
+      line-height: 20px;
     }
   }
 
@@ -382,8 +412,9 @@ header .block-contacts {
 
 @media (max-width: 550px) {
   .btn-mobile {
-    width: 100% ;
+    width: 100%;
     display: block;
+
     i {
       margin-right: 0;
     }
@@ -396,12 +427,15 @@ header .block-contacts {
     flex-basis: 90%;
   }
 }
-@media screen and (max-width: 400px){
+
+@media screen and (max-width: 400px) {
   .header-mobile-block {
     width: 100%;
+
     .search button {
       top: -4.5px;
     }
+
     form {
       margin: 0;
     }
@@ -410,11 +444,13 @@ header .block-contacts {
     top: 3px;
   }
 }
+
 @media screen and (max-width: 340px) {
   header {
     .authentication {
       gap: 5px;
     }
+
     .bottom-block {
       gap: 10px;
     }

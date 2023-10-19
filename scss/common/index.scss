@@ -9,9 +9,11 @@
 section {
   margin-bottom: 90px;
 }
+
 .wrapper {
   position: relative;
 }
+
 .container {
   font-size: 16px;
   max-width: 1180px;
@@ -19,17 +21,27 @@ section {
   font-family: Inter, sans-serif;
   position: relative;
 }
+
+.modal-background-login,
 .modal-background {
-  background: rgba(0,0,0,.5);
+  background: rgba(0, 0, 0, .5) !important;
+
   header {
     background: white;
     margin-bottom: 0;
-
   }
+
   section {
     opacity: .3;
   }
 }
+
+.modal-background-login {
+  header {
+    background: rgba(0, 0, 0, .5) !important;;
+  }
+}
+
 @media screen and (max-width: 1260px) {
   section {
     margin-bottom: 40px;
@@ -38,6 +50,7 @@ section {
     padding: 0 30px !important;
   }
 }
+
 @import "fonts";
 @import "colors";
 @import "buttons";
