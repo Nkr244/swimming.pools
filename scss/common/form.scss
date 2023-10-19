@@ -88,8 +88,8 @@
 .form-radio-check {
   display: inline-block;
   border: 1px solid $grey3;
-  width: 21px;
-  height: 21px;
+  width: 20px;
+  height: 20px;
   border-radius: 187.5px;
   position: relative;
   vertical-align: top;
@@ -109,8 +109,8 @@
 
 input:checked + .form-radio-wrapper .form-radio-check:before {
   position: absolute;
-  top: 5px;
-  transform: translateX(-45%);
+  top: 4px;
+  transform: translateX(-49%);
   left: 50%;
   content: '';
   background-color: $blue;
