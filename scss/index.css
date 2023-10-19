@@ -858,6 +858,10 @@ header .header-menu a {
   font-size: 14px;
   text-wrap: nowrap;
 }
+.login span a,
+.basket span a {
+  text-decoration: none;
+}
 
 .btn-mobile {
   display: none;
