@@ -1401,7 +1401,7 @@ footer .contacts-block-address span:last-child {
 .prev-product-i,
 .next-product-i {
   position: absolute;
-  top: -2px;
+  top: 0;
   left: 8px;
   color: black;
 }
