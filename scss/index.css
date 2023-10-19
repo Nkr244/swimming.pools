@@ -3716,6 +3716,7 @@ footer .contacts-block-address span:last-child {
   margin-bottom: 0;
 }
 .personal-area-form-cancel .form-content {
+  margin: 0 auto;
   max-width: 520px;
   width: 100%;
   display: block;
@@ -3723,7 +3724,7 @@ footer .contacts-block-address span:last-child {
 }
 .personal-area-form-cancel .form-radio-wrapper {
   border: none;
-  padding: 10px 0;
+  padding: 10px;
 }
 .personal-area-form-cancel .form-group {
   margin-bottom: 0;
@@ -3838,6 +3839,7 @@ footer .contacts-block-address span:last-child {
 }
 .personal-area .block-right .basket-product-item-text {
   text-align: left;
+  flex-basis: 95%;
 }
 .personal-area .block-right .basket-product-item-text c {
   color: black;
@@ -3855,6 +3857,35 @@ footer .contacts-block-address span:last-child {
   padding: 4px 8px;
   text-wrap: nowrap;
   color: #767676;
+}
+
+.product-cancel {
+  justify-content: center;
+  position: fixed;
+  top: 15%;
+  left: 0;
+  right: 0;
+  z-index: 6666;
+  margin: 0 auto;
+}
+.product-cancel .form {
+  background: white;
+}
+.product-cancel .form-content {
+  position: relative;
+}
+.product-cancel .form-content i {
+  position: absolute;
+  font-size: 24px;
+  top: 0;
+  right: 10px;
+  cursor: pointer;
+}
+
+.about-order {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
 @media screen and (max-width: 1040px) {

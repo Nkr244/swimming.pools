@@ -148,6 +148,7 @@
 
   &-form-cancel {
     .form-content {
+      margin: 0 auto;
       max-width: 520px;
       width: 100%;
       display: block;
@@ -156,7 +157,7 @@
 
     .form-radio-wrapper {
       border: none;
-      padding: 10px 0;
+      padding: 10px;
     }
 
     .form-group {
@@ -306,6 +307,7 @@
 
     .basket-product-item-text {
       text-align: left;
+      flex-basis: 95%;
 
       c {
         color: $black;
@@ -329,7 +331,33 @@
     }
   }
 }
-
+.product-cancel {
+  justify-content: center;
+  position: fixed;
+  top: 15%;
+  left: 0;
+  right: 0;
+  z-index: 6666;
+  margin: 0 auto;
+  .form {
+    background: white;
+    &-content {
+      position: relative;
+      i {
+        position: absolute;
+        font-size: 24px;
+        top: 0;
+        right: 10px;
+        cursor: pointer;
+      }
+    }
+  }
+}
+.about-order {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
 @media screen and (max-width: 1040px) {
   .personal-area {
     .block-left {
