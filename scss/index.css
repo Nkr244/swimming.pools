@@ -3350,6 +3350,10 @@ footer .contacts-block-address span:last-child {
   bottom: 0;
   z-index: 6666;
 }
+.login-custom::-webkit-scrollbar,
+.register::-webkit-scrollbar {
+  display: none;
+}
 
 .login-custom .form-content,
 .register .form-content,
