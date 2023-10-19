@@ -3955,7 +3955,7 @@ footer .contacts-block-address span:last-child {
   padding: 20px 20px 0;
 }
 .order .product-slide {
-  max-width: 600px;
+  max-width: 100%;
 }
 .order .form-content {
   max-width: 100% !important;
