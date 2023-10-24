@@ -119,3 +119,19 @@
   .form-group-custom label{
   }
 }
+.pickup {
+  span, p {
+    display: inline-block;
+    font-size: 14px;
+  }
+  span {
+    color: $grey1;
+  }
+  &-delivery {
+    max-height: 40px;
+    margin-bottom: 20px !important;
+  }
+  & div:first-child {
+    margin-bottom: 10px;
+  }
+}

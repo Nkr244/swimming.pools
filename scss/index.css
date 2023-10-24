@@ -4148,6 +4148,21 @@ footer .contacts-block-address span:last-child {
     flex-direction: column;
   }
 }
+.pickup span, .pickup p {
+  display: inline-block;
+  font-size: 14px;
+}
+.pickup span {
+  color: #767676;
+}
+.pickup-delivery {
+  max-height: 40px;
+  margin-bottom: 20px !important;
+}
+.pickup div:first-child {
+  margin-bottom: 10px;
+}
+
 .offer {
   font-size: 14px;
 }
