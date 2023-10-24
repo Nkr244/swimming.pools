@@ -168,24 +168,25 @@
         </div>
         <section class="main-filter-catalog">
             <div class="block-left">
-                <div class="block-left-item">
-                    <h3>Цена</h3>
-                    <div class="range">
-                        <div class="range-slider">
-                            <span class="range-selected"></span>
+                <div>
+                    <div class="block-left-item">
+                        <h3>Цена</h3>
+                        <div class="range">
+                            <div class="range-slider">
+                                <span class="range-selected"></span>
+                            </div>
+                            <div class="range-input">
+                                <input type="range" class="min" min="0" max="1000" value="0" step="10">
+                                <input type="range" class="max" min="0" max="1000" value="1000" step="10">
+                            </div>
+                            <div class="range-price">
+                                <input type="number" name="min" value="0">
+                                <input type="number" name="max" value="1000">
+                            </div>
                         </div>
-                        <div class="range-input">
-                            <input type="range" class="min" min="0" max="1000" value="0" step="10">
-                            <input type="range" class="max" min="0" max="1000" value="1000" step="10">
-                        </div>
-                        <div class="range-price">
-                            <input type="number" name="min" value="0">
-                            <input type="number" name="max" value="1000">
-                        </div>
-                    </div>
 
-                </div>
-                <div class="block-left-item">
+                    </div>
+                    <div class="block-left-item">
                         <h3>Цена</h3>
                         <div class="main-filter-catalog-checkbox">
                             <label class="form-checkbox-item">
@@ -203,52 +204,54 @@
                                 </span>
                             </label>
                         </div>
-                </div>
-                <div class="block-left-item">
-                    <h3>Тип продукта</h3>
-                    <div class="main-filter-catalog-checkbox">
-                        <label class="form-checkbox-item">
-                            <input type="checkbox" name="checkbox-name">
-                            <span class="form-checkbox-wrapper">
+                    </div>
+                    <div class="block-left-item">
+                        <h3>Тип продукта</h3>
+                        <div class="main-filter-catalog-checkbox">
+                            <label class="form-checkbox-item">
+                                <input type="checkbox" name="checkbox-name">
+                                <span class="form-checkbox-wrapper">
                                     <span class="form-checkbox-check"><i class="icon-done-large"></i></span>
                                     <label>Втулки</label>
                                 </span>
-                        </label>
-                        <label class="form-checkbox-item">
-                            <input type="checkbox" name="checkbox-name">
-                            <span class="form-checkbox-wrapper">
+                            </label>
+                            <label class="form-checkbox-item">
+                                <input type="checkbox" name="checkbox-name">
+                                <span class="form-checkbox-wrapper">
                                     <span class="form-checkbox-check"><i class="icon-done-large"></i></span>
                                     <label>Заглушки</label>
                                 </span>
-                        </label>
-                        <label class="form-checkbox-item">
-                            <input type="checkbox" name="checkbox-name">
-                            <span class="form-checkbox-wrapper">
+                            </label>
+                            <label class="form-checkbox-item">
+                                <input type="checkbox" name="checkbox-name">
+                                <span class="form-checkbox-wrapper">
                                     <span class="form-checkbox-check"><i class="icon-done-large"></i></span>
                                     <label>Переходы с наружной резьбой</label>
                                 </span>
-                        </label>
-                        <label class="form-checkbox-item">
-                            <input type="checkbox" name="checkbox-name">
-                            <span class="form-checkbox-wrapper">
+                            </label>
+                            <label class="form-checkbox-item">
+                                <input type="checkbox" name="checkbox-name">
+                                <span class="form-checkbox-wrapper">
                                     <span class="form-checkbox-check"><i class="icon-done-large"></i></span>
                                     <label>Крестовины</label>
                                 </span>
-                        </label>
-                        <label class="form-checkbox-item">
-                            <input type="checkbox" name="checkbox-name">
-                            <span class="form-checkbox-wrapper">
+                            </label>
+                            <label class="form-checkbox-item">
+                                <input type="checkbox" name="checkbox-name">
+                                <span class="form-checkbox-wrapper">
                                     <span class="form-checkbox-check"><i class="icon-done-large"></i></span>
                                     <label>Краны с электроприводом</label>
                                 </span>
-                        </label>
+                            </label>
+                        </div>
+                        <div class="main-filter-catalog-collapse">
+                            <h3>Свернуть</h3>
+                            <i class="icon-arrow-up-large"></i>
+                        </div>
+                        <a href="">Сбросить фильтры</a>
                     </div>
-                    <div class="main-filter-catalog-collapse">
-                        <h3>Свернуть</h3>
-                        <i class="icon-arrow-up-large"></i>
-                    </div>
-                    <a href="">Сбросить фильтры</a>
                 </div>
+
 
             </div>
             <div class="block-right">
@@ -271,7 +274,7 @@
                         </div>
                     </div>
                     <div class="count-product">
-                       <span>336 товаров</span>
+                        <span>336 товаров</span>
                     </div>
                 </div>
                 <div class="new-product">
@@ -308,8 +311,15 @@
                                             64 844 ₽
                                         </div>
                                     </div>
-                                    <button class="btn"><p>В корзину</p><span>1</span></button>
-                                   </div>
+                                    <button class="btn-go-basket btn">В корзину</button>
+                                    <div class="product-add-basket close">
+                                        <button class="btn-square minus" data-count-button="minus"><i
+                                                class="icon-minus"></i></button>
+                                        <span class="col">1</span>
+                                        <button class="btn-square plus" data-count-button="plus"><i
+                                                class="icon-plus"></i></button>
+                                    </div>
+                                </div>
                             </div>
                             <div class="product-slide">
                                 <div class="product-slide-content">
@@ -342,10 +352,13 @@
                                             64 844 ₽
                                         </div>
                                     </div>
-                                    <div class="product-add-basket">
-                                        <button class="btn-square"><i class="icon-minus"></i></button>
-                                        <span>1</span>
-                                        <button class="btn-square"> <i class="icon-plus"></i></button>
+                                    <button class="btn-go-basket btn">В корзину</button>
+                                    <div class="product-add-basket close">
+                                        <button class="btn-square minus" data-count-button="minus"><i
+                                                class="icon-minus"></i></button>
+                                        <span class="col">1</span>
+                                        <button class="btn-square plus" data-count-button="plus"><i
+                                                class="icon-plus"></i></button>
                                     </div>
                                 </div>
                             </div>
@@ -380,7 +393,14 @@
                                             64 844 ₽
                                         </div>
                                     </div>
-                                    <button class="btn">В корзину</button>
+                                    <button class="btn-go-basket btn">В корзину</button>
+                                    <div class="product-add-basket close">
+                                        <button class="btn-square minus" data-count-button="minus"><i
+                                                class="icon-minus"></i></button>
+                                        <span class="col">1</span>
+                                        <button class="btn-square plus" data-count-button="plus"><i
+                                                class="icon-plus"></i></button>
+                                    </div>
                                 </div>
                             </div>
                             <div class="product-slide">
@@ -414,7 +434,14 @@
                                             64 844 ₽
                                         </div>
                                     </div>
-                                    <button class="btn">В корзину</button>
+                                    <button class="btn-go-basket btn">В корзину</button>
+                                    <div class="product-add-basket close">
+                                        <button class="btn-square minus" data-count-button="minus"><i
+                                                class="icon-minus"></i></button>
+                                        <span class="col">1</span>
+                                        <button class="btn-square plus" data-count-button="plus"><i
+                                                class="icon-plus"></i></button>
+                                    </div>
                                 </div>
                             </div>
                             <div class="product-slide">
@@ -448,7 +475,14 @@
                                             64 844 ₽
                                         </div>
                                     </div>
-                                    <button class="btn">В корзину</button>
+                                    <button class="btn-go-basket btn">В корзину</button>
+                                    <div class="product-add-basket close">
+                                        <button class="btn-square minus" data-count-button="minus"><i
+                                                class="icon-minus"></i></button>
+                                        <span class="col">1</span>
+                                        <button class="btn-square plus" data-count-button="plus"><i
+                                                class="icon-plus"></i></button>
+                                    </div>
                                 </div>
                             </div>
                             <div class="product-slide">
@@ -483,7 +517,14 @@
                                             64 844 ₽
                                         </div>
                                     </div>
-                                    <button class="btn">В корзину</button>
+                                    <button class="btn-go-basket btn">В корзину</button>
+                                    <div class="product-add-basket close">
+                                        <button class="btn-square minus" data-count-button="minus"><i
+                                                class="icon-minus"></i></button>
+                                        <span class="col">1</span>
+                                        <button class="btn-square plus" data-count-button="plus"><i
+                                                class="icon-plus"></i></button>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -491,8 +532,8 @@
                 </div>
             </div>
 
-    </section>
-</div>
+        </section>
+    </div>
 </div>
 <footer>
     <div class="container">
@@ -584,6 +625,20 @@
 <script type="text/javascript" src="js/slick.min.js"></script>
 <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 <script>
+
+    var addToCartButtons = document.querySelectorAll(".btn-go-basket");
+
+    addToCartButtons.forEach(function (button, test) {
+        button.addEventListener("click", function () {
+            var buttonParent = button.parentNode
+            const children = buttonParent.children[6];
+            children.classList.remove('close')
+            button.classList.add('close')
+
+        });
+    });
+
+
     let rangeMin = 100;
     const range = document.querySelector(".range-selected");
     const rangeInput = document.querySelectorAll(".range-input input");
@@ -626,6 +681,31 @@
     });
 
     jQuery(($) => {
+        $(document).ready(() => {
+            $('[data-count-button]').click(event => {
+                const buttonClick = event.target;
+                const button = buttonClick.parentNode
+                const countEl = buttonClick.parentNode.parentNode.querySelector(".col")
+                let count = ~~countEl.innerText
+
+                if (button.getAttribute('data-count-button') === 'plus') {
+                    count++;
+                } else {
+                    count--;
+                }
+                if (count < 1) {
+                    count = 1
+                    addToCartButtons = document.querySelectorAll('[data-count-button="minus"]');
+                    buttonParent = button.parentNode.classList.add('close')
+                    button.parentNode.parentNode.querySelector('.btn-go-basket').classList.remove('close')
+                }
+
+
+                countEl.innerText = count
+
+
+            })
+        });
 
         $('[data-select]').each((i, mainElement) => {
             mainElement = $(mainElement)
@@ -678,7 +758,7 @@
         });
         $('.main-filter-catalog-collapse').click(function (e) {
 
-           $('.main-filter-catalog-checkbox').toggle();
+            $('.main-filter-catalog-checkbox').toggle();
 
         })
 

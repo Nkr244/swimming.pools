@@ -155,11 +155,11 @@
                                                             </div>
                                                             <div class="basket-product-item-button">
                                                                 <div class="basket-product-item-button-item">
-                                                                    <button class="btn-square"><i
+                                                                    <button class="btn-square" data-count-button="minus"><i
                                                                             class="icon-minus"></i>
                                                                     </button>
                                                                     <span class="basket-count">12</span>
-                                                                    <button class="btn-square"><i class="icon-plus"></i>
+                                                                    <button class="btn-square" data-count-button="plus"><i class="icon-plus"></i>
                                                                     </button>
                                                                 </div>
                                                                 <div class="basket-product-btn-price">
@@ -193,11 +193,11 @@
                                                             </div>
                                                             <div class="basket-product-item-button">
                                                                 <div class="basket-product-item-button-item">
-                                                                    <button class="btn-square"><i
+                                                                    <button class="btn-square" data-count-button="minus"><i
                                                                             class="icon-minus"></i>
                                                                     </button>
                                                                     <span class="basket-count">12</span>
-                                                                    <button class="btn-square"><i class="icon-plus"></i>
+                                                                    <button class="btn-square" data-count-button="plus"><i class="icon-plus"></i>
                                                                     </button>
                                                                 </div>
                                                                 <div class="basket-product-btn-price">
@@ -292,13 +292,13 @@
                                                             <h3>Итого</h3>
                                                         </div>
                                                         <div>
-                                                            <p>770 025 ₽</p>
+                                                            <p><b class="total-sum">770 025</b> ₽</p>
                                                         </div>
 
                                                     </div>
                                                     <button class="btn">Перейти к оформлению</button>
 
-                                                    <div class="min-sum ">
+                                                    <div class="min-sum close">
                                                         <i class="icon-error"></i>Минимальная сумма заказа 10 000 ₽
                                                     </div>
                                                     <p class="sub-title">Доступные способы доставки можно выбрать при оформлении
@@ -409,5 +409,35 @@
 <script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
 <script type="text/javascript" src="js/slick.min.js"></script>
 <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script>
+    jQuery(($) => {
+        $(document).ready(() => {
+            let totalSum = document.querySelector('.total-sum').innerHTML.replaceAll(' ','');
+            if (totalSum < 10000) {
+                $('.min-sum').removeClass('close')
+            } else  $('.min-sum').addClass('close')
+            $('[data-count-button]').click(event => {
+                const buttonClick = event.target;
+                const button = buttonClick.parentNode
+                const countEl = buttonClick.parentNode.parentNode.querySelector(".basket-count")
+                console.log(countEl)
+                let count = ~~countEl.innerText
 
+                if (button.getAttribute('data-count-button') === 'plus') {
+                    count++;
+                } else {
+                    count--;
+                }
+                if (count < 1) {
+                    count = 1
+                }
+
+
+                countEl.innerText = count
+
+
+            })
+        });
+    })
+</script>
 </html>

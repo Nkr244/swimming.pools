@@ -77,6 +77,7 @@
     border: 1px solid $grey3;
     border-radius: 10px;
     margin-right: 20px;
+    height: 100%;
 
     &-item {
       padding: 15px 20px;
@@ -390,4 +391,10 @@
 }
 .range-price input:first-of-type {
   margin-right: 15px;
+}
+.go-basket {
+  background: black;
+}
+.btn-catalog-first:hover {
+  color: white;
 }

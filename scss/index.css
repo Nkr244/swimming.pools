@@ -2318,6 +2318,7 @@ footer .contacts-block-address span:last-child {
   border: 1px solid #E4E4E4;
   border-radius: 10px;
   margin-right: 20px;
+  height: 100%;
 }
 .main-filter-catalog .block-left-item {
   padding: 15px 20px;
@@ -2607,6 +2608,14 @@ footer .contacts-block-address span:last-child {
 
 .range-price input:first-of-type {
   margin-right: 15px;
+}
+
+.go-basket {
+  background: black;
+}
+
+.btn-catalog-first:hover {
+  color: white;
 }
 
 .flex-basis-45 {
