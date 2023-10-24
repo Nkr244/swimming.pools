@@ -182,8 +182,8 @@
                             <h3>Личные данные</h3>
                             <div class="form-group form-group-radio">
                                 <label class="form-radio-item">
-                                    <input type="radio" name="radio-name">
-                                    <span class="form-radio-wrapper">
+                                    <input type="radio" name="radio-name" checked>
+                                    <span class="form-radio-wrapper" >
                                             <span class="form-radio-check"></span>
                                             <span class="form-radio-name">Физическое лицо</span>
                                         </span>
@@ -216,26 +216,10 @@
                     </div>
 
                 </div>
-                <div class="register register-second">
+                <div class="data-legal register register-second close">
                     <div class="form-content">
                         <div class="form">
                             <h3>Реквизиты организации</h3>
-                            <div class="form-group form-group-radio">
-                                <label class="form-radio-item">
-                                    <input type="radio" name="radio-name">
-                                    <span class="form-radio-wrapper">
-                                            <span class="form-radio-check"></span>
-                                            <span class="form-radio-name">Физическое лицо</span>
-                                        </span>
-                                </label>
-                                <label class="form-radio-item">
-                                    <input type="radio" name="radio-name">
-                                    <span class="form-radio-wrapper" style="">
-                                            <span class="form-radio-check"></span>
-                                            <span class="form-radio-name">Юридическое лицо</span>
-                                        </span>
-                                </label>
-                            </div>
                             <form action="">
                                 <div class="form-group">
                                     <label class="">ИНН организации</label>
@@ -310,7 +294,29 @@
 
     </div>
 </div>
+<script type="text/javascript" src="js/jquery-3.5.1.slim.min.js"></script>
+<script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="js/slick.min.js"></script>
+<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 
+<script>
+    $(document).ready(function(){
+        $('.form-radio-wrapper').on('click', function () {
+            for (let i=0; i<document.querySelectorAll('.form-radio-name').length; i++) {
+                const item = document.querySelectorAll('.form-radio-name')[i];
+                if (item.innerHTML === 'Юридическое лицо') {
+                    if ($('.data-legal').hasClass('close') === true) {
+                        $('.data-legal').removeClass('close')
+                    } else $('.data-legal').addClass('close')
+                }
+            }
+
+        })
+
+    });
+
+
+</script>
 <footer>
     <div class="container">
         <div class="upper-blocks">

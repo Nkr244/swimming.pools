@@ -147,17 +147,17 @@
                                                     <h3>Получаетель</h3>
                                                     <div class="form-group form-group-radio">
                                                         <label class="form-radio-item">
-                                                            <input type="radio" name="radio-name">
-                                                            <span class="form-radio-wrapper">
+                                                            <input type="radio" name="radio-name" checked>
+                                                            <span class="form-legal form-radio-wrapper">
                                                                 <span class="form-radio-check"></span>
-                                                                <span class="form-radio-name">Доставка по адресу</span>
+                                                                <span class="form-radio-name">Физическое лицо</span>
                                                             </span>
                                                         </label>
                                                         <label class="form-radio-item">
                                                             <input type="radio" name="radio-name">
-                                                            <span class="form-radio-wrapper" style="">
+                                                            <span class="form-legal form-radio-wrapper" style="">
                                                                 <span class="form-radio-check"></span>
-                                                                <span class="form-radio-name">Самовывоз</span>
+                                                                <span class="form-radio-name">Юридическое лицо</span>
                                                             </span>
                                                         </label>
                                                     </div>
@@ -181,7 +181,7 @@
 
                                         </div>
                                     </div>
-                                    <div class="order-phys order-receiver product-slide">
+                                    <div class="order-phys order-receiver product-slide close">
                                         <div class=" register-second">
                                             <div class="form-content">
                                                 <div class="form">
@@ -217,7 +217,7 @@
                                                     <h3>Доставка</h3>
                                                     <div class="form-group form-group-radio">
                                                         <label class="form-radio-item">
-                                                            <input type="radio" name="radio-name">
+                                                            <input type="radio" name="radio-name" checked>
                                                             <span class="form-radio-wrapper">
                                                                 <span class="form-radio-check"></span>
                                                                 <span class="form-radio-name">Доставка по адресу</span>
@@ -265,7 +265,7 @@
                                         <h3 class="order-item-title">Способ оплаты</h3>
                                         <div class="form-group form-group-radio">
                                             <label class="form-radio-item">
-                                                <input type="radio" name="radio-name">
+                                                <input type="radio" name="radio-name" checked>
                                                 <span class="form-radio-wrapper" style="">
                                                     <span class="form-radio-check"></span>
                                                     <span class="form-radio-name">Наличными при <br> получении</span>
@@ -548,5 +548,18 @@
 <script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
 <script type="text/javascript" src="js/slick.min.js"></script>
 <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script>
+    $('.form-legal').on('click', function () {
+        for (let i=0; i<document.querySelectorAll('.form-radio-name').length; i++) {
+            const item = document.querySelectorAll('.form-radio-name')[i];
+            console.log(item.innerHTML === 'Юридическое лицо')
+            if (item.innerHTML === 'Юридическое лицо') {
+                if ($('.order-phys').hasClass('close') === true) {
+                    $('.order-phys').removeClass('close')
+                } else $('.order-phys').addClass('close')
+            }
+        }
 
+    })
+</script>
 </html>

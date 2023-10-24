@@ -83,7 +83,21 @@
       font-size: 14px;
       display: flex;
       flex-direction: column;
-
+      .price-range {
+        margin-bottom: 15px;
+      }
+      .price-to-do {
+        display: flex;
+        gap: 20px;
+        input {
+          max-width: 110px;
+          width: 100%;
+          height: 40px;
+          border: 1px solid $grey2;
+          border-radius: 4px;
+          padding-left: 10px;
+        }
+      }
       input:checked + .form-checkbox-wrapper .form-checkbox-check i {
         font-size: 18px;
       }
@@ -310,4 +324,70 @@
   .product-category-item {
     flex-basis: 100% !important;
   }
+}
+.range-slider {
+  height: 5px;
+  position: relative;
+  background-color: #e1e9f6;
+  border-radius: 2px;
+}
+.range-selected {
+  height: 100%;
+  left: 0;
+  right: 0;
+  position: absolute;
+  border-radius: 5px;
+  background-color: $blue;
+}
+.range-input {
+  position: relative;
+}
+.range-input input {
+  position: absolute;
+  width: 100%;
+  height: 10px;
+  top: -7px;
+  background: none;
+  pointer-events: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+.range-input input::-webkit-slider-thumb {
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  border: 3px solid $blue;
+  background-color: $blue;
+  pointer-events: auto;
+  -webkit-appearance: none;
+}
+.range-input input::-moz-range-thumb {
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  border: 3px solid $blue;
+  background-color: #fff;
+  pointer-events: auto;
+  -moz-appearance: none;
+}
+.range-price {
+  margin-top: 30px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.range-price label {
+  margin-right: 5px;
+}
+.range-price input {
+  max-width: 110px;
+  height: 40px;
+  padding-left: 10px;
+  border-radius: 4px;
+  border: 1px solid $grey2;
+
+}
+.range-price input:first-of-type {
+  margin-right: 15px;
 }
