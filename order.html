@@ -147,19 +147,21 @@
                                                     <h3>Получаетель</h3>
                                                     <div class="form-group form-group-radio">
                                                         <label class="form-radio-item">
-                                                            <input type="radio" name="radio-name" checked>
+                                                            <input class="checked" type="checkbox" name="radio-name" checked>
                                                             <span class="form-legal form-radio-wrapper">
                                                                 <span class="form-radio-check"></span>
                                                                 <span class="form-radio-name">Физическое лицо</span>
                                                             </span>
                                                         </label>
                                                         <label class="form-radio-item">
-                                                            <input type="radio" name="radio-name">
+                                                            <input type="checkbox" name="radio-name">
                                                             <span class="form-legal form-radio-wrapper" style="">
                                                                 <span class="form-radio-check"></span>
                                                                 <span class="form-radio-name">Юридическое лицо</span>
                                                             </span>
                                                         </label>
+
+                                                        <input name="options[file]" type="hidden" id="file" value="" />
                                                     </div>
                                                     <form action="">
                                                         <div class="form-group">
@@ -217,14 +219,14 @@
                                                     <h3>Доставка</h3>
                                                     <div class="form-group form-group-radio">
                                                         <label class="form-radio-item">
-                                                            <input type="radio" name="radio-name" checked>
+                                                            <input type="checkbox" name="radio-name" checked>
                                                             <span class="form-radio-wrapper">
                                                                 <span class="form-radio-check"></span>
                                                                 <span class="form-radio-name">Доставка по адресу</span>
                                                             </span>
                                                         </label>
                                                         <label class="form-radio-item">
-                                                            <input type="radio" name="radio-name">
+                                                            <input type="checkbox" name="radio-name">
                                                             <span class="form-radio-wrapper" style="">
                                                                 <span class="form-radio-check"></span>
                                                                 <span class="form-radio-name">Самовывоз</span>
@@ -265,21 +267,21 @@
                                         <h3 class="order-item-title">Способ оплаты</h3>
                                         <div class="form-group form-group-radio">
                                             <label class="form-radio-item">
-                                                <input type="radio" name="radio-name" checked>
+                                                <input type="checkbox" name="radio-name" checked>
                                                 <span class="form-radio-wrapper" style="">
                                                     <span class="form-radio-check"></span>
                                                     <span class="form-radio-name">Наличными при <br> получении</span>
                                                 </span>
                                             </label>
                                             <label class="form-radio-item">
-                                                <input type="radio" name="radio-name">
+                                                <input type="checkbox" name="radio-name">
                                                 <span class="form-radio-wrapper">
                                                     <span class="form-radio-check"></span>
                                                     <span class="form-radio-name">Банковской картой</span>
                                                 </span>
                                             </label>
                                             <label class="form-radio-item">
-                                                <input type="radio" name="radio-name">
+                                                <input type="checkbox" name="radio-name">
                                                 <span class="form-radio-wrapper">
                                                     <span class="form-radio-check"></span>
                                                     <span class="form-radio-name">По счету</span>
@@ -549,6 +551,7 @@
 <script type="text/javascript" src="js/slick.min.js"></script>
 <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 <script>
+
     $('.form-legal').on('click', function () {
         for (let i=0; i<document.querySelectorAll('.form-radio-name').length; i++) {
             const item = document.querySelectorAll('.form-radio-name')[i];

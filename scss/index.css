@@ -4061,6 +4061,9 @@ footer .contacts-block-address span:last-child {
   font-size: 20px;
   padding: 20px 20px 0;
 }
+.order .product-slider .block-left {
+  border: none;
+}
 .order .product-slide {
   max-width: 100%;
 }
