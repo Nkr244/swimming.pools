@@ -3924,6 +3924,9 @@ footer .contacts-block-address span:last-child {
   align-items: center;
   position: initial;
 }
+.personal-area .block-right .mb20 {
+  margin-bottom: 20px;
+}
 .personal-area .block-right .btn-more {
   color: black;
   width: auto !important;

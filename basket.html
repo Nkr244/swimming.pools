@@ -416,7 +416,9 @@
             if (totalSum < 10000) {
                 $('.min-sum').removeClass('close')
             } else  $('.min-sum').addClass('close')
-            $('[data-count-button]').click(event => {
+
+
+           $('[data-count-button]').click(event => {
                 const buttonClick = event.target;
                 const button = buttonClick.parentNode
                 const countEl = buttonClick.parentNode.parentNode.querySelector(".basket-count")
