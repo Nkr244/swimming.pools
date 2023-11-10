@@ -2138,8 +2138,8 @@ footer .contacts-block-address span:last-child {
 }
 .form-group .form-checkbox-check i:before {
   position: absolute;
-  top: -4px;
-  left: 7.5px;
+  top: -7px;
+  left: 3.5px;
 }
 
 .form-image {
@@ -3490,6 +3490,10 @@ footer .contacts-block-address span:last-child {
 .login-custom::-webkit-scrollbar,
 .register::-webkit-scrollbar {
   display: none;
+}
+
+.register-page {
+  position: relative;
 }
 
 .login-custom .form-content,
