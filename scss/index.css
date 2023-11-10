@@ -82,6 +82,18 @@ section {
   font-family: "Inter", sans-serif;
 }
 
+.red {
+  color: #ff453a !important;
+}
+
+.yellow {
+  color: #d3d32f !important;
+}
+
+.green {
+  color: #54d23a !important;
+}
+
 [class^=btn][disabled],
 [class^=btn][disabled]:hover {
   cursor: default !important;
@@ -1621,7 +1633,8 @@ footer .contacts-block-address span:last-child {
 }
 .new-product .product-slide-content-active-price {
   font-size: 26px;
-  color: #C81354;
+  color: #f91567;
+  font-weight: bold;
 }
 .new-product .product-slide-content-prev-price {
   font-size: 16px;
@@ -2189,6 +2202,10 @@ footer .contacts-block-address span:last-child {
 }
 .delivery-tab-content-item {
   margin-bottom: 20px;
+}
+.delivery-tab-content-item h3 {
+  color: #538fea;
+  font-weight: bold;
 }
 .delivery-tab-content .delivery-tab-image {
   flex-basis: 50%;
@@ -3421,7 +3438,7 @@ footer .contacts-block-address span:last-child {
   bottom: -10px;
   right: -30px;
   font-size: 14px;
-  color: #767676;
+  color: #ff453a;
   font-weight: normal;
 }
 .basket-none .page-catalog-instructions-item-content .btn-transparent i,
@@ -3803,7 +3820,7 @@ footer .contacts-block-address span:last-child {
 }
 .personal-area-data .register .form-content .password-ok {
   color: #27ba0f;
-  background: #e5ffe0;
+  background: #54d23a;
 }
 .personal-area-data .register .form-content .form h3 {
   text-align: start;
@@ -3973,6 +3990,10 @@ footer .contacts-block-address span:last-child {
 .personal-area .block-right .basket-product-item-text h3 {
   font-size: 16px !important;
   margin-bottom: 5px;
+}
+.personal-area .block-right .basket-product-item-text h3 span {
+  font-size: 16px;
+  color: #538fea;
 }
 .personal-area .block-right .basket-product-item-tag {
   font-size: 12px;

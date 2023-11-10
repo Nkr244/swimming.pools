@@ -14,8 +14,16 @@ $darkblue:#255394;
 $systemRed:#ff453a;
 $systemRedLight:#ffeeed;
 $systemGreen:#27ba0f;
-$systemGreenLight:#e5ffe0;
-
+$systemGreenLight: #54d23a;
+.red {
+color: $systemRed !important;
+}
+.yellow {
+color: #d3d32f !important;
+}
+.green {
+color: $systemGreenLight !important;
+}
 
 
 

@@ -47,6 +47,10 @@
 
   &-item {
     margin-bottom: 20px;
+    h3 {
+      color: $blue;
+      font-weight: bold;
+    }
   }
 
   .delivery-tab-image {
